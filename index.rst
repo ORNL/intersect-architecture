@@ -11,3 +11,4 @@ Architecture Documentation
 
    introduction
 
+   bibliography

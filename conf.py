@@ -42,7 +42,8 @@ bibtex_reference_style = 'label'
 templates_path = ['_templates']
 
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 've3', 'venv', '.venv',
-                    'README', 'Makefile', 'Dockerfile']
+                    'README', 'Makefile', 'Dockerfile',
+                    'README.md']
 
 # Allow number-based figure references
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-numfig
