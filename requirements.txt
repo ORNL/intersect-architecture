@@ -1,0 +1,8 @@
+sphinx>=4.2.0
+recommonmark
+docutils
+sphinx-rtd-theme
+sphinxcontrib-bibtex
+sphinxcontrib-plantuml
+sphinxcontrib-mermaid
+sphinxcontrib-youtube
