@@ -1,0 +1,57 @@
+# Based on: "2022-May-4-Planning.jpg"
+title Approval -- Experiment Plan
+
+
+participantgroup #lightblue **System 1** 
+participant "HMI" as HMI
+participant "Orchestrator" as O1
+participant "App Mgr" as AMgr1
+end
+
+participantgroup #lightgreen **System 2**
+participant "Orchestator" as O2
+participant "App Mgr" as AMgr2
+participant "Resource Mgr" as RMgr2
+end
+
+participantgroup #lightgrey **System //n//**
+participant "Orchestaror" as O3
+end
+
+box over O1 #lightyellow: **Assumptions:**\n  1. All Systems are running\n  2. All systems share status + resource status\n  3. User has access/authorization to run on system\n  4. Tasks are not low latency tasks (sec not usec)
+
+
+
+# Activity A1 on System X produces Data Product
+#activate HMI
+HMI->O1:Task(1-n)
+O1->O2:Task(1-n)
+O2->O3:Task(1-n)
+#deactivate HMI
+
+HMI->O1:PlanCommand(Task (1-n))
+#activate O1
+O1->O1:assign Tasks to\nresources
+O1-->>HMI:PlanCommandStatus(Task assignment)
+O1-->>AMgr1:PlanCommandStatus(Task assignment)
+#deactivate O1
+
+#activate AMgr1
+AMgr1->HMI:<size:14>**ApprovalRequest**</size>
+HMI-->>AMgr1:<size:14>**ApprovalRequestStatus**</size>
+#deactivate AMgr1
+AMgr1-->>O1:PlanCommandStatus(approved)
+O1->O2:PlanCommand(Task 1-4)
+O2->O2:assign Tasks to\nresources
+
+O1->O3:PlanCommand(Task 5-n)
+O2-->>HMI:Plan(1-4)
+note over O2#lightyellow: opt. approval step
+
+
+O3-->>HMI:Plan(5-n)
+O2-->>HMI:PlanStatus
+RMgr2-->>O2:TaskStatus
+RMgr2-->>O1:TaskStatus
+RMgr2-->>HMI:TaskStatus
+

@@ -1,0 +1,37 @@
+entity "Campaign" as campaign {
+        * user_id : UNIQUEID <<FK>>
+        campaign_id : INTEGER
+        --
+        campaign_name : VARCHAR(256)
+        campaign_description : VARCHAR(256)
+        campaign_status : CHAR(30)
+	domain_classifier : VARCHAR(256)	
+	approver : UNIQUEID <<FK>>
+	requestor : UNIQUEID <<FK>>
+	requested_ts : DATETIMETZ
+	actual_ts : DATETIMETZ
+	draft : TEXT
+	coordinates : VARCHAR(256)
+	requested_resources : UNIQUEID <<FK>>
+	initiated_login_ts : DATETIMETZ
+	last_monitor_login_ts : DATETIMETZ
+	end_ts : DATETIMETZ
+	template : BOOLEAN
+}
+note right of campaign::campaign_status
+campaign_status enumerated type
+
+Complete
+Draft
+Running
+Scheduled
+Submitted
+end note
+
+note right of campaign::draft
+draft enumerated type
+
+Draft
+Submitted
+UnderReview
+end note

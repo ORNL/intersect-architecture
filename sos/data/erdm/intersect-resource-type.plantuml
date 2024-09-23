@@ -1,0 +1,4 @@
+entity "INTERSECT Resource Type" as intersect_resource_type {
+	* intersect_resource_id : UNIQUEID
+	* description : VARCHAR(256)
+	}

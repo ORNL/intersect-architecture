@@ -1,0 +1,35 @@
+\textbackslash subsubsection\{Schema Document Properties\}
+\textbackslash bf\textbackslash noindent\textbackslash emph\{Declared
+Namespaces\}\} \textbackslash subsubsection\{Global Declarations\}
+Complex Type: XML Instance Representation Start ChoiceCommand message
+type. Requires action for receiver. Must be responded to by an
+acknowledgement. Immediate response expected with deferred
+processing.Acknowledgement message type. Response to CommandMessage.
+Response is Accepted/Rejected.Request message type. Inquisitive for
+receiver. Must be responded to by a reply. Response expected after
+processing is complete. Reply message type. Response to RequestMessage.
+Response is detailed.Notification message type. Asynchronous and does
+not need a response or acknowledgement. Examples include heartbeat
+message, log message, status message. Complex Type: CommandMessageType
+XML Instance Representation Base type for a
+CommandMessage.\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater{}
+Schema Component Representation The UTC date and time that this message
+instance was created.The sender ID of this message. This is the ID of
+the component or system at which this message was formulated.The
+receiver ID of this message. This is the ID of the component or system
+at which this message was sent.The name for the given message type.The
+actual message content, deciphered by either MessageSchemaURI or
+(MessageType, MessageName, MessageVersion). Complex Type:
+AcknowledgeMessageType XML Instance Representation
+\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater{}
+Schema Component Representation Complex Type: ReplyMessageType XML
+Instance Representation Base type for a
+ReplyMessage.\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater{}
+Schema Component Representation Complex Type: RequestMessageType XML
+Instance Representation Base type for a
+RequestMessage.\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater{}
+Schema Component Representation Complex Type: EventMessageType XML
+Instance Representation Base type for a
+EventMessage.\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater\textless\textgreater\textless/\textgreater{}
+Schema Component Representation \textbackslash subsubsection\{Global
+Definitions\}

@@ -1,0 +1,13 @@
+@startuml
+
+' hide the spot
+hide circle
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+	    
+
+
+		user }o..|{ user_profile
+		@enduml

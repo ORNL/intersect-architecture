@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="434 683 412 144" width="412" height="144">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="CrowBall_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -6 24 12" markerWidth="24" markerHeight="12" color="#447e59">
+      <g>
+        <path d="M 21.599994 0 L 7.199998 0 M 21.599994 4.799999 L 9.599998 0 L 21.599994 -4.799999 M 1.0544157 2.5455833 C -.3514679 1.1396961 -.3514679 -1.1396961 1.0544157 -2.5455833 C 2.4602994 -3.951467 4.739699 -3.951467 6.1455824 -2.5455833 C 7.55147 -1.1396961 7.55147 1.1396961 6.1455824 2.5455833 C 4.739699 3.951467 2.4602994 3.951467 1.0544157 2.5455833" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="Bar_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-13 -6 14 12" markerWidth="14" markerHeight="12" color="#447e59">
+      <g>
+        <path d="M -11.999998 0 L 0 0 M 0 -4.799999 L 0 4.799999" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="CrowBar_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -6 19 12" markerWidth="19" markerHeight="12" color="#447e59">
+      <g>
+        <path d="M 16.799996 0 L 0 0 M 16.799996 4.799999 L 4.799999 0 L 16.799996 -4.799999 M 0 4.799999 L 0 -4.799999" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="CrowBall_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-23 -6 24 12" markerWidth="24" markerHeight="12" color="#447e59">
+      <g>
+        <path d="M -21.599997 0 L -7.199999 0 M -21.599997 -4.799999 L -9.599998 0 L -21.599997 4.799999 M -1.0544158 -2.5455836 C .35146794 -1.1396962 .35146794 1.1396962 -1.0544158 2.5455836 C -2.4602996 3.9514674 -4.739699 3.9514674 -6.145583 2.5455836 C -7.55147 1.1396962 -7.55147 -1.1396962 -6.145583 -2.5455836 C -4.739699 -3.9514674 -2.4602996 -3.9514674 -1.0544158 -2.5455836" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="Repository_ERD" fill-opacity="1" fill="none" stroke="none" stroke-dasharray="none" stroke-opacity="1">
+    <title>Repository_ERD</title>
+    <rect fill="white" x="434" y="683" width="412" height="144"/>
+    <g id="Repository_ERD_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <rect x="435" y="683.5" width="54.28099" height="28.5" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(440 686.75)" fill="#447e59">
+          <tspan font-family="Helvetica" font-size="9" fill="#447e59" x="12.635124" y="9" xml:space="preserve">Data </tspan>
+          <tspan font-family="Helvetica" font-size="9" fill="#447e59" x=".6314621" y="20" xml:space="preserve">Repository</tspan>
+        </text>
+      </g>
+      <g id="Line_3">
+        <line x1="501.781" y1="697.75" x2="531.6397" y2="697.75" marker-end="url(#CrowBall_Marker)" marker-start="url(#Bar_Marker)" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <rect x="553.7397" y="683.5" width="54.28099" height="28.5" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(558.7397 692.25)" fill="#447e59">
+          <tspan font-family="Helvetica" font-size="9" fill="#447e59" x="5.88073" y="9" xml:space="preserve">DataSet</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <line x1="620.52066" y1="697.75" x2="650.37934" y2="697.75" marker-end="url(#CrowBall_Marker)" marker-start="url(#Bar_Marker)" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <rect x="672.4793" y="683.5" width="54.28099" height="28.5" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(677.4793 692.25)" fill="#447e59">
+          <tspan font-family="Helvetica" font-size="9" fill="#447e59" x=".3765793" y="9" xml:space="preserve">Data Asset</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <line x1="749.1103" y1="697.75" x2="773.919" y2="697.75" marker-end="url(#CrowBar_Marker)" marker-start="url(#CrowBall_Marker_2)" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <rect x="791.219" y="683.5" width="54.28099" height="28.5" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(796.219 686.75)" fill="#447e59">
+          <tspan font-family="Helvetica" font-size="9" fill="#447e59" x="3.378044" y="9" xml:space="preserve">Metadata </tspan>
+          <tspan font-family="Helvetica" font-size="9" fill="#447e59" x="9.13488" y="20" xml:space="preserve">Object</tspan>
+        </text>
+      </g>
+      <g id="Line_10">
+        <path d="M 580.88017 734.1 L 580.88017 755.1458 L 773.919 754.7825" marker-end="url(#CrowBar_Marker)" marker-start="url(#CrowBall_Marker_2)" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <rect x="791.219" y="740.5" width="54.28099" height="28.5" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(796.219 743.75)" fill="#447e59">
+          <tspan font-family="Helvetica" font-size="9" fill="#447e59" x="3.378044" y="9" xml:space="preserve">Metadata </tspan>
+          <tspan font-family="Helvetica" font-size="9" fill="#447e59" x="9.13488" y="20" xml:space="preserve">Object</tspan>
+        </text>
+      </g>
+      <g id="Line_12">
+        <path d="M 462.1405 734.1 L 462.1405 811.3542 L 773.919 811.7292" marker-end="url(#CrowBar_Marker)" marker-start="url(#CrowBall_Marker_2)" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <rect x="791.219" y="797.5" width="54.28099" height="28.5" stroke="#447e59" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(796.219 800.75)" fill="#447e59">
+          <tspan font-family="Helvetica" font-size="9" fill="#447e59" x="3.378044" y="9" xml:space="preserve">Metadata </tspan>
+          <tspan font-family="Helvetica" font-size="9" fill="#447e59" x="9.13488" y="20" xml:space="preserve">Object</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

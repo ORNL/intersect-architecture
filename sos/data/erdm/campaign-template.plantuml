@@ -1,0 +1,15 @@
+
+entity "Campaign Templates" as campaign_template {
+	* campaign_id : INTEGER
+	--
+	title : TEXT
+	intent : TEXT
+	background : TEXT
+	description : TEXT
+	workflow : VARBINARYBLOB
+	recommended_resources : intersect_resource_id
+	past_campaigns : campaign_id
+	}
+
+
+	

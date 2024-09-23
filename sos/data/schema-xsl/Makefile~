@@ -1,0 +1,30 @@
+SAXON = java -jar /opt/local/share/java/saxon9he.jar
+XSLTPROC = xsltproc
+
+MESSAGE_SCHEMA = SoS-MessageSchema-v1.xsd
+
+# Saxon command-line syntax
+# REPORT_STYLESHEET = -xsl:xs3p.xsl
+
+REPORT_STYLESHEET = report.xsl
+
+
+all : ms.tex ms.xhtml
+
+ms.xhtml : ${MESSAGE_SCHEMA} ${REPORT_STYLESHEET}
+	${SAXON} -s:$^ ${XS3P} > ms.xhtml
+	@ # ${XSLTPROC} ${REPORT_STYLESHEET} ${MESSAGE_SCHEMA} > ms.xhtml
+
+ms.tex : ms.xhtml
+	pandoc ms.xhtml -o ms.tex
+
+newms.tex : ${MESSAGE_SCHEMA} ${REPORT_STYLESHEET}
+	${SAXON} -s:$^ ${XS3P} >newms.tex
+
+copyout : ms.tex
+	cp ms.tex ../message-schema.tex
+
+clean :
+	rm ms.xhtml ms.tex
+
+

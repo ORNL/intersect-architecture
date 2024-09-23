@@ -22,7 +22,7 @@ html_last_updated_fmt = '%b %d, %Y'
 #      and having to read/parse it here. Good enough for now!
 ###
 version = 'main'   # 'main' (production) or 'next' (devel)
-release = 'v0.0'   # 'v0.9', 'v1.0', etc.
+release = 'v1.0'   # 'v0.9', 'v1.0', etc.
 
 
 # -- General configuration ---------------------------------------------------
@@ -34,7 +34,7 @@ release = 'v0.0'   # 'v0.9', 'v1.0', etc.
 import sphinx_rtd_theme
 extensions = ['recommonmark', "sphinx_rtd_theme", 'sphinxcontrib.bibtex',
               'sphinx.ext.todo','sphinxcontrib.plantuml','sphinxcontrib.mermaid', 'sphinxcontrib.youtube']
-bibtex_bibfiles = ['bibliography.bib']
+bibtex_bibfiles = ['bibliography.bib', 'publications.bib']
 bibtex_default_style = 'unsrt'
 bibtex_reference_style = 'label'
 
@@ -42,8 +42,7 @@ bibtex_reference_style = 'label'
 templates_path = ['_templates']
 
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 've3', 'venv', '.venv',
-                    'README', 'Makefile', 'Dockerfile',
-                    'README.md']
+                    'Makefile', 'Dockerfile', 'README.md']
 
 # Allow number-based figure references
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-numfig

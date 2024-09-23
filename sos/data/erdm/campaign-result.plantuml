@@ -1,0 +1,5 @@
+entity "Campaign Results" as campaign_result {
+	* campaign_id : INTEGER
+	--
+	running_coordinates : VARCHAR(256)
+}	

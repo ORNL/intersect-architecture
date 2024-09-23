@@ -1,0 +1,82 @@
+.. _intersect:arch:sos:operational:activities:registry:
+
+Service Registry / Registrar
+============================
+
+
+Service identity registration facility that provides the universally
+unique identifiers
+
+.. _intersect:arch:sos:operational:activities:registry:descr:
+
+Description
+-----------
+
+The INTERSECT services communicate via messages and require a unique
+address, i.e., UUID. The service registry provides a directory of
+systems with their respective services. These unique identifiers are
+used when communicating with targets. The current addressing structure
+follows a hierarchical format as shown in
+:numref:`fig:intersect:arch:sos:operational:activities:registry:naming`.
+
+.. figure:: images/fig-opview-registry-naming.png
+   :name:  fig:intersect:arch:sos:operational:activities:registry:naming
+   :align: center
+   :width: 80.0%
+
+   Hierarchical naming structure for System of System addressing.
+
+The registration service provides all entities in the INTERSECT
+ecosystem a unique identifier such that they may communicate on the
+messaging platform. The registry self-assigns UUIDs for the entities in
+the system. The active state of each service is not maintained in the
+registration beyond basic existence, i.e., the registry is not
+responsible for tracking service state (see Service Monitoring in
+:ref:`intersect:arch:sos:operational:activities:monitoring`).
+When a service registers it provides what capabilities (and version) it
+supports and receives a unique identifier for each capability, which get
+mapped down to the service schema. Additionally, a regular name may be
+included with services to aid with channel naming for broadcasts and be
+helpful for debugging.
+
+.. _intersect:arch:sos:operational:activities:registry:interfaces:
+
+Interfaces and Data
+-------------------
+
+See :numref:`fig:intersect:arch:sos:operational:activities:registry:seqdiag-registry`
+for example of expected interfaces:
+
+  * ``Register(Type, org, facility, [cert])`` – connect to the Service
+    Registry to be assigned a UUID, optional certificate for added
+    security
+
+  * ``Response(hash, UUID)`` – response containing item’s assigned UUID
+
+  * ``RequestUUID(Type, org, facility, hash)`` – request the UUID of a
+    given item (hash ID), this may contain wildcards to obtain a set of
+    UUID (e.g., ``"org.facility.*"``).
+
+.. _intersect:arch:sos:operational:activities:registry:example:
+
+Example
+-------
+
+The steps for a service to obtain a universally unique identifier are
+outlined in
+:numref:`fig:intersect:arch:sos:operational:activities:registry:seqdiag-registry`.
+
+.. figure:: images/fig-opview-seqdiag-registry.png
+   :name: fig:intersect:arch:sos:operational:activities:registry:seqdiag-registry
+   :align: center
+   :width: 80.0%
+
+   Illustration of messages involved in service registration to obtain a
+   universally unique identifier (UUID).
+
+.. _intersect:arch:sos:operational:activities:registry:related:
+
+Related
+-------
+
+  * Service Monitoring in :ref:`intersect:arch:sos:operational:activities:monitoring`

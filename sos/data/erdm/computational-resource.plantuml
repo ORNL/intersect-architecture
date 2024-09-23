@@ -1,0 +1,17 @@
+entity "Computational Resources" as computational_resource {
+	* resource_id : INTEGER
+	--
+	name : TEXT
+	supported_software_version : TEXT
+	performance_metrics : VARBINARYBLOB
+	architecture : TEXT
+	cpu_cores : TEXT
+	host_memory : TEXT
+	acceleration : TEXT
+	cluster_size : TEXT
+	storage : TEXT
+	other : TEXT
+	}
+
+
+	

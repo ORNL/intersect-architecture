@@ -1,0 +1,10 @@
+entity "INTERSECT Resource Actions" as intersect_resource_action {
+	* intersect_resource_action_id : INTEGER
+	--
+	function_name : TEXT
+	description : TEXT
+	documentation_url : TEXT
+	}
+
+
+	

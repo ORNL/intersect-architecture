@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema.json
+%TAG ! tag:ornl.gov,2002:intersect/
+---
+dataSet:
+  type: object
+  name: "Data Set"
+  properties:
+    name:
+      type: string
+    dataAssets:
+      type: array
+      items: dataAsset
+      uniqueItems: true
+  required:
+  - name
+  - dataAssets
+  <<: !include something.yaml
+---

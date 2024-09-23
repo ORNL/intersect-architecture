@@ -1,0 +1,73 @@
+
+
+      \subsubsection{Schema Document Properties}
+
+      \bf\noindent\emph{Declared Namespaces}
+
+      \subsubsection{Global Declarations}
+
+    
+
+    \bf\noindent{Complex Type:} 
+    
+    \emph{XML Instance Representation}
+    
+    Start Choice<CommandMessage>CommandMessageType</CommandMessage><AcknowledgeMessage>AcknowledgeMessageType</AcknowledgeMessage><RequestMessage>RequestMessageType</RequestMessage><ReplyMessage>ReplyMessageType</ReplyMessage><EventMessage>EventMessageType</EventMessage>End Choice
+
+    \emph{Schema Component Representation}
+    
+    Command message type.  Requires action for receiver.  Must be responded to by an acknowledgement.  Immediate response expected with deferred processing.Acknowledgement message type.  Response to CommandMessage.  Response is Accepted/Rejected.Request message type.  Inquisitive for receiver.  Must be responded to by a reply.  Response expected after processing is complete. Reply message type.  Response to RequestMessage.  Response is detailed.Notification message type.  Asynchronous and does not need a response or acknowledgement.  Examples include heartbeat message, log message, status message.
+
+    \bf\noindent{Complex Type:} CommandMessageType
+    
+    \emph{XML Instance Representation}
+    
+    Base type for a CommandMessage.<></><></><></><></><></><></><></><></><></>
+
+    \emph{Schema Component Representation}
+    
+    The UTC date and time that this message instance was created.The sender ID of this message.  This is the ID of the component or system at which this message was formulated.The receiver ID of this message.  This is the ID of the component or system at which this message was sent.The name for the given message type.The actual message content, deciphered by either MessageSchemaURI or (MessageType, MessageName, MessageVersion).
+
+    \bf\noindent{Complex Type:} AcknowledgeMessageType
+    
+    \emph{XML Instance Representation}
+    
+    <></><></><></><></><></><></><></><></><></><></><></>
+
+    \emph{Schema Component Representation}
+    
+    
+
+    \bf\noindent{Complex Type:} ReplyMessageType
+    
+    \emph{XML Instance Representation}
+    
+    Base type for a ReplyMessage.<></><></><></><></><></><></><></><></><></><></><></>
+
+    \emph{Schema Component Representation}
+    
+    
+
+    \bf\noindent{Complex Type:} RequestMessageType
+    
+    \emph{XML Instance Representation}
+    
+    Base type for a RequestMessage.<></><></><></><></><></><></><></><></><></>
+
+    \emph{Schema Component Representation}
+    
+    
+
+    \bf\noindent{Complex Type:} EventMessageType
+    
+    \emph{XML Instance Representation}
+    
+    Base type for a EventMessage.<></><></><></><></><></><></><></><></><></>
+
+    \emph{Schema Component Representation}
+    
+    
+
+    \subsubsection{Global Definitions}
+
+  

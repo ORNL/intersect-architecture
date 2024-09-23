@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" modified="2023-05-08T15:49:00.384Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="qqc66Vsb9t-NmgvpQK67" version="21.2.9" type="device">
+  <diagram id="wKn2AWFeLD71Gitel8ec" name="Page-1">
+    <mxGraphModel dx="2714" dy="1434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pxdwXx65ijOLmUPr7shV-14" value="&lt;i&gt;&lt;u&gt;Design of Experiments&lt;/u&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;verticalAlign=top;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="230" y="180" width="560" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-15" value="&lt;i&gt;&lt;u&gt;Experiment Steering&lt;/u&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;verticalAlign=top;strokeWidth=2;perimeterSpacing=2;" parent="1" vertex="1">
+          <mxGeometry x="410" y="210" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-1" value="Experiment&lt;br&gt;Design Plan" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.document;" parent="1" vertex="1">
+          <mxGeometry x="260" y="240" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-2" value="Experiment&lt;br&gt;Planner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="320" y="240" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pxdwXx65ijOLmUPr7shV-1" target="pxdwXx65ijOLmUPr7shV-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="261" as="sourcePoint" />
+            <mxPoint x="480" y="351" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="pxdwXx65ijOLmUPr7shV-10" target="pxdwXx65ijOLmUPr7shV-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="140" as="sourcePoint" />
+            <mxPoint x="410" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-5" value="Experiment&lt;br&gt;Controller" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="490" y="240" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-6" value="Safety-/Progress-&lt;br&gt;Related Feedback" style="endArrow=classic;html=1;rounded=0;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="pxdwXx65ijOLmUPr7shV-8" target="pxdwXx65ijOLmUPr7shV-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="401" as="sourcePoint" />
+            <mxPoint x="335" y="301" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="644" y="310" />
+              <mxPoint x="530" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="pxdwXx65ijOLmUPr7shV-5" target="pxdwXx65ijOLmUPr7shV-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="260" as="sourcePoint" />
+            <mxPoint x="610" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-8" value="Test" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="600" y="240" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-9" value="Result-Related Feedback" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="pxdwXx65ijOLmUPr7shV-12" target="pxdwXx65ijOLmUPr7shV-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="320" as="sourcePoint" />
+            <mxPoint x="390" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="726" y="340" />
+              <mxPoint x="360" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-10" value="Experiment&lt;br&gt;Plan" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.document;" parent="1" vertex="1">
+          <mxGeometry x="430" y="240" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="pxdwXx65ijOLmUPr7shV-2" target="pxdwXx65ijOLmUPr7shV-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="270" as="sourcePoint" />
+            <mxPoint x="500" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-12" value="Experiment&lt;br&gt;Result" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.document;" parent="1" vertex="1">
+          <mxGeometry x="711" y="240" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pxdwXx65ijOLmUPr7shV-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="pxdwXx65ijOLmUPr7shV-8" target="pxdwXx65ijOLmUPr7shV-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="180" as="sourcePoint" />
+            <mxPoint x="720" y="390.6700000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

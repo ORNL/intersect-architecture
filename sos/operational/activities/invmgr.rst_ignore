@@ -1,0 +1,60 @@
+.. _intersect:arch:sos:operational:activities:invmgr:
+
+Inventory Manager
+=================
+
+Manager responsible for tracking details about resources (e.g., systems,
+applications, etc.) to include their state and possibly their global
+service dependencies.
+
+.. _intersect:arch:sos:operational:activities:invmgr:descr:
+
+Description
+-----------
+
+  .. todo:: TODO: General description of activity, 1-2 paragraphs to
+            clarify purpose
+
+.. _intersect:arch:sos:operational:activities:invmgr:interfaces:
+
+Interfaces and Data
+-------------------
+
+  .. todo:: TODO: Interface details, to include APIs and/or data
+            consumed/produced
+
+.. _intersect:arch:sos:operational:activities:invmgr:example:
+
+Example
+-------
+
+  .. todo:: TODO: Illustrative example for the activity
+            (prefer general/generic use case)
+
+.. _intersect:arch:sos:operational:activities:invmgr:related:
+
+Related
+-------
+
+  * Service Registry/Registrar in :ref:`intersect:arch:sos:operational:activities:registry`
+
+  *  Related – brief pointers to related activities, sections, etc.
+
+.. _intersect:arch:sos:operational:activities:invmgr:notes:
+
+Notes / Open Issues
+-------------------
+
+Points for further consideration / review:
+
+  * The idea here is to have a separate service that deals with state
+    tracking of intersect services (if needed), and possibly knows about
+    service dependencies if things need to be cycles if something is
+    added/leaves, etc. This would use things like the Service Registry
+    (that is mostly stateless), but supplement that information with state
+    tracking or other details.
+
+  * This may be an inventory of systems and/or applications. Therefore,
+    could be useful for the “match making” type of needs, i.e., what can
+    run where.
+

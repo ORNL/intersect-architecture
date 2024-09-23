@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+---
+DataAsset:
+  type: object
+  properties:
+    name:
+      type: string
+    description:
+      type: [string, object]
+  required:
+  - name
+---

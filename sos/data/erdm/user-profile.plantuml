@@ -1,0 +1,17 @@
+entity "User_Profile" as user_profile {
+	* user_profile_id : INTEGER <<FK>>
+	--
+	username : TEXT
+	registered_datetime_utc : TIMESTAMPTZ
+	last_updated_datetime_utc : TIMESTAMPTZ
+	user_firstname : TEXT
+	user_lastname : TEXT
+	title : TEXT
+	organization : TEXT
+	facility : TEXT
+	user_email : TEXT
+	user_phone_number : TEXT
+	user_interests : VARBINARYBLOB
+	user_profile_picture : VARBINARYBLOB
+	}
+
