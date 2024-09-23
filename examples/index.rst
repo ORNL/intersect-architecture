@@ -34,3 +34,5 @@ use cases are addressed by the architecture, including how the
    :caption: Architecture Examples Catalog
 
    aam/index
+   acl/index
+
