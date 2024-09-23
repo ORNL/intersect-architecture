@@ -1,0 +1,6 @@
+entity "Email Contact" as email_contact {
+	* user_id : UNIQUEID <<FK>>
+	--
+	email_address : VARCHAR(64)
+	description : VARCHAR(64)
+	}

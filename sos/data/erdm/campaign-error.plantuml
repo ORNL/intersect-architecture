@@ -1,0 +1,6 @@
+entity "Campaign Errors" as campaign_error {
+	* campaign_id : INTEGER
+	--
+	error_type : TEXT
+	error_detail : TEXT
+}	

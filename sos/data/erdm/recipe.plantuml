@@ -1,0 +1,9 @@
+entity "Recipe" as recipe {
+	* user_id : UNIQUEID <<FK>>
+	* campaign_id : INTEGER <<FK>>
+	recipe_id : INTEGER
+	--
+	name : VARCHAR(256)
+	description : VARCHAR(256)
+	details : VARBINARYBLOB(255)
+	}

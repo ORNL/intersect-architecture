@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+---
+Task:
+  type: object
+  properties:
+    name:
+      type: string
+    state:
+      type: string
+      description: The measured skill for hunting
+      enum:
+      - ready
+      - assigned
+      - active
+      - suspended
+      - canceled
+      - aborted
+      - successful
+      - unsuccessful
+  required:
+  - name
+---

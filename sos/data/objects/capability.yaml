@@ -1,0 +1,12 @@
+Capability:
+  type: object
+  discriminator:
+    propertyName: capabilityType
+  properties:
+    name:
+      type: string
+    capabilityType:
+      type: string
+  required:
+  - name
+  - capabilityType

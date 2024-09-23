@@ -1,0 +1,39 @@
+entity "INTERSECT Resources" as intersect_resources {
+	* intersect_resource_id : UNIQUEID
+	--
+	resource_name : VARCHAR(256)
+	resource_description : VARCHAR(256)
+	resource_physical_location : VARCHAR(256)
+	resource_adapter_url : VARCHAR(256)
+	classification : TEXT
+	resource_type : VARCHAR(256)
+	vendor : TEXT
+	model : TEXT
+	version : TEXT
+	status : TEXT
+	' Enum of Ready, BeingPrepared, InUse, Down, AlternateReady
+	thumbnail : VARBINARYBLOB
+	instrument_setup_images : VARBINARYBLOB
+	performance_metrics : TEXT
+	actions : intersect_action_id
+	'
+	current_availability : VARCHAR
+	future_availability : VARBINARYBLOB
+	' calendar with lead time for instruments
+	'
+	om_setup : DURATION
+	om_teardown : DURATION
+	operator_maintainer : UNIQUEID
+	'
+	owner : UNIQUEID
+	'
+	digital_twin_available : BOOLEAN
+	digital_twin_caveats : TEXT
+	'
+	past_campaigns : INTEGER
+	reviews : TEXT
+	'
+	compliance : TEXT
+	' SOS 4.5.1
+	}
+

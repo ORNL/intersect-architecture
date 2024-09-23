@@ -1,0 +1,68 @@
+@startuml
+
+hide circle
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+title "INTERSECT E/R"
+
+!include user.plantuml
+!include user-profile.plantuml
+!include project.plantuml
+!include campaign.plantuml
+!include campaign-result.plantuml
+!include campaign-error.plantuml
+!include campaign-warning.plantuml
+!include campaign-template.plantuml
+!include recipe.plantuml
+!include approved-user-resources.plantuml
+!include approved-administrator-resources.plantuml
+!include approved-operator-resources.plantuml
+!include intersect-resource-type.plantuml
+!include intersect-resource-action.plantuml
+!include intersect-resources.plantuml
+!include computational-resource.plantuml
+!include resource-support.plantuml
+!include resource-capability.plantuml
+!include phone-contact.plantuml
+!include email-contact.plantuml
+
+'
+user }o..|{ user_profile
+user ||--o{ approved_user_resources
+user ||--o{ approved_administrator_resources
+user ||--o{ approved_operator_resources
+user ||--o{ campaign
+user_profile ||--o{ email_contact
+user_profile ||--o{ phone_contact
+
+campaign ||--o{ recipe
+campaign }|--o{ intersect_resources
+campaign ||--|{ campaign_result
+campaign ||--o{ campaign_error
+campaign ||--o{ campaign_warning
+'
+project ||..|{ campaign
+project ||..|{ intersect_resources
+project }|..|{ user
+'
+intersect_resources ||--o{ approved_user_resources
+intersect_resources ||--o{ approved_operator_resources
+intersect_resources ||--o{ approved_administrator_resources
+'
+intersect_resources }o..|| intersect_resource_type
+intersect_resources ||--|{ intersect_resource_action
+intersect_resources ||..|{ user
+intersect_resources ||--o{ computational_resource
+
+campaign_template ||--o{ campaign
+campaign_template ||--o{ intersect_resources
+
+resource_capability }|--|| intersect_resources
+resource_capability }o--o{ user
+resource_support }o--o{ user
+resource_support }|--|{ intersect_resources
+	
+
+
+@enduml

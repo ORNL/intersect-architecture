@@ -1,0 +1,11 @@
+Agent:
+  type: object
+  properties:
+    name:
+      type: string
+    capabilities:
+      type: array
+      items:
+        $ref: capability.yaml
+  required:
+  - name

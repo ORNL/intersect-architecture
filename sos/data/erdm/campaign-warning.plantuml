@@ -1,0 +1,6 @@
+entity "Campaign Warnings" as campaign_warning {
+	* campaign_id : INTEGER
+	--
+	warning_type : TEXT
+	warning_detail : TEXT
+}	

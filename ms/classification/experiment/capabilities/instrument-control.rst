@@ -1,0 +1,238 @@
+.. _`intersect:arch:ms:capability:experiment:instrument:controller`:
+
+Capability - Experiment Control :: Instrument Controller
+--------------------------------------------------------
+
+:Description:
+   Interact with scientific instruments to initiate and control their
+   actions and activities, and to query their operational state or
+   associated data products. *Instrument actions* are intended to correspond
+   to idempotent command or control operations such as moving a physical
+   object to a specific location, and are not expected to generate data
+   products. The completion status for actions should be reported via
+   events where applicable. *Instrument activities* are intended to
+   correspond to sequences of instrument control software actions that
+   may result in data products.
+
+:Version:
+   0.1 - Initial capability definition.
+
+:Related Capabilities:
+   - Extends:
+
+      + :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`
+
+   - Requires:
+
+      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:data_catalog`
+      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:storage`
+
+:Interactions:
+   - Asynchronous: ``InstrumentActionCompletion``,
+     ``InstrumentActivityStatusChange``
+   - Command: ``PerformAction()``, ``CancelActivity()``
+   - Request-Reply: ``GetActionDescription()``, ``GetActivityDescription()``,
+     ``ListActions()``, ``ListActivities()``,
+     ``StartActivity()``, ``GetActivityData()``, ``GetActivityStatus()``
+
+- *Asynchronous Status* - ``InstrumentActionCompletion``
+
+      + Purpose: Notification of instrument action completion.
+
+      + Event Data:
+
+         *  ``actionName`` (``String``) : The instrument action name.
+
+         *  ``actionStatus`` (``String``) : The instrument action status
+            information (e.g., "ACTION_SUCCESS" or "ACTION_FAILURE").
+
+         *  ``timeBegin`` (``Timestamp``) : The timestamp when the
+            action was initiated.
+
+         *  ``timeEnd`` (``Timestamp``) : The timestamp when the
+            action was completed.
+
+         *  ``statusMsg`` (``String``) : *[Optional]* When the action has
+            failed, a message describing any available details.
+
+- *Asynchronous Status* - ``InstrumentActivityStatusChange``
+
+      + Purpose: Notification of instrument activity status changes.
+
+      + Event Data:
+
+         *  ``activityId`` (``String``) : The unique activity
+            identifier.
+
+         *  ``activityName`` (``String``) : The activity name.
+
+         *  ``activityStatus`` (``String``) : The instrument activity
+            status information for the given ``activityId`` (e.g.,
+            "ACTIVITY_PENDING", "ACTIVITY_IN_PROGRESS",
+            "ACTIVITY_CANCELED", "ACTIVITY_COMPLETED", or
+            "ACTIVITY_FAILED").
+
+         *  ``statusMsg`` (``String``) : *[Optional]* When the activity
+            has been canceled or failed, a message describing any
+            available details.
+
+- *Command* - ``PerformAction()``
+
+      + Purpose: Perform an instrument action. When the action completes,
+        triggers the ``InstrumentActionCompletion`` event.
+
+      + Command Data:
+
+         *  ``actionName`` (``String``) : The name of the action to
+            perform.
+
+         *  ``actionOptions`` (``List< KeyVal<String> >``) : *[Optional]*
+            A list of key-value options associated with the action.
+
+- *Command* - ``CancelActivity()``
+
+      + Purpose: Cancel an ongoing activity. On successful completion, triggers
+        the ``InstrumentActivityStatusChange`` event with
+        "ACTIVITY_CANCELED" as the status.
+
+      + Command Data:
+
+         *  ``activityId`` (``String``) : The activity identifier.
+
+         *  ``reason`` (``String``) : A description of the reason for
+            canceling the activity.
+
+- *Request-Reply* - ``GetActionDescription()``
+
+      + Purpose: Request a textual description of the action. The description
+        should include information regarding the intended purpose of
+        the action and its associated options.
+
+      + Request Data:
+
+         *  ``actionName`` (``String``) : The name of the instrument
+            action.
+
+      + Reply Data:
+
+         *  ``actionDescription`` (``String``) : The action description
+            text.
+
+- *Request-Reply* - ``GetActivityDescription()``
+
+      + Purpose: Request a textual description of the activity. The description
+        should include information regarding the intended purpose of
+        the activity, its associated options, and a summary of any data products.
+
+      + Request Data:
+
+         *  ``activityName`` (``String``) : The name of the instrument
+            activity.
+
+      + Reply Data:
+
+         *  ``activityDescription`` (``String``) : The activity
+            description text.
+
+- *Request-Reply* - ``GetActivityData()``
+
+      + Purpose: Request a list of the data products generated by the given
+        ``activityId``.
+
+      + Request Data:
+
+         *  ``activityId`` (``String``) : The unique activity
+            identifier.
+
+      + Reply Data:
+
+         *  ``products`` (``List<UUID>``) : A list of UUIDs for the data
+            products generated by the activity.
+
+         *  ``errorMsg`` (``String``) : *[Optional]* An error message
+            describing why the requested data product list could not be
+            returned for the given ``activityId``.
+
+- *Request-Reply* - ``GetActivityStatus()``
+
+      + Purpose: Request the current status for the given ``activityId``..
+
+      + Request Data:
+
+         *  ``activityId`` (``String``) : The unique activity
+            identifier.
+
+      + Reply Data:
+
+         *  ``activityStatus`` (``String``) : The status information for
+            the given ``activityId`` (e.g., "ACTIVITY_PENDING",
+            "ACTIVITY_IN_PROGRESS", "ACTIVITY_CANCELED",
+            "ACTIVITY_COMPLETED", or "ACTIVITY_FAILED").
+
+         *  ``statusMsg`` (``String``) : *[Optional]* When the activity
+            has been canceled or failed, a message describing any
+            available details.
+
+         *  ``timeBegin`` (``Timestamp``) : The timestamp when the
+            activity was initiated.
+
+         *  ``timeEnd`` (``Timestamp``) : *[Optional]* The timestamp when the
+            activity was completed.
+
+         *  ``errorMsg`` (``String``) : *[Optional]* An error message
+            describing why the requested activity status could not be
+            returned for the given ``activityId``.
+
+- *Request-Reply* - ``ListActions()``
+
+      + Purpose: Request a list of the valid action names.
+
+      + Reply Data:
+
+         *  ``actionNames`` (``List<String>``) : The list of valid
+            action names.
+
+         *  ``errorMsg`` (``String``) : *[Optional]* An error message
+            describing why the action list could not be returned.
+
+- *Request-Reply* - ``ListActivities()``
+
+      + Purpose: Request a list of the valid activity names.
+
+      + Reply Data:
+
+         *  ``activityNames`` (``List<String>``) : The list of valid
+            activity names.
+
+         *  ``errorMsg`` (``String``) : *[Optional]* An error message
+            describing why the activity list could not be returned.
+
+- *Request-Reply* - ``StartActivity()``
+
+      + Purpose: Initiate an instrument activity and return a unique identifier.
+        Changes in the activity’s status should trigger the
+        ``InstrumentActivityStatusChange`` event.
+
+      + Request Data:
+
+         *  ``activityName`` (``String``) : The name of the activity to
+            perform.
+
+         *  ``activityOptions`` (``List< KeyVal<String> >``) :
+            *[Optional]* A list of key-value options associated with the
+            activity. The option names may be queried via the *Parameter
+            Configuration* capability.
+
+         *  ``activityDeadline`` (``Timestamp``) : *[Optional]* A deadline
+            timestamp for completion of the activity. If the activity
+            has not completed by the given deadline, the activity should
+            be canceled and any intermediate data products should be
+            deleted.
+
+      + Reply Data:
+
+         *  ``activityId`` (``String``) : The unique identifier for the
+            activity.
+
+         *  ``errorMsg`` (``String``) : *[Optional]* An error message
+            describing why the requested activity could not be started.

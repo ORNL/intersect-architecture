@@ -1,0 +1,7 @@
+entity "Resource Support" as resource_support {
+	resource_id : UNIQUEID
+	--
+	operator_maintainer : UNIQUEID
+	support_level : INTEGER
+}
+

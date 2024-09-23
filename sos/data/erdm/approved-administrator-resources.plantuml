@@ -1,0 +1,8 @@
+entity "Approved Administrator Resources" as approved_administrator_resources {
+	* user_id : UNIQUEID <<FK>>
+	* INTERSECT_resource_id : UNIQUEID
+	--
+	resource_approval_datetime_utc : TIMESTAMPTZ
+	resource_expiration_datetime_utc : TIMESTAMPTZ
+	status : BOOLEAN
+	}

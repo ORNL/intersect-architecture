@@ -1,0 +1,14 @@
+entity "Project" as project {
+	project_id : INTEGER
+	--
+	title : TEXT
+	abstract : TEXT
+	keywords : TEXT
+	principal_investigator : UNIQUEID <<FK>>
+	co_principal_investigator : UNIQUEID <<FK>>
+	start_date : TIMESTAMPTZ
+	end_date : TIMESTAMPTZ
+	campaigns : UNIQUEID <<FK>>
+	resources : UNIQUEID <<FK>>
+	approvers : UNIQUEID <<FK>>
+	}

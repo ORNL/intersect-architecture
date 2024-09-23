@@ -1,0 +1,73 @@
+
+
+      \subsubsection{Schema Document Properties}
+
+      \bf\noindent\emph{Declared Namespaces}}
+
+      \subsubsection{Global Declarations}
+
+    
+
+    Complex Type: 
+    
+    XML Instance Representation
+    
+    Start Choice<CommandMessage&gt;CommandMessageType&lt;/CommandMessage&gt;<AcknowledgeMessage&gt;AcknowledgeMessageType&lt;/AcknowledgeMessage&gt;<RequestMessage&gt;RequestMessageType&lt;/RequestMessage&gt;<ReplyMessage&gt;ReplyMessageType&lt;/ReplyMessage&gt;<EventMessage&gt;EventMessageType&lt;/EventMessage&gt;End Choice
+
+    Schema Component Representation
+    
+    <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:choice><xs:element name="CommandMessage" type="CommandMessageType"><xs:annotation><xs:documentation>Command message type.  Requires action for receiver.  Must be responded to by an acknowledgement.  Immediate response expected with deferred processing.</xs:documentation></xs:annotation></xs:element><xs:element name="AcknowledgeMessage" type="AcknowledgeMessageType"><xs:annotation><xs:documentation>Acknowledgement message type.  Response to CommandMessage.  Response is Accepted/Rejected.</xs:documentation></xs:annotation></xs:element><xs:element name="RequestMessage" type="RequestMessageType"><xs:annotation><xs:documentation>Request message type.  Inquisitive for receiver.  Must be responded to by a reply.  Response expected after processing is complete. </xs:documentation></xs:annotation></xs:element><xs:element name="ReplyMessage" type="ReplyMessageType"><xs:annotation><xs:documentation>Reply message type.  Response to RequestMessage.  Response is detailed.</xs:documentation></xs:annotation></xs:element><xs:element name="EventMessage" type="EventMessageType"><xs:annotation><xs:documentation>Notification message type.  Asynchronous and does not need a response or acknowledgement.  Examples include heartbeat message, log message, status message.</xs:documentation></xs:annotation></xs:element></xs:choice></xs:complexType>
+
+    Complex Type: CommandMessageType
+    
+    XML Instance Representation
+    
+    Base type for a CommandMessage.<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;
+
+    Schema Component Representation
+    
+    <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="CommandMessageType"><xs:sequence><xs:element ref="MessageID"/><xs:element ref="MessageCreationDateTimeUTC"><xs:annotation><xs:documentation>The UTC date and time that this message instance was created.</xs:documentation></xs:annotation></xs:element><xs:element ref="SourceID"><xs:annotation><xs:documentation>The sender ID of this message.  This is the ID of the component or system at which this message was formulated.</xs:documentation></xs:annotation></xs:element><xs:element ref="TargetID"><xs:annotation><xs:documentation>The receiver ID of this message.  This is the ID of the component or system at which this message was sent.</xs:documentation></xs:annotation></xs:element><xs:element ref="MessageSchemaURI"/><xs:element ref="MessageType" minOccurs="0"/><xs:element ref="MessageName" minOccurs="0"><xs:annotation><xs:documentation>The name for the given message type.</xs:documentation></xs:annotation></xs:element><xs:element ref="MessageVersion" minOccurs="0"/><xs:element ref="MessageContent"><xs:annotation><xs:documentation>The actual message content, deciphered by either MessageSchemaURI or (MessageType, MessageName, MessageVersion).</xs:documentation></xs:annotation></xs:element></xs:sequence></xs:complexType>
+
+    Complex Type: AcknowledgeMessageType
+    
+    XML Instance Representation
+    
+    <&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;
+
+    Schema Component Representation
+    
+    <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="AcknowledgeMessageType"><xs:sequence><xs:element ref="MessageID"/><xs:element ref="MessageCreationDateTimeUTC"/><xs:element ref="SourceID"/><xs:element ref="TargetID"/><xs:element ref="ResponseToMessageID"/><xs:element ref="ResponseSummary"/><xs:element ref="MessageSchemaURI"/><xs:element ref="MessageType" minOccurs="0"/><xs:element ref="MessageName" minOccurs="0"/><xs:element ref="MessageVersion" minOccurs="0"/><xs:element ref="MessageContent"/></xs:sequence></xs:complexType>
+
+    Complex Type: ReplyMessageType
+    
+    XML Instance Representation
+    
+    Base type for a ReplyMessage.<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;
+
+    Schema Component Representation
+    
+    <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="ReplyMessageType"><xs:sequence><xs:element ref="MessageID"/><xs:element ref="MessageCreationDateTimeUTC"/><xs:element ref="SourceID"/><xs:element ref="TargetID"/><xs:element ref="ResponseToMessageID"/><xs:element ref="ResponseSummary"/><xs:element ref="MessageSchemaURI"/><xs:element ref="MessageType" minOccurs="0"/><xs:element ref="MessageName" minOccurs="0"/><xs:element ref="MessageVersion" minOccurs="0"/><xs:element ref="MessageContent"/></xs:sequence></xs:complexType>
+
+    Complex Type: RequestMessageType
+    
+    XML Instance Representation
+    
+    Base type for a RequestMessage.<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;
+
+    Schema Component Representation
+    
+    <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="RequestMessageType"><xs:sequence><xs:element ref="MessageID"/><xs:element ref="MessageCreationDateTimeUTC"/><xs:element ref="SourceID"/><xs:element ref="TargetID"/><xs:element ref="MessageSchemaURI"/><xs:element ref="MessageType" minOccurs="0"/><xs:element ref="MessageName" minOccurs="0"/><xs:element ref="MessageVersion" minOccurs="0"/><xs:element ref="MessageContent"/></xs:sequence></xs:complexType>
+
+    Complex Type: EventMessageType
+    
+    XML Instance Representation
+    
+    Base type for a EventMessage.<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;<&gt;&lt;/&gt;
+
+    Schema Component Representation
+    
+    <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="EventMessageType"><xs:sequence><xs:element ref="MessageID"/><xs:element ref="MessageCreationDateTimeUTC"/><xs:element ref="SourceID"/><xs:element ref="TargetID"/><xs:element ref="MessageSchemaURI"/><xs:element ref="MessageType" minOccurs="0"/><xs:element ref="MessageName" minOccurs="0"/><xs:element ref="MessageVersion" minOccurs="0"/><xs:element ref="MessageContent"/></xs:sequence></xs:complexType>
+
+    \subsubsection{Global Definitions}
+
+  

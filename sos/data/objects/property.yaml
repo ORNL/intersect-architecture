@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+Property:
+  type: object
+  discriminator:
+    propertyName: propertyType
+  properties:
+    name:
+      type: string
+    capabilityType:
+      type: string
+  required:
+  - name
+  - propertyType
+---

@@ -1,0 +1,6 @@
+entity "Phone Contact" as phone_contact {
+	* user_profile_id : INTEGER <<FK>>
+	--
+	phone_number : VARCHAR(64)
+	description : VARCHAR(64)
+	}

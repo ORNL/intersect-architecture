@@ -1,0 +1,11 @@
+entity "Resource Capabilities / Modes" as resource_capabilty {
+	* intersect_resource_id : UNIQUEID
+	--
+	title : TEXT
+	description : TEXT
+	setup_lead_time : DURATION
+	setup_operator_maintainer : UNIQUEID
+	teardown_lead_time : DURATION
+	teardown_operator_maintainer : DURATION
+	delegates : UNIQUEID
+	}
