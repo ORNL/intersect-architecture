@@ -43,6 +43,7 @@ Research sponsored by the [Laboratory Directed Research and Development
 Program's INTERSECT Initiative](https://www.ornl.gov/intersect) of [Oak Ridge
 National Laboratory](https://www.ornl.gov).
 
+
 ## How to Cite
 
 Christian Engelmann,
@@ -60,6 +61,7 @@ Suhas Somnath, and
 Rohit Srivastava.
 INTERSECT Architecture Documentation.
 URL: https://intersect-architecture.readthedocs.io
+
 
 ## Contact
 
