@@ -19,22 +19,26 @@ format and uses [Sphinx](https://www.sphinx-doc.org/) to generate the
 
  - Step 1: **FIRST TIME ONLY**
 
+   ```
    shell$ python3 -m venv ve3
    shell$ source ve3/bin/activate
    shell$ pip install -r requirements.txt
-
+   ```
 
  - Step 2: Standard usage for edit and build
 
+   ```
    shell$ source ve3/bin/activate
    shell$ make
    shell$ vi myfile.rst
    shell$ make
-
+   ```
+   
  - Step 3: View HTML results (e.g., using ``open`` utility on macOS)
 
+   ```
    shell$ open _build/index.html
-
+   ```
 
 
 ## Acknowledgements
