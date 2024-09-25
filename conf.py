@@ -7,9 +7,15 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+
+from datetime import datetime
+current_year = datetime.now().year
+
 project = 'INTERSECT Architecture'
 author = 'INTERSECT Architecture Team'
-html_show_copyright = False
+copyright = f'2021-{current_year}, {author}'
+
+html_show_copyright = True
 html_show_sphinx = False
 html_last_updated_fmt = '%b %d, %Y'
 
@@ -42,7 +48,7 @@ bibtex_reference_style = 'label'
 templates_path = ['_templates']
 
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 've3', 'venv', '.venv',
-                    'Makefile', 'Dockerfile', 'README.md']
+                    'Makefile', 'Dockerfile', 'README.md', 'LICENSE']
 
 # Allow number-based figure references
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-numfig
