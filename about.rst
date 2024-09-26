@@ -1,7 +1,7 @@
-.. _intersect:arch:team:
+.. _intersect:arch:about:
 
-Team and Publications
-#####################
+About
+#####
 
 The :term:`INTERconnected Science ECosysTem (INTERSECT)<INTERSECT>` open
 federated hardware/software architecture is currently being developed at
@@ -69,6 +69,14 @@ Suhas Somnath, and
 Rohit Srivastava.
 INTERSECT Architecture Documentation.
 URL: https://intersect-architecture.readthedocs.io
+
+
+.. _intersect:arch:team:contribute:
+
+.. rubric:: How to Contribute to this Documentation
+
+This documentation is maintaned on GitHub. To contribute, please go to
+https://github.com/ORNL/intersect-architecture.
 
 
 .. _intersect:arch:team:publications:

@@ -12,7 +12,7 @@ INTERSECT Architecture Documentation
 
    introduction
    concept
-   team
+   about
 
 .. toctree::
    :maxdepth: 2
