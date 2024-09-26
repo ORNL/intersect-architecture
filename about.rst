@@ -1,7 +1,7 @@
-.. _intersect:arch:team:
+.. _intersect:arch:about:
 
-Team and Publications
-#####################
+About
+#####
 
 The :term:`INTERconnected Science ECosysTem (INTERSECT)<INTERSECT>` open
 federated hardware/software architecture is currently being developed at
