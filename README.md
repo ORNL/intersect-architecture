@@ -14,41 +14,42 @@ format and uses [Sphinx](https://www.sphinx-doc.org/) to generate the
 [Web-based documentation](https://intersect-architecture.readthedocs.io).
 
 
+## :hammer_and_wrench: Building the Documentation Manually
 
-##  Building Docs Manually
-
- - Step 1: **FIRST TIME ONLY**
+ - Download and setup:
 
    ```
+   shell$ git clone --single-branch --branch main https://github.com/ORNL/intersect-architecture.git
+   shell$ cd intersect-architecture
    shell$ python3 -m venv ve3
    shell$ source ve3/bin/activate
+   shell$ pip install pip --upgrade
    shell$ pip install -r requirements.txt
    ```
 
- - Step 2: Standard usage for edit and build
+ - Edit and build
 
    ```
    shell$ source ve3/bin/activate
-   shell$ make
    shell$ vi myfile.rst
    shell$ make
    ```
    
- - Step 3: View HTML results (e.g., using ``open`` utility on macOS)
+ - View in browser (e.g., using ``open`` utility on macOS)
 
    ```
    shell$ open _build/index.html
    ```
 
 
-## Acknowledgements
+## :trophy: Acknowledgements
 
 Research sponsored by the [Laboratory Directed Research and Development
 Program's INTERSECT Initiative](https://www.ornl.gov/intersect) of [Oak Ridge
 National Laboratory](https://www.ornl.gov).
 
 
-## How to Cite
+## :page_facing_up: How to Cite
 
 Christian Engelmann,
 Michael Brim,
@@ -67,7 +68,7 @@ INTERSECT Architecture Documentation.
 URL: https://intersect-architecture.readthedocs.io
 
 
-## Contact
+## :email: Contact
 
 Please contact Christian Engelmann at engelmannc@ornl.gov with any comments or
 questions.
