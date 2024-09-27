@@ -233,17 +233,78 @@ The following data artifacts are generated and/or managed as experimental data b
 Operational View
 ================
 
-The :term:`INTERSECT` :term:`AAM`\'s :ref:`intersect:arch:sos:operational` ...
+The :term:`INTERSECT` :term:`AAM`\'s :ref:`intersect:arch:sos:operational`
+describes tasks and procedures from the viewpoint of real-world operations
+stakeholders.  The intent is to capture practical constraints and procedures
+for the operation and use of the additive manufacturing equipment.
+
+The current :term:`AAM` has two operational workflows, one that runs at :term:`MDF`
+and the other that runs at :term:`SNS`.  The :term:`SNS` configuration uses
+a more mobile 3D-printer and containment environment to allow for on-site
+experiments using neutrons to acquire structrual details about the
+manufactured item.  The :term:`MDF` setup employs a larger 3D-printer that
+uses a thermal camera to obtain temperature details about the manufactured
+item.
+
+These workflows include the following key operations:
+
+ - The thermal camera data (from MDF, from SNS) provide temperature details
+   about the manufactured item.
+
+ - The neutron diffraction data (from SNS) provides structural details about
+   the manufactured item.
+
+ - The thermal camera can be moved from MDF to SNS for on-site experiments,
+   to provide both thermal and structural data.
+
+ - Simulations can run on a variety of hardware platforms, using either
+   local (to instrument) or remote (to instrument) computational resources.
+
+
+A high-level diagram of the basic steps is given in :numref:`intersect:arch:examples:aam:sos:process`.
 
 .. figure:: sos/aam-process.png
    :name: intersect:arch:examples:aam:sos:process
    :align: center
-   
-   Steps of the printing process.
 
-.. todo::
+   Step of the printing process.
 
-   ???
+
+The thermo-mechanical simulation (i.e., :term:`ADAMANTINE`) is often run using
+process containers (e.g., Docker), which helps to streamline the setup and
+execution.  These simulations can run on the edge machine(s) at :term:`MDF`,
+on the OLCF ACE testbed or the SNS analysis cluster computer.  The adaptive control
+(via :term:`ADAMANTINE` driver) steers the operational parameters for the
+3D-printing process, based on information gathered from the thermal camera.
+The :term:`ROS` software environment controls the printing process, and
+coordinates the overall set of actions.  The visualization/dashboard runs
+via :term:`ROS` and offers real-time information.
+An operator (human) is responsible for monitoring the printing process
+for safety reasons, with phsical "kill switches" to abort if needed.
+
+The Okuma 3D-printer device includes both a laser for additive procedures
+(i.e., melting power) and a milling tool for subtractive machining
+(:numref:`intersect:arch:examples:aam:sos:okuma`.).  The device can only use
+one mode at a time, additive or subtractive.  A close-up view of the platform,
+camera and laser head are shown in :numref:`intersect:arch:examples:aam:sos:okuma-zoom`.
+
+.. figure:: sos/mdf-okuma-1849.jpg
+   :name: intersect:arch:examples:aam:sos:okuma
+   :align: center
+   :width: 600
+
+   The :term:`AAM` 3D-printer (Okuma) and control station. At center, the
+   milling platform is in a level position but can rotate as needed. The
+   laser head is to the right (gold tip) and thermal camera to left (plastic
+   cover).
+
+.. figure:: sos/mdf-okuma-zoom-1848.jpg
+   :name: intersect:arch:examples:aam:sos:okuma-zoom
+   :align: center
+   :width: 400
+
+   Closer view of the milling platform, laser head (right - gold tip)
+   and thermal camera (left - plastic cover).
 
 .. _intersect:arch:examples:aam:sos:user:
 
