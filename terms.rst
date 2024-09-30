@@ -205,6 +205,9 @@ Acronym and Terminology Definitions
    INTERSECT
       INTERconnected Science ECosysTem
 
+   IR
+      infra-red
+
    IRI
       :term:`ASCR` Integrated Research Infrastructure
 

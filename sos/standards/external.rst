@@ -17,3 +17,4 @@ external standards focuses on individual per-project requirements in the
    - Requirement: :ref:`OLCF ACE Testbed<intersect:arch:examples:aam:sos:standards:external:ace>`
    - Requirement: :ref:`ADAMANTINE<intersect:arch:examples:aam:sos:standards:external:adamantine>`
    - Requirement: :ref:`SNS VULCAN Engineering Materials Diffractometer<intersect:arch:examples:aam:sos:standards:external:sns_vulcan>`
+   - Requirement: :ref:`SNS Analysus cluster computer<intersect:arch:examples:aam:sos:standards:external:sns_analysis>`
