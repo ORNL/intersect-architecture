@@ -37,10 +37,6 @@ Facility (OLCF)<OLCF>` as a cross-facility instrument-science workflow.
    in-situ observations and thermo-mechanical simulations to build
    "born qualified" structures.
 
-The :term:`Oak Ridge National Laboratory<ORNL>` project team consists of:
-
-- `Stephen DeWitt (Principal Investigator) <https://www.ornl.gov/staff-profile/stephen-dewitt>`_
-
 .. list-table::
    :align: center
 
@@ -48,6 +44,12 @@ The :term:`Oak Ridge National Laboratory<ORNL>` project team consists of:
       .. youtube:: UGTADFR1O2U
          :align: center
          :width: 800
+
+Project Web site: https://www.ornl.gov/project/enabling-adaptively-controlled-additive-manufacturing-through-automation
+
+The :term:`Oak Ridge National Laboratory<ORNL>` project team consists of:
+
+- `Stephen DeWitt (Principal Investigator) <https://www.ornl.gov/staff-profile/stephen-dewitt>`_
 
 .. toctree::
    :name: intersect:arch:examples:aam:architecture
