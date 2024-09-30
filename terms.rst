@@ -337,7 +337,10 @@ Acronym and Terminology Definitions
       component of Docutils.
 
    SDC
-       Silent data corruption
+      Silent data corruption
+
+   SDK
+      Software development kit
 
    Slurm
       SchedMD's Slurm is a computational resource management and job scheduling 

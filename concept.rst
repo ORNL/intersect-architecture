@@ -1,7 +1,7 @@
 .. _intersect:arch:concept:
 
-Architecture Concept
-####################
+Concept
+#######
 
 The :term:`INTERSECT` open architecture approach roughly follows the
 :term:`U.S. Department of Defense Architecture Framework (DoDAF)<DoDAF>`
