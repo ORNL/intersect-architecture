@@ -10,6 +10,11 @@ federated hardware/software architecture is currently being developed at
 The current team involves :term:`ORNL` scientists and engineers, but the
 project is open for external contributions.
 
+.. _intersect:arch:about:sdk:
+
+Team
+----
+
 - :term:`Oak Ridge National Laboratory<ORNL>` team:
 
   - `Christian Engelmann (Principal Investigator) <https://www.ornl.gov/staff-profile/christian-engelmann>`_
@@ -43,7 +48,8 @@ project is open for external contributions.
 
 .. _intersect:arch:about:Acknowledgements:
 
-.. rubric:: Acknowledgements
+Acknowledgements
+----------------
 
 Research sponsored by the `Laboratory Directed Research and Development
 Program's INTERSECT Initiative <https://www.ornl.gov/intersect>`_ of `Oak Ridge
@@ -52,28 +58,32 @@ National Laboratory <https://www.ornl.gov>`_.
 
 .. _intersect:arch:about:cite:
 
-.. rubric:: How to Cite this Documentation
+Citation
+--------
 
-Christian Engelmann,
-Michael Brim,
-Swen Boehm,
-Olga Kuchar,
-Jack Lange,
-Thomas Naughton,
-Patrick Widener,
-Ben Mintz,
-Rob Moore,
-Elke Arenholz,
-Scott Atchley,
-Suhas Somnath, and
-Rohit Srivastava.
-INTERSECT Architecture Documentation.
-URL: https://intersect-architecture.readthedocs.io
+How to cite this documentation:
+
+    Christian Engelmann,
+    Michael Brim,
+    Swen Boehm,
+    Olga Kuchar,
+    Jack Lange,
+    Thomas Naughton,
+    Patrick Widener,
+    Ben Mintz,
+    Rob Moore,
+    Elke Arenholz,
+    Scott Atchley,
+    Suhas Somnath, and
+    Rohit Srivastava.
+    INTERSECT Architecture Documentation.
+    URL: https://intersect-architecture.readthedocs.io
 
 
 .. _intersect:arch:about:contribute:
 
-.. rubric:: How to Contribute to this Documentation
+Contribute
+----------
 
 This documentation is maintaned on GitHub. To contribute, please go to
 https://github.com/ORNL/intersect-architecture.
@@ -81,7 +91,8 @@ https://github.com/ORNL/intersect-architecture.
 
 .. _intersect:arch:about:sdk:
 
-.. rubric:: Software Development Kit
+Software Development Kit
+------------------------
 
 The :term:`INTERSECT` :term:`Software Development Kit (SDK)<SDK>` implements this
 architecture and can be found at https://github.com/INTERSECT-SDK.
@@ -89,7 +100,8 @@ architecture and can be found at https://github.com/INTERSECT-SDK.
 
 .. _intersect:arch:about:publications:
 
-.. rubric:: Publications
+Publications
+------------
 
 .. bibliography:: publications.bib
    :all:
