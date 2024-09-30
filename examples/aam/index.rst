@@ -45,7 +45,8 @@ Facility (OLCF)<OLCF>` as a cross-facility instrument-science workflow.
          :align: center
          :width: 800
 
-Project Web site: https://www.ornl.gov/project/enabling-adaptively-controlled-additive-manufacturing-through-automation
+Project Web site: 
+  - https://www.ornl.gov/project/enabling-adaptively-controlled-additive-manufacturing-through-automation
 
 The :term:`Oak Ridge National Laboratory<ORNL>` project team consists of:
 
