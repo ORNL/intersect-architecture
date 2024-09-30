@@ -84,7 +84,7 @@ https://github.com/ORNL/intersect-architecture.
 .. rubric:: Software Development Kit
 
 The :term:`INTERSECT` :term:`Software Development Kit (SDK)<SDK>` implements this
-architecture and can be found at `https://github.com/INTERSECT-SDK`.
+architecture and can be found at https://github.com/INTERSECT-SDK.
 
 
 .. _intersect:arch:about:publications:
