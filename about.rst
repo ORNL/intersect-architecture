@@ -41,7 +41,7 @@ project is open for external contributions.
     - `Rohit Srivastava <https://www.ornl.gov/staff-profile/rohit-srivastava>`_
 
 
-.. _intersect:arch:team:Acknowledgements:
+.. _intersect:arch:about:Acknowledgements:
 
 .. rubric:: Acknowledgements
 
@@ -50,7 +50,7 @@ Program's INTERSECT Initiative <https://www.ornl.gov/intersect>`_ of `Oak Ridge
 National Laboratory <https://www.ornl.gov>`_.
 
 
-.. _intersect:arch:team:cite:
+.. _intersect:arch:about:cite:
 
 .. rubric:: How to Cite this Documentation
 
@@ -71,7 +71,7 @@ INTERSECT Architecture Documentation.
 URL: https://intersect-architecture.readthedocs.io
 
 
-.. _intersect:arch:team:contribute:
+.. _intersect:arch:about:contribute:
 
 .. rubric:: How to Contribute to this Documentation
 
@@ -79,7 +79,15 @@ This documentation is maintaned on GitHub. To contribute, please go to
 https://github.com/ORNL/intersect-architecture.
 
 
-.. _intersect:arch:team:publications:
+.. _intersect:arch:about:sdk:
+
+.. rubric:: Software Development Kit
+
+The :term:`INTERSECT` :term:`Software Development Kit (SDK)<SDK>` implements this
+architecture and can be found at https://github.com/INTERSECT-SDK.
+
+
+.. _intersect:arch:about:publications:
 
 .. rubric:: Publications
 
