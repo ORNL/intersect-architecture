@@ -86,7 +86,8 @@ Contribute
 ----------
 
 This documentation is maintaned on GitHub. To contribute, please go to
-https://github.com/ORNL/intersect-architecture.
+https://github.com/ORNL/intersect-architecture.  Please see the
+:doc:`Author Guide </misc/authors>`_.
 
 
 .. _intersect:arch:about:sdk:
