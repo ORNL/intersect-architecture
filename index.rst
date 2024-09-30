@@ -7,7 +7,7 @@ INTERSECT Architecture Documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Architecture Overview
 
    introduction
