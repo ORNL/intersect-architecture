@@ -42,6 +42,7 @@ bibtex_reference_style = 'label'
 templates_path = ['_templates']
 
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 've3', 'venv', '.venv',
+                    'misc/*',
                     'Makefile', 'Dockerfile', 'README.md']
 
 # Allow number-based figure references

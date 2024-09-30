@@ -76,7 +76,8 @@ URL: https://intersect-architecture.readthedocs.io
 .. rubric:: How to Contribute to this Documentation
 
 This documentation is maintaned on GitHub. To contribute, please go to
-https://github.com/ORNL/intersect-architecture.
+https://github.com/ORNL/intersect-architecture.  Please see the
+:doc:`Author Guide </misc/authors>`_.
 
 
 .. _intersect:arch:team:publications:
