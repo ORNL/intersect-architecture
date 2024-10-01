@@ -20,7 +20,7 @@ required user facing functionality, such as:
      :ref:`intersect:arch:sos:user:roles`
 
 Details about data flows, communication, and any interaction between systems,
-subsystems or services are not part of this view, including any activity that
+subsystems or services are not part of this view. This includes any activity that
 is not observed by the system, such as:
 
    - A user's physical interaction with an instrument, including connecting
