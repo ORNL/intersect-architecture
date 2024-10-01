@@ -1,7 +1,7 @@
 .. _intersect:arch:ms:orchestrate:
 
-Orchestration of Microservices
-##############################
+Orchestration of INTERSECT Microservices
+########################################
 
 Orchestration of microservices is concerned with how microservices work
 together to accomplish the goals of a specific application use case.
