@@ -10,7 +10,7 @@ federated hardware/software architecture is currently being developed at
 The current team involves :term:`ORNL` scientists and engineers, but the
 project is open for external contributions.
 
-.. _intersect:arch:about:sdk:
+.. _intersect:arch:about:team:
 
 Team
 ----
