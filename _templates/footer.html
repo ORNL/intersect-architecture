@@ -13,12 +13,24 @@
 
   <hr/>
 
+  <!-- Custom ORNL Footer (begin) -->
+  <p>
+    <!-- <img alt="ORNL Logo" src="https://www.ornl.gov/ornlhome/images/ornlheader.jpg"/><br/> -->
+    <a href="https://www.ornl.gov/intersect">Interconnected Science Ecosystem</a> |
+    <a href="https://www.ornl.gov">Oak Ridge National Laboratory</a>
+  </p>
+  <!-- Custom ORNL Footer (end) -->
+
   <div role="contentinfo">
   {%- block contentinfo %}
     <p>
     {%- if show_copyright %}
       {%- if hasdoc('copyright') %}
         {%- trans path=pathto('copyright'), copyright=copyright|e %}&#169; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+      <!-- Custom Team copyright link in Footer (begin) -->
+      {%- elif intersect_html_show_copyright_team_url %}
+        {%- trans copyright=copyright|e %}&#169; Copyright {{ copyright }}, <a href="{{ html_baseurl }}about.html#team">{{ author }}</a>.{% endtrans %}
+      <!-- Custom Team copyright link in Footer (end) -->
       {%- else %}
         {%- trans copyright=copyright|e %}&#169; Copyright {{ copyright }}.{% endtrans %}
       {%- endif %}
@@ -57,14 +69,11 @@
     {% trans %}provided by {{ readthedocs_web }}{% endtrans %}.
   {% endif %}
 
-  <!-- Custom ORNL Footer (begin) -->
+  <!-- Custom ORNL CC-BY Footer (begin) -->
   <p>
-    <!-- <img alt="ORNL Logo" src="https://www.ornl.gov/ornlhome/images/ornlheader.jpg"/><br/> -->
-    <a href="https://www.ornl.gov/intersect">Interconnected Science Ecosystem</a> |
-    <a href="https://www.ornl.gov">Oak Ridge National Laboratory</a> |
-    <a href="https://www.ornl.gov/ornlhome/disclaimers.shtml">Copyright & Disclaimers</a>
+    Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a>
   </p>
-  <!-- Custom ORNL Footer (end) -->
+  <!-- Custom ORNL CC-BY Footer (end) -->
 
   {%- block extrafooter %} {% endblock %}
 
