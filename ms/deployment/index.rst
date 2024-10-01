@@ -1,7 +1,7 @@
 .. _intersect:arch:ms:deployment:
 
-Deployment of Microservices
-###########################
+Deployment of INTERSECT Microservices
+#####################################
 
 .. toctree::
    :maxdepth: 2
