@@ -1,7 +1,7 @@
 .. _intersect:arch:ms:use:
 
-Use of Microservices Architecture
-=================================
+Use of Microservices in the INTERSECT Architecture
+==================================================
 
 The INTERSECT Open Architecture provides a catalog of infrastructure and
 experiment-specific microservices that may be useful within an interconnected
