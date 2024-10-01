@@ -39,6 +39,7 @@ release = 'v1.0'   # 'v0.9', 'v1.0', etc.
 #
 html_context = {
    "intersect_html_show_copyright_team_url": intersect_html_show_copyright_team_url,
+   "author": author,
 }
 
 # -- General configuration ---------------------------------------------------
