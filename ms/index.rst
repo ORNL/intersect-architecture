@@ -81,8 +81,8 @@ as data schemas.
 .. toctree::
    :maxdepth: 2
 
-   ms-arch-intersect
-   ms-arch-interaction
+   use
+   interaction
    classification/index
    orchestration/index
    deployment/index

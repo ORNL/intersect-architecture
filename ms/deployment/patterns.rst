@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:deploy:patterns:
+.. _intersect:arch:ms:deployment:patterns:
 
 Design Patterns for Microservice Deployment
 -------------------------------------------
@@ -16,7 +16,7 @@ independence and reuse. Composition patterns are useful for addressing
 problems related to how microservices coordinate within an application
 use case that involves many services.
 
-.. _intersect:arch:ms:deploy:patterns:sidecar:
+.. _intersect:arch:ms:deployment:patterns:sidecar:
 
 Sidecar Pattern
 ~~~~~~~~~~~~~~~
@@ -44,8 +44,8 @@ Solution:
    and destroyed with the primary service).
 
 Related Patterns:
-   :ref:`intersect:arch:ms:deploy:patterns:ambassador`,
-   :ref:`intersect:arch:ms:deploy:patterns:servicemesh`
+   :ref:`intersect:arch:ms:deployment:patterns:ambassador`,
+   :ref:`intersect:arch:ms:deployment:patterns:servicemesh`
 
 
 .. figure:: ../images/sidecar-pattern.svg
@@ -53,7 +53,7 @@ Related Patterns:
 
    Sidecar Pattern
 
-.. _intersect:arch:ms:deploy:patterns:ambassador:
+.. _intersect:arch:ms:deployment:patterns:ambassador:
 
 Ambassador Proxy Pattern
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,8 +81,8 @@ Solution:
    communication resilience mechanisms (e.g., timeout and retry).
 
 Related Patterns:
-   :ref:`intersect:arch:ms:deploy:patterns:sidecar`,
-   :ref:`intersect:arch:ms:deploy:patterns:servicemesh`
+   :ref:`intersect:arch:ms:deployment:patterns:sidecar`,
+   :ref:`intersect:arch:ms:deployment:patterns:servicemesh`
 
 
 .. figure:: ../images/ambassador-pattern.svg
@@ -90,7 +90,7 @@ Related Patterns:
 
    Ambassador Proxy Pattern
 
-.. _intersect:arch:ms:deploy:patterns:servicemesh:
+.. _intersect:arch:ms:deployment:patterns:servicemesh:
 
 Service Mesh Pattern
 ~~~~~~~~~~~~~~~~~~~~
@@ -118,8 +118,8 @@ Solution:
    possible.
 
 Related Patterns:
-   :ref:`intersect:arch:ms:deploy:patterns:ambassador`,
-   :ref:`intersect:arch:ms:deploy:patterns:sidecar`
+   :ref:`intersect:arch:ms:deployment:patterns:ambassador`,
+   :ref:`intersect:arch:ms:deployment:patterns:sidecar`
 
 
 .. figure:: ../images/service-mesh-pattern.svg

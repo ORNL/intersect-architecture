@@ -1,7 +1,7 @@
 .. _intersect:arch:ms:class:
 
-Classification of INTERSECT Microservices
-#########################################
+Classification of Microservices
+###############################
 
 The format used to document microservice capabilities is described
 in :ref:`intersect:arch:ms:class:capability-format`. In the

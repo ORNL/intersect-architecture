@@ -1,7 +1,7 @@
-.. _intersect:arch:ms:intersect:
+.. _intersect:arch:ms:use:
 
-Use of Microservices Architecture within the INTERSECT Open Architecture
-========================================================================
+Use of Microservices Architecture
+=================================
 
 The INTERSECT Open Architecture provides a catalog of infrastructure and
 experiment-specific microservices that may be useful within an interconnected
@@ -25,14 +25,14 @@ constraints.
 The INTERSECT science use case design patterns help
 identify the relevant infrastructure and experiment-specific
 microservices for a given science ecosystem.
-:numref:`fig:intersect:arch:ms:overview` provides an
+:numref:`fig:intersect:arch:ms:use:overview` provides an
 architectural overview of the potential classes of microservices that
 may be involved with a given interconnected science ecosystem.
 :ref:`intersect:arch:ms:class`
 provides additional information on the various INTERSECT microservice
 classes and their shared capabilities and data requirements.
 
-.. _fig:intersect:arch:ms:overview:
+.. _fig:intersect:arch:ms:use:overview:
 .. figure:: images/ms-classes.svg
    :alt: Potential classes of INTERSECT microservices
 
