@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:deploy:
+.. _intersect:arch:ms:deployment:
 
 Deployment of INTERSECT Microservices
 #####################################
@@ -6,4 +6,4 @@ Deployment of INTERSECT Microservices
 .. toctree::
    :maxdepth: 2
 
-   ms-deploy-patterns
+   patterns
