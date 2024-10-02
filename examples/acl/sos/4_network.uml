@@ -1,0 +1,20 @@
+@startuml
+nwdiag {
+    ORNL [ shape = cloud, description = "ORNL Network"];
+    ORNL -- router;
+
+    network Instrument {
+        router
+        InstrumentComputer
+    }
+    
+    router -- gateway;
+
+    network Internal {
+        gateway
+        laptop1
+        laptop2
+        laptop3
+    }
+}
+@enduml
