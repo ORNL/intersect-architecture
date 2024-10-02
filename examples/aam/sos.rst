@@ -380,7 +380,7 @@ permanent or temporary duration as required.
 Processes
 ^^^^^^^^^
 
-User processes implemented by AAM may include some combination of thefollowing, among others:
+User processes implemented by AAM may include some combination of the following, among others:
 
 - :ref:`Compile DAG<intersect:arch:sos:user:processes:process-compile>`: The DE will use INTERSECT user interfaces to assemble the necessary resources to accomplish an experiment.
 
