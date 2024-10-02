@@ -15,6 +15,15 @@ autonomous :term:`autonomous additive manufacturing (AAM)<AAM>` system is to
 control the residual stress in a part to address a grand challenge –- building
 parts that are ready and safe to use immediately (i.e., “born qualified”).
 
+.. figure:: aam.png
+   :name: intersect:arch:examples:aam:aam
+   :align: center
+   :width: 800
+
+   The :term:`INTERSECT` :term:`AAM` system performs 3D metal printing with
+   in-situ observations and thermo-mechanical simulations to build
+   "born qualified" structures.
+
 This project enables secure, automated, time-sensitive interactions between
 experimental and computational components. It demonstrates a new method for
 autonomous control, combining in-situ observations and thermo-mechanical
@@ -25,6 +34,14 @@ targets :term:`AM` builds with residual stress at least two times closer to the
 desired distribution than current methods, drastically reducing the time to
 develop process parameters for new alloys and geometries.
 
+.. list-table::
+   :align: center
+
+   * -
+      .. youtube:: UGTADFR1O2U
+         :align: center
+         :width: 800
+
 The :term:`AAM` system is deployed at :term:`Oak Ridge National
 Laboratory<ORNL>`\'s :term:`Manufacturing Demonstration Facility (MDF)<MDF>`,
 :term:`Spallation Neutron Source Facility (SNS)<SNS>`, and :term:`Oak Ridge
@@ -33,23 +50,6 @@ instrument-science workflow. Its architecture consists of
 :ref:`intersect:arch:examples:aam:pat`, a
 :ref:`intersect:arch:examples:aam:sos`, and a
 :ref:`intersect:arch:examples:aam:ms`.
-
-.. figure:: aam.png
-   :name: intersect:arch:examples:aam:aam
-   :align: center
-   :width: 800
-
-   The :term:`INTERSECT` :term:`AAM` system performs 3D metal printing with
-   in-situ observations and thermo-mechanical simulations to build
-   "born qualified" structures.
-
-.. list-table::
-   :align: center
-
-   * -
-      .. youtube:: UGTADFR1O2U
-         :align: center
-         :width: 800
 
 Project Web site: 
   - https://www.ornl.gov/project/enabling-adaptively-controlled-additive-manufacturing-through-automation
