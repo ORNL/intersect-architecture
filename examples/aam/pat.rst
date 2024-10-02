@@ -47,7 +47,7 @@ follows:
    :align: center
    
    Experiment Steering and Design of Experiments strategic patterns
-   for the :term:`AM` science use case
+   for the :term:`AAM` science use case
 
 The :term:`INTERSECT` :term:`AAM` system
 (:numref:`intersect:arch:examples:aam:pat:architectural`) implements the
@@ -67,4 +67,4 @@ correlation and one for the validation.
    :align: center
 
    Distributed Experiment Steering and Distributed Design of Experiments
-   strategic patterns for the :term:`AM` science use case
+   strategic patterns for the :term:`AAM` science use case
