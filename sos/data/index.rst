@@ -40,7 +40,7 @@ and how that data is defined and exchanged.
    :caption: Components of the Data View
 
    erdm/index
-   schema-desc
+   messages
    model
 
    
