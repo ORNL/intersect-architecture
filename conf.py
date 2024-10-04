@@ -38,6 +38,11 @@ release = 'v1.0'   # 'v0.9', 'v1.0', etc.
 # (see also: "_templates/footer.html").
 #
 html_context = {
+    "display_github": True,                 # Integrate GitHub
+    "github_user": "ORNL",                  # Username
+    "github_repo": "intersect-architecture",# Repo name
+    "github_version": version,              # Version
+    "conf_py_path": "/",                    # Path in the checkout to the docs root
    "intersect_html_show_copyright_team_url": intersect_html_show_copyright_team_url,
    "author": author,
 }
