@@ -7,20 +7,21 @@ The :term:`INTERSECT` :term:`AAM` system has several loop control problems
 (:numref:`intersect:arch:examples:aam:pat:strategic`). The first loop control
 implements an :ref:`intersect:arch:pat:catalog:strategic:steering` strategic
 pattern. It obtains temperature data from thermocouple sensors mounted to the
-base of the printed object and from an IR camera that is observing the printing
-process from an angle above. The temperature data is streamed to an analyzer
-that performs faster-than-real-time simulation of the thermal evolution the
-printed material. The simulation data is used to change the parameters of the
-laser on the next printed layer. This permits adapting the live printing
-process to the simulated stresses inferred by the measured data. The second
-loop control involves the neutron beam of :term:`ORNL`’s :term:`SNS` to obtain
-more detailed and multi-scale structural data. The neutron diffraction
-measurements and corresponding digital image correlation of the entire 3D
-printing process permit validation of the structural simulation and adaptation
-of the 3D printing process for the next part to be printed in an
+base of the printed object and from an :term:`infrared (IR)<IR>` camera that is
+observing the printing process from an angle above. The temperature data is
+streamed to an analyzer that performs faster-than-real-time simulation of the
+printed material's thermal evolution. The simulation data is used to change the
+parameters of the laser on the next printed layer. This permits adapting the
+live printing process to the simulated stresses inferred by the measured data.
+The second loop control involves the neutron beam of :term:`Oak Ridge National
+Laboratory's (ORNL's) <ORNL>` :term:`Spallation Neutron Source (SNS)<SNS>`
+to obtain more detailed and multi-scale structural data. The neutron
+diffraction measurements and corresponding digital image correlation of the
+entire 3D printing process permit validation of the structural simulation and
+adaptation of the 3D printing process for the next part to be printed in an
 :ref:`intersect:arch:pat:catalog:strategic:design` strategic pattern. At the
-strategic pattern level of abstraction, the individual pattern components are as
-follows:
+strategic pattern level of abstraction, the individual pattern components are
+as follows:
 
 -  The experiment design plan describes the goal, which is the validated 3D
    printing of a metal part with predetermined structural stresses.
@@ -31,8 +32,7 @@ follows:
    parameters necessary to 3D print the metal part. The parameters include the
    targeted structural stress and the options for changing the laser
    parameters, such as temperature and speed.
--  The experiment controller is the control computer system of the 3D metal
-   printer.
+-  The experiment controller is the control computer of the 3D metal printer.
 -  The test performed in an experiment 3D prints a metal part subject to
    dynamic control by the experiment controller and targeting desired
    structural stresses, optionally in conjunction with a neutron beamline where
@@ -46,8 +46,8 @@ follows:
    :name: intersect:arch:examples:aam:pat:strategic
    :align: center
    
-   Experiment Steering and Design of Experiments strategic patterns
-   for the :term:`AAM` science use case
+   Experiment Steering and Design of Experiments strategic patterns for the
+   :term:`INTERSECT` :term:`AAM` science use case
 
 The :term:`INTERSECT` :term:`AAM` system
 (:numref:`intersect:arch:examples:aam:pat:architectural`) implements the
@@ -67,4 +67,4 @@ correlation and one for the validation.
    :align: center
 
    Distributed Experiment Steering and Distributed Design of Experiments
-   strategic patterns for the :term:`AAM` science use case
+   strategic patterns for the :term:`INTERSECT` :term:`AAM` science use case

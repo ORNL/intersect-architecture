@@ -101,8 +101,14 @@ Acronym and Terminology Definitions
    CS
       Communication system
 
+   CSV
+      Comma-separated values format
+
    DAG
       Directed acyclic graph
+
+   DE
+      Domain expert
 
    DMS
       Data management system
@@ -206,7 +212,7 @@ Acronym and Terminology Definitions
       INTERconnected Science ECosysTem
 
    IR
-      infra-red
+      infrared
 
    IRI
       :term:`ASCR` Integrated Research Infrastructure
@@ -429,3 +435,5 @@ Acronym and Terminology Definitions
    WWW
       World-Wide Web
 
+   XRD
+      X-ray diffraction
