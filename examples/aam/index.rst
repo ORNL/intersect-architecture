@@ -45,7 +45,7 @@ develop process parameters for new alloys and geometries.
 The :term:`AAM` system is deployed at :term:`Oak Ridge National Laboratory's
 (ORNL's) <ORNL>` :term:`Manufacturing Demonstration Facility (MDF)<MDF>`,
 :term:`Spallation Neutron Source (SNS)<SNS>`, and :term:`Oak Ridge Leadership
-Computing Facility (OLCF)<OLCF>` as a cross-facilityinstrument-science
+Computing Facility (OLCF)<OLCF>` as a cross-facility instrument-science
 workflow. Its architecture consists of :ref:`intersect:arch:examples:aam:pat`,
 a :ref:`intersect:arch:examples:aam:sos`, and a
 :ref:`intersect:arch:examples:aam:ms`.
