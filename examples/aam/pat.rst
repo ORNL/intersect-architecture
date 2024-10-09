@@ -18,7 +18,7 @@ Laboratory's (ORNL's) <ORNL>` :term:`Spallation Neutron Source (SNS)<SNS>`
 to obtain more detailed and multi-scale structural data. The neutron
 diffraction measurements and corresponding digital image correlation of the
 entire 3D printing process permit validation of the structural simulation and
-adaptation of the 3D printing process for the next part to be printed in an
+adaptation of the 3D printing process for the next part to be printed in a
 :ref:`intersect:arch:pat:catalog:strategic:design` strategic pattern. At the
 strategic pattern level of abstraction, the individual pattern components are
 as follows:
