@@ -372,7 +372,7 @@ User
 
 Maintainer/Operator
    The :term:`DE` may be responsible for maintenance of the domain expert
-   computer, the 3D metal printer, or the 3D metal printer controller computer.
+   computer, the 3D metal printer, or the 3D metal printer control computer.
    Other resources, such as the :term:`ACE` testbed and the :term:`SNS` Analysis
    cluster computer have their own designated maintainers/operators.
 
