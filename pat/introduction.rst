@@ -33,6 +33,8 @@ system’s flexibility or scalability as well as consider implementation issues.
 Design patterns must address a specific problem at hand, and yet must be
 general enough to remain relevant to future requirements of systems.
 
+.. _intersect:arch:pat:introduction:software:
+
 Software Design Patterns
 ========================
 
