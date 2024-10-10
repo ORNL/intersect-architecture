@@ -14,8 +14,7 @@ individual pattern capabilities and relationships. It also further helps to
 understand how patterns rely on each other and can be composed to form a
 complete solution.
 
-The classification of science use case design patterns is work in progress at
-this stage of this document. At this point, there are two classes of science use
+There are currently two classes of science use
 case design patterns (:numref:`intersect:arch:pat:catalog:classification`): (1)
 :ref:`intersect:arch:pat:catalog:strategic` that define high-level solution
 methods using experiment control architecture features at a very coarse
@@ -46,7 +45,7 @@ The primary feature currently explored by the
 and remote components used by a corresponding strategic pattern, where local
 means that there is not a potentially significant communication delay to a
 component and remote means that there is a potentially significant communication
-delay to a component. Other architectural features may be explored in the future
+delay. Other architectural features may be explored in the future
 with different patterns.
 
 For example, the :ref:`intersect:arch:pat:catalog:strategic:steering` strategic
@@ -70,11 +69,15 @@ This classification scheme is open for extension. New patterns may be added for
 each class if new strategic or architectural patterns emerge that do not fit in
 the existing patterns. New classes may be added if new pattern features emerge
 that express commonalities that are not covered by patterns. For example, a new
-class may map the existing patterns to data-intensive, time-sensitive an
-long-term experiment campaigns, which are workflow execution features that are
+class may map the existing patterns to the
+:ref:`intersect:arch:iri:patterns:time`,
+:ref:`intersect:arch:iri:patterns:data` and
+:ref:`intersect:arch:iri:patterns:long` patterns of the
+:ref:`intersect:arch:iri` Blueprint Activity, which are
+:ref:`intersect:arch:sos:logical:systems:ors:workflows:pattern` that are
 orthogonal to the current pattern classes. Another new class may focus on the
-algorithms used in the feedback loop, such as probabilistic (e.g.,
-Bayesian) vs. domain science based (e.g., physics informed) algorithms.
+algorithms used in the feedback loop, such as probabilistic (e.g., Bayesian) vs.
+domain science based (e.g., physics informed) algorithms.
 
 .. toctree::
    :maxdepth: 2
