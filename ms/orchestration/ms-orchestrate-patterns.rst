@@ -1,5 +1,5 @@
 
-.. _intersect:arch:ms:orchestrate:patterns:
+.. _intersect:arch:ms:orchestration:patterns:
 
 Orchestration Patterns for Microservices
 ========================================

@@ -34,13 +34,11 @@ targets :term:`AM` builds with residual stress at least two times closer to the
 desired distribution than current methods, drastically reducing the time to
 develop process parameters for new alloys and geometries.
 
-.. list-table::
+.. youtube:: UGTADFR1O2U
    :align: center
+   :width: 600
 
-   * -
-      .. youtube:: UGTADFR1O2U
-         :align: center
-         :width: 800
+|
 
 The :term:`AAM` system is deployed at :term:`Oak Ridge National Laboratory's
 (ORNL's) <ORNL>` :term:`Manufacturing Demonstration Facility (MDF)<MDF>`,
