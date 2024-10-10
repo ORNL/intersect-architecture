@@ -11,7 +11,7 @@ according to their purpose: (1) General Utility, (2) INTERSECT System Management
 .. toctree::
    :maxdepth: 2
 
-   ms-class-infra-general
-   ms-class-infra-sys-mgmt
-   ms-class-infra-data-info
-   ms-class-infra-compute
+   general
+   system
+   data
+   compute
