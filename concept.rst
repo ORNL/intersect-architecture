@@ -59,7 +59,7 @@ architecture splits these views over three different components
 :ref:`intersect:arch:ms`
    The :ref:`intersect:arch:ms` maps the :ref:`intersect:arch:pat` to
    the :ref:`intersect:arch:sos` with loosely coupled microservices and
-   standardized interfaces. It defines :ref:`intersect:arch:ms:interactions`
+   uniform interfaces. It defines :ref:`intersect:arch:ms:interactions`
    and provides a :ref:`intersect:arch:ms:class` that includes
    :ref:`intersect:arch:ms:class:infrastructure` and
    :ref:`intersect:arch:ms:class:experiment`. The microservices are defined to
