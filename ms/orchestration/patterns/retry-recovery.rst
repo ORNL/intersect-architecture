@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:orchestrate:patterns:retry_recovery:
+.. _intersect:arch:ms:orchestration:patterns:retry_recovery:
 
 Retry and Recovery from Errors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

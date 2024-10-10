@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:orchestrate:
+.. _intersect:arch:ms:orchestration:
 
 Orchestration of INTERSECT Microservices
 ########################################

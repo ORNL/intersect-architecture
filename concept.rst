@@ -8,8 +8,8 @@ The :term:`INTERSECT` open architecture approach roughly follows the
 :cite:`DoDAF2:2010` with its different architectural viewpoints, such as (i)
 operational scenarios, (ii) composition, interconnectivity and context, (iii)
 services and their capabilities, (iv) policies, standards and guidance, and (v)
-capability. The major difference is that the :term:`INTERSECT` Open
-Architecture splits these views over three different components
+capability. The major difference is that the :term:`INTERSECT` open
+architecture splits these views over three different components
 (:numref:`intersect:arch:concept:architecture`): (1) :ref:`intersect:arch:pat`,
 (2) a :ref:`intersect:arch:sos`, and (3) a :ref:`intersect:arch:ms`:
 
@@ -18,7 +18,7 @@ Architecture splits these views over three different components
    :term:`AI`-driven design, discovery and evaluation are described as
    :ref:`intersect:arch:pat` that identify and abstract the involved
    hardware/software components and their interactions in terms of control,
-   work, and data flow. The basic template for a science use case design
+   work and data flow. The basic template for a science use case design
    pattern is defined in a loop control problem paradigm. There are two classes
    in the :ref:`intersect:arch:pat:catalog`: strategic patterns and
    architectural patterns. :ref:`intersect:arch:pat:catalog:strategic` define
@@ -49,13 +49,20 @@ Architecture splits these views over three different components
    systems, geographical distribution with a physically distributed and
    federated ecosystem, emergent behavior based on the interplay between
    systems and components, and evolutionary development through pluggability
-   and extensibility.
+   and extensibility. Similar to the :term:`DoDAF`, the
+   :ref:`intersect:arch:sos` offers different architectural viewpoints: a
+   :ref:`intersect:arch:sos:logical`, an :ref:`intersect:arch:sos:operational`
+   a :ref:`intersect:arch:sos:user`, a :ref:`intersect:arch:sos:data`, a
+   :ref:`intersect:arch:sos:physical`, and a
+   :ref:`intersect:arch:sos:standards`.
 
 :ref:`intersect:arch:ms`
    The :ref:`intersect:arch:ms` maps the :ref:`intersect:arch:pat` to
    the :ref:`intersect:arch:sos` with loosely coupled microservices and
-   standardized interfaces. It provides a catalog of infrastructure and
-   experiment-specific microservices. The microservices are defined to
+   standardized interfaces. It defines :ref:`intersect:arch:ms:interactions`
+   and provides a :ref:`intersect:arch:ms:class` that includes
+   :ref:`intersect:arch:ms:class:infrastructure` and
+   :ref:`intersect:arch:ms:class:experiment`. The microservices are defined to
    facilitate composition within the federated :ref:`intersect:arch:sos`.
    :term:`INTERSECT` infrastructure microservices represent common service
    functionality and capabilities, such as data management, computing,
@@ -65,6 +72,9 @@ Architecture splits these views over three different components
    whose implementation may require detailed application knowledge, such as
    experiment planning or steering services that require knowledge of
    experiment-specific control parameters and their associated constraints.
+   The :ref:`intersect:arch:ms` also clarifies
+   :ref:`intersect:arch:ms:orchestration` and
+   :ref:`intersect:arch:ms:deployment`.
 
 .. figure:: concept/architecture.png
    :name: intersect:arch:concept:architecture
@@ -72,7 +82,7 @@ Architecture splits these views over three different components
    :width: 800
 
    Components of the :term:`INTERSECT` architecture in the context of the
-   :term:`INTERSECT` Initiative activities.
+   :term:`INTERSECT` Initiative's activities.
 
 This approach permits separating (a) coarse-grain architectural decisions, such
 as what objective a particular self-driving laboratory has and how that
@@ -83,9 +93,7 @@ self-driving laboratory and how do they communicate with each other, and from
 control, data transfer and compute microservices are being used and how. The
 :ref:`intersect:arch:pat`, :ref:`intersect:arch:sos`, and
 :ref:`intersect:arch:ms` complement each other, just like the different
-viewpoints of the :term:`DoDAF`. Additionally, the :ref:`intersect:arch:sos`
-itself offers complementary viewpoints, such as user, data, operational,
-logical, physical, and standards view. :ref:`intersect:arch:examples` describe
+viewpoints of the :term:`DoDAF`. :ref:`intersect:arch:examples` describe
 how each of these architecture components is applied to real-world use cases.
 The :term:`DOE`\ 's recent efforts in an :ref:`intersect:arch:iri` are
 addressed as well, specifically the the relationships between its
