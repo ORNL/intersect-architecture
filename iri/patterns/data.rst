@@ -32,7 +32,8 @@ opportunities
   tools; complex-wide data storage and searching capabilities; new models for
   “wide-area” cybersecurity; common or well-understood data policies; lack of
   :term:`FAIR` data; user-focused user experience; lack of portable code; and
-  crosstraining of staff (scientific, engineering, support, administrative).
+  crosstraining of staff (scientific, engineering, support, and
+  administrative).
   
 - **Opportunities:**
   Many early-win science opportunities exist for this pattern; common
@@ -56,7 +57,7 @@ architectural patterns, as experiment data analyis is performed in the feedback
 loop during the experiment. This data may come from different sources, such as
 different types of temperature sensors for a laser that is depositing metal in
 a 3D manufacturing process. It may even include data from a computational
-simulation, such as a structural stess simulation that takes past and current
+simulation, such as a structural stress simulation that takes past and current
 temperature sensor readings into account.
 
 It is also related in a special way to the :term:`INTERSECT`
@@ -79,5 +80,5 @@ This pattern is also related in a particular way to the :term:`INTERSECT`
 architectural patterns, as data from multiple experiments that may depend on
 each other is analyzed. This may include combining and analyzing data from
 multiple experiments to inform a subsequent experiment in a complex workflow.
-It also may include combining and analyzing data from mmultiple experiments to
+It also may include combining and analyzing data from multiple experiments to
 produce the overall result of the workflow.

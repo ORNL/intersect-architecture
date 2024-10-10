@@ -61,7 +61,7 @@ The execution of predetermined actions by an experiment controller may include
 time-sensitive actions based on feedback, such as adjusting parameters (e.g.,
 changing the power of a laser that is depositing metal in a 3D manufacturing
 process) throughout the experiment based on feedback (e.g., infrared camera
-measurements of the lasers hearing and cooling impact on the product being
+measurements of the lasers heating and cooling impact on the product being
 printed and an analysis of the stresses being created in the material).
 
 It is also related to the :term:`INTERSECT`
