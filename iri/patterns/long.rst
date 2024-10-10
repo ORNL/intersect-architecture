@@ -65,7 +65,7 @@ architectural patterns, when such a single, long-running experiment needs to be
 steered, i.e., its parameters need to be changed over time based on experiment
 progress. For example, an open-field plant growth experiment investigating the
 absobtion of CO\ :sub:`2` may regulate the amount of CO\ :sub:`2` in different
-parts of the field to adjust for envoronmental factors, such as sun exposure
+parts of the field to adjust for environmental factors, such as sun exposure
 and rain. The resources required to steer this single experiment need to be
 available over an extended period of time.
 
