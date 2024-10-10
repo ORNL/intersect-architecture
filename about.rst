@@ -46,7 +46,7 @@ Team
     - `Rohit Srivastava <https://www.ornl.gov/staff-profile/rohit-srivastava>`_
 
 
-.. _intersect:arch:about:Acknowledgements:
+.. _intersect:arch:about:acknowledgements:
 
 Acknowledgements
 ----------------
