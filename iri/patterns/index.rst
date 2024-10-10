@@ -25,7 +25,7 @@ The :term:`IRI` patterns are very good examples of
 related to the :term:`INTERSECT` architecture and ecosystem, which address a
 number :term:`IRI` practice areas and patterns. The :term:`IRI` patterns are
 not defined in a very formal way with a specific pattern anatomy and format in
-mind, but are rather as structured informal descriptions of the commonalities,
+mind, but are structured as informal descriptions of the commonalities,
 requirements, and challenges for each pattern. Their relationships to the
 :term:`INTERSECT` :ref:`intersect:arch:pat` are similarly discussed in a
 structured informal fashion.
