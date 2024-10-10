@@ -3,11 +3,10 @@
 Science Use Case Design Patterns
 ################################
 
-The science use case design patterns of the :term:`INTERSECT` Open Architecture
-Specification identify and abstract the involved hardware/software components
-and their interactions in terms of control, work and data flow. The
-:ref:`intersect:arch:pat:anatomy` is defined in a loop control problem
-paradigm.
+The science use case design patterns identify and abstract the involved
+hardware/software components and their interactions in terms of control,
+work and data flow. The :ref:`intersect:arch:pat:anatomy` is defined in
+a loop control problem paradigm.
 
 At the moment, the :ref:`intersect:arch:pat:catalog` defines two classes of
 patterns: :ref:`intersect:arch:pat:catalog:strategic` with high-level solution
@@ -16,10 +15,12 @@ granularity and :ref:`intersect:arch:pat:catalog:architectural` with more
 specific solution methods using hardware and software architecture features at
 a finer granularity. The classification scheme itself is open for extension,
 such as for adding new patterns for each class or new classes entirely. For
-example, a new class may map the existing patterns to other workflow
-properties, such as (a) data-intensive, (b) time-sensitive and (c) long-term
-experiment campaigns (woprkflow execution patterns defined by the :term:`IRI`
-Architecture Blueprint Activity :cite:`IRI:2023`).
+example, a new class may map the existing patterns to
+:ref:`intersect:arch:sos:logical:systems:ors:workflows:pattern`, such as the
+:ref:`intersect:arch:iri:patterns:time`,
+:ref:`intersect:arch:iri:patterns:data` and
+:ref:`intersect:arch:iri:patterns:long` patterns defined by the
+:ref:`intersect:arch:iri` Blueprint Activity :cite:`IRI:2023`.
 
 :ref:`intersect:arch:pat:solutions` requires dissecting a science use case
 by the open or closed loop control problem or problems it contains.

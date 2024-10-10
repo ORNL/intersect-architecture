@@ -4,7 +4,7 @@ Building Solutions using Science Use Case Design Patterns
 =========================================================
 
 The patterns detailed in the :ref:`intersect:arch:pat:catalog` focus on the
-inherent open or closed loop control problem as a common problem to\ be solved
+inherent open or closed loop control problem as a common problem to be solved
 in reducing human-in-the-loop requirements with machine-in-the-loop
 capabilities. Scientific instruments, robot-controlled laboratories and
 edge/center computing/data resources are connected in a loop control to enable
@@ -32,7 +32,7 @@ including individual decision parameters.
 complete solutions.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :name: intersect:arch:pat:solutions:toc
    :caption: Creating Solutions with Design Patterns for Science Use Cases
 
