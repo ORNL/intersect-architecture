@@ -25,8 +25,8 @@ ongoing or plan a next experiment. It may be assisted by an :term:`AI` that is
 trained online and/or offline with archived data and/or with synthetic data
 created by a digital twin. Analysis and decision making may also rely on
 rule-based approaches, causal or physics-based models, and advanced statistical
-methods. Human interaction for experiment planning, observation and steering is
-performed through appropriate human-machine interfaces.
+methods. Human interaction for experiment planning, observation, and steering
+is performed through appropriate human-machine interfaces.
 
 For example, both the rate and output of traditional materials synthesis and
 discovery are currently too slow and too small to efficiently provide needed
@@ -81,10 +81,8 @@ discovery and evaluation. :ref:`intersect:arch:examples` offer insight for
 applying this novel approach to real-world solutions. The :term:`DOE`\ 's
 recent efforts in an :ref:`intersect:arch:iri` are addressed as well.
 
-.. list-table::
+.. youtube:: MQImdRf5wfc
    :align: center
+   :width: 600
 
-   * -
-      .. youtube:: MQImdRf5wfc
-         :align: center
-         :width: 800
+|
