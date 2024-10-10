@@ -11,9 +11,9 @@ project creates an autonomous system to plan and adaptively control
 (:numref:`intersect:arch:examples:aam:aam`). It involves multiple
 characterization modes, computation across the edge-to-center computing
 continuum, and multiple scientific user facilities. The objective of the
-autonomous :term:`autonomous additive manufacturing (AAM)<AAM>` system is to
-control the residual stress in a part to address a grand challenge –- building
-parts that are ready and safe to use immediately (i.e., “born qualified”).
+:term:`autonomous additive manufacturing (AAM)<AAM>` system is to control the
+residual stress in a part to address a grand challenge – building parts that
+are ready and safe to use immediately (i.e., “born qualified”).
 
 .. figure:: aam.png
    :name: intersect:arch:examples:aam:aam
@@ -42,13 +42,12 @@ develop process parameters for new alloys and geometries.
          :align: center
          :width: 800
 
-The :term:`AAM` system is deployed at :term:`Oak Ridge National
-Laboratory<ORNL>`\'s :term:`Manufacturing Demonstration Facility (MDF)<MDF>`,
-:term:`Spallation Neutron Source Facility (SNS)<SNS>`, and :term:`Oak Ridge
-Leadership Computing Facility (OLCF)<OLCF>` as a cross-facility
-instrument-science workflow. Its architecture consists of
-:ref:`intersect:arch:examples:aam:pat`, a
-:ref:`intersect:arch:examples:aam:sos`, and a
+The :term:`AAM` system is deployed at :term:`Oak Ridge National Laboratory's
+(ORNL's) <ORNL>` :term:`Manufacturing Demonstration Facility (MDF)<MDF>`,
+:term:`Spallation Neutron Source (SNS)<SNS>`, and :term:`Oak Ridge Leadership
+Computing Facility (OLCF)<OLCF>` as a cross-facility instrument-science
+workflow. Its architecture consists of :ref:`intersect:arch:examples:aam:pat`,
+a :ref:`intersect:arch:examples:aam:sos`, and a
 :ref:`intersect:arch:examples:aam:ms`.
 
 Project Web site: 
