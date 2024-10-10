@@ -17,6 +17,6 @@ experimental control or design for experiment-specific services.
 .. toctree::
    :maxdepth: 2
 
-   ms-class-capability
+   capabilities
    infrastructure/index
    experiment/index

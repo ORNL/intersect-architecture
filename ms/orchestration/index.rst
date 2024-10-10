@@ -25,4 +25,4 @@ of microservice interactions.
 .. toctree::
    :maxdepth: 2
 
-   ms-orchestrate-patterns
+   patterns/index

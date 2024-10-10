@@ -10,7 +10,7 @@ to accomplish the goals of a specific application use case.
 .. toctree::
    :maxdepth: 1
 
-   patterns/conductor-choreography
-   patterns/retry-recovery
+   conductor-choreography
+   retry-recovery
 
 
