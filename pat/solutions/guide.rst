@@ -101,7 +101,7 @@ Which strategic pattern?
    strategic pattern is employed (see
    :ref:`intersect:arch:pat:solutions:compositions`).
 
-What is local? What is remote?:
+What is local? What is remote?
    The architectural science use case design patterns distinguish between local
    and remote components based on communication delay. Any potentially
    significant communication delay to a component makes it a remote component.

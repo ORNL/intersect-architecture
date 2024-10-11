@@ -16,14 +16,14 @@ experiments in an open or closed loop control. Such an abstract
 definition creates universal patterns that describe solutions free of
 implementation details.
 
-:ref:`intersect:arch:pat:anatomy:experiment` and
-:ref:`intersect:arch:pat:anatomy:workflow` show two different
-loop control problems. :ref:`intersect:arch:pat:anatomy:experiment`
+:numref:`intersect:arch:pat:anatomy:experiment` and
+:numref:`intersect:arch:pat:anatomy:workflow` show two different
+loop control problems. :numref:`intersect:arch:pat:anatomy:experiment`
 describes a closed loop control of an experiment that performs a test with
 some feedback to an experiment controller running the test.
-:ref:`intersect:arch:pat:anatomy:workflow` describes a
+:numref:`intersect:arch:pat:anatomy:workflow` describes a
 multi-experiment workflow with a closed loop control of multiple experiments,
-each with their own a closed loop control. There are a number of different
+each with their own closed loop control. There are a number of different
 loop control problems that the science use case design patterns systematize
 and categorize.
 

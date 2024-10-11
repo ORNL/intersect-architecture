@@ -17,36 +17,36 @@ workflow, such as using experiment-local, edge and/or center computing and data
 resources. The :ref:`intersect:arch:pat:catalog:architectural:toc` defines the
 following architectural patterns:
 
--  :ref:`intersect:arch:pat:catalog:architectural:local_control`: A local
-   experiment controller executes an experiment. There are no remote components
-   that could incur a significant communication delay.
+:ref:`intersect:arch:pat:catalog:architectural:local_control`
+   A local experiment controller executes an experiment. There are no remote
+   components that could incur a significant communication delay.
 
--  :ref:`intersect:arch:pat:catalog:architectural:distributed_control`: A remote
-   experiment controller executes an experiment, incurring a potentially
-   significant communication delay.
+:ref:`intersect:arch:pat:catalog:architectural:distributed_control`
+   A remote experiment controller executes an experiment, incurring a
+   potentially significant communication delay.
 
--  :ref:`intersect:arch:pat:catalog:architectural:local_steering`: Experiment
-   progress is analyzed and judged locally. There are no remote components that
-   could incur a significant communication delay.
+:ref:`intersect:arch:pat:catalog:architectural:local_steering`
+   Experiment progress is analyzed and judged locally. There are no remote
+   components that could incur a significant communication delay.
 
--  :ref:`intersect:arch:pat:catalog:architectural:distributed_steering`:
+:ref:`intersect:arch:pat:catalog:architectural:distributed_steering`
    Experiment progress is analyzed and optionally also judged/controlled
    remotely, incurring a potentially significant communication delay.
 
--  :ref:`intersect:arch:pat:catalog:architectural:local_design`: Experiment
-   results are analyzed and judged locally. There are no remote components that
-   could incur a significant communication delay.
+:ref:`intersect:arch:pat:catalog:architectural:local_design`
+   Experiment results are analyzed and judged locally. There are no remote
+   components that could incur a significant communication delay.
 
--  :ref:`intersect:arch:pat:catalog:architectural:distributed_design`:
+:ref:`intersect:arch:pat:catalog:architectural:distributed_design`
    Experiment results are analyzed and optionally also judged/controlled
    remotely, incurring a potentially significant communication delay.
 
--  :ref:`intersect:arch:pat:catalog:architectural:local_workflow`: All
-   experiments are local. There are no remote experiments that could incur a
-   significant communication delay.
+:ref:`intersect:arch:pat:catalog:architectural:local_workflow`
+   All experiments are local. There are no remote experiments that could incur
+   a significant communication delay.
 
--  :ref:`intersect:arch:pat:catalog:architectural:distributed_workflow`: One or
-   more experiments are remote, incurring a potentially significant
+:ref:`intersect:arch:pat:catalog:architectural:distributed_workflow`
+   One or more experiments are remote, incurring a potentially significant
    communication delay.
 
 :numref:`intersect:arch:pat:catalog:architectural:relationships` shows the

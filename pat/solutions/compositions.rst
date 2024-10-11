@@ -13,7 +13,8 @@ strategic pattern instead. Similarly, the
 uses the :ref:`intersect:arch:pat:catalog:strategic:control` strategic pattern,
 but could use the :ref:`intersect:arch:pat:catalog:strategic:steering` strategic
 pattern, the :ref:`intersect:arch:pat:catalog:strategic:design` strategic
-pattern, or a combination of :ref:`intersect:arch:pat:catalog:strategic:control`,
+pattern, or a combination of
+:ref:`intersect:arch:pat:catalog:strategic:control`,
 :ref:`intersect:arch:pat:catalog:strategic:steering`, and
 :ref:`intersect:arch:pat:catalog:strategic:design` strategic patterns instead.
 This composition of strategic patterns is then also reflected in composition
@@ -33,22 +34,27 @@ loops that are independent from each other. They may operate with different
 timing requirements, perform analysis on different computational resources and
 modify different parameters independent from each other.
 
+.. _intersect:arch:pat:solutions:compositions:example:
+
+Example
+=======
+
 The following example illustrates the composition of science use case design
 patterns. In this solution, there is a control loop for
 :ref:`intersect:arch:pat:catalog:strategic:steering` to change parameters based
 on observation as the experiment is progressing. There is also a second control
 loop for :ref:`intersect:arch:pat:catalog:strategic:design` to change the
-Experiment Plan based on the prior experiment result after each experiment.
+experiment plan based on the prior experiment result after each experiment.
 :numref:`intersect:arch:pat:compositions:strategic` illustrates the involved
 components and control/data flow of the
 :ref:`intersect:arch:pat:catalog:strategic:steering` and the
 :ref:`intersect:arch:pat:catalog:strategic:design` strategic pattern
-composition. The Experiment Design Plan and the Experiment Planner are exclusive
-parts of the :ref:`intersect:arch:pat:catalog:strategic:design` strategic
-pattern, while the other components are part of the
+composition. The Experiment Design Plan and the experiment planner are
+exclusive parts of the :ref:`intersect:arch:pat:catalog:strategic:design`
+strategic pattern, while the other components are part of the
 :ref:`intersect:arch:pat:catalog:strategic:steering` strategic pattern that the
-:ref:`intersect:arch:pat:catalog:strategic:design` strategic pattern is using as
-its experiment to control from an Experiment Plan perspective.
+:ref:`intersect:arch:pat:catalog:strategic:design` strategic pattern is using
+as its experiment to control from an experiment plan perspective.
 
 .. figure:: compositions/strategic.png
    :name: intersect:arch:pat:compositions:strategic
@@ -63,15 +69,15 @@ In the given science use case example, the
 :ref:`intersect:arch:pat:catalog:strategic:steering` utilizes a local shared
 storage device, such as a small :term:`NAS`, for all sensor data and its
 analysis results. It also relies on a local computational resource, such as an
-NVIDIA Jetson Nano, for analysis and decision making. The
+NVIDIA Jetson Nano computer, for analysis and decision making. The
 :ref:`intersect:arch:pat:catalog:strategic:design` transfers the sensor data of
 the entire experiment from the shared storage device to a remote analyzer, such
-as an NVIDIA DGX system. Its analysis results are evaluated and a new experiment
-plan is created by the Controller on a desktop system running a :term:`GUI`. The
-corresponding involved components and control/data flow of the
+as an NVIDIA DGX computer. Its analysis results are evaluated and a new
+experiment plan is created by the Controller on a desktop computer running a
+:term:`GUI`. The corresponding involved components and control/data flow of the
 :ref:`intersect:arch:pat:catalog:architectural:local_steering` and the
-:ref:`intersect:arch:pat:catalog:architectural:distributed_design` architectural
-pattern composition is shown in
+:ref:`intersect:arch:pat:catalog:architectural:distributed_design`
+architectural pattern composition is shown in
 :numref:`intersect:arch:pat:compositions:architectural`.
 
 .. figure:: compositions/architectural.png
@@ -89,6 +95,6 @@ same physical components, such as when different control loops use the same
 storage device or the same computational resource for analysis and/or control.
 For example, separate controllers for different
 :ref:`intersect:arch:pat:catalog:strategic:steering` control loops may use
-exactly the same physical component, such as a Raspberry Pi, for storing and
-analyzing sensor data and for issuing different, non-conflicting control
-commands to a robot.
+exactly the same physical component, such as a Raspberry Pi computer, for
+storing and analyzing sensor data and for issuing different, non-conflicting
+control commands to a robot.

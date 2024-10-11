@@ -33,6 +33,11 @@ system’s flexibility or scalability as well as consider implementation issues.
 Design patterns must address a specific problem at hand, and yet must be
 general enough to remain relevant to future requirements of systems.
 
+.. _intersect:arch:pat:introduction:software:
+
+Software Design Patterns
+========================
+
 In the domain of software design, patterns were introduced in an effort to
 create reusable solutions in the design of software and bring discipline to the
 art of programming. The intent of software design patterns isn’t to provide a
@@ -97,6 +102,8 @@ functionality of a workflow and certain common execution patterns, such as data
 movement and data analysis steps. Similar workflows execution patterns, not
 design patterns, have been recently proposed for instrument science
 :cite:`VESCOVI2022100606`. The :ref:`intersect:arch:iri` Blueprint Activity
-:cite:`IRI:2023` has recently defined execution patterns for scientific
-computational workflows, such as (a) data-intensive, (b) time-sensitive and
-(c) long-term experiment campaigns.
+:cite:`IRI:2023` has recently defined
+:ref:`intersect:arch:sos:logical:systems:ors:workflows:pattern` for scientific
+computational workflows, such as :ref:`intersect:arch:iri:patterns:time`,
+:ref:`intersect:arch:iri:patterns:data` and
+:ref:`intersect:arch:iri:patterns:long`.
