@@ -37,7 +37,7 @@ Team
   
   - Former team members:
 
-    - Elke Arenholz (fomer :term:`INTERSECT` :term:`LDRD` Initiative co-lead)
+    - Elke Arenholz (former :term:`INTERSECT` :term:`LDRD` Initiative co-lead)
 
     - `Scott Atchley <https://www.olcf.ornl.gov/directory/staff-member/scott-atchley/>`_
 
