@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:interactions:
+.. _intersect:arch:ms:interaction:
 
 Microservice Interaction Patterns
 =================================
@@ -6,7 +6,7 @@ Microservice Interaction Patterns
 To enable federation of INTERSECT microservices, it is useful to
 understand the types of interactions a given microservice may reasonably
 expect from one of its clients. As shown in
-:numref:`fig:intersect:arch:ms:interactions`, we have
+:numref:`intersect:arch:ms:interaction:patterns`, we have
 identified three common patterns that substantively cover the expected
 interactions: *Command*, *Request-Reply*, and *Asynchronous Status or
 Event*. 
@@ -39,10 +39,10 @@ durability to ensure that the message is delivered to at least one
 interested party. Each of these interaction patterns supports
 implementations based on RESTful client-server communication or
 asynchronous messaging, as described later in
-:ref:`intersect:arch:ms:interactions:implementation`.
+:ref:`intersect:arch:ms:interaction:implementation`.
 
-.. _fig:intersect:arch:ms:interactions:
-.. figure:: images/interaction-patterns.svg
+.. figure:: interaction/patterns.svg
+   :name: intersect:arch:ms:interaction:patterns
    :alt: Interaction patterns for INTERSECT microservices
 
    Interaction Patterns for INTERSECT Microservices
@@ -82,7 +82,7 @@ through microservices is also crucial for operational insight when
 investigating and resolving problems encountered in deployed
 microservices architectures.
 
-.. _intersect:arch:ms:interactions:sequences:
+.. _intersect:arch:ms:interaction:sequences:
 
 Sequence Diagrams for Microservice Interactions
 -----------------------------------------------
@@ -91,7 +91,7 @@ Throughout the INTERSECT Open Architecture documentation, we utilize
 sequence diagrams to depict interactions between microservices.
 A sequence diagram uses parallel entity lifelines to show the actions 
 taken by entities and interactions between entities.
-:numref:`fig:intersect:arch:ms:interactions:sequences:example` 
+:numref:`intersect:arch:ms:interaction:sequences:example` 
 shows an example sequence diagram for microservice interactions. 
 As shown in the figure, boxes are used to denote INTERSECT systems 
 and services, and individual entity lifelines are shown for each 
@@ -107,14 +107,14 @@ that provide information about relevant service actions or behavior.
 A sequence diagram may also incorporate sub-sequences shown in another 
 diagram through a reference to the title of the other diagram.
 
-.. _fig:intersect:arch:ms:interactions:sequences:example:
-.. figure:: images/example-sequence.png
+.. figure:: interaction/example.png
+   :name: intersect:arch:ms:interaction:sequences:example
    :alt: INTERSECT Microservice Interaction Sequence Diagram Example
 
    Example INTERSECT microservice interaction sequence diagram showing
    common components.
 
-.. _intersect:arch:ms:interactions:implementation:
+.. _intersect:arch:ms:interaction:implementation:
 
 Implementing Microservice Interaction Patterns
 ----------------------------------------------
@@ -125,7 +125,7 @@ there are two common communication architectures used for microservices:
 *client-server* and *asynchronous messaging*. Here we describe the
 relative merits of each communication architecture, followed by example
 approaches for implementing the common interaction patterns introduced
-in :ref:`intersect:arch:ms:interactions` using each architecture.
+in :ref:`intersect:arch:ms:interaction` using each architecture.
 
 The predominant approach to client-server communication architecture
 involves RESTful microservices that provide a synchronous
@@ -149,7 +149,7 @@ concurrent providers of the same service, support for transient
 services, and simplified communication context management due to the use
 of a central message broker.
 
-:numref:`fig:intersect:arch:ms:interact:command` shows a
+:numref:`intersect:arch:ms:interaction:command` shows a
 typical implementation strategy for the *Command Interaction Pattern*
 using both client-server communication and asynchronous messaging. With
 client-server communication, sending the ``Command`` message involves
@@ -162,13 +162,13 @@ status acknowledgement would typically come from a message broker to
 indicate whether the ``Command`` has been successfully queued for later
 delivery, rather than from the target microservice.
 
-.. _fig:intersect:arch:ms:interact:command:
-.. figure:: images/command-interaction.svg
+.. figure:: interaction/command.svg
+   :name: intersect:arch:ms:interaction:command
    :alt: Microservice Command Interaction Pattern
 
    Microservice Command Interaction Pattern
 
-:numref:`fig:intersect:arch:ms:interact:request-reply` shows a
+:numref:`intersect:arch:ms:interaction:request-reply` shows a
 typical implementation strategy for the *Request-Reply Interaction
 Pattern* using both client-server communication and asynchronous
 messaging. With client-server communication, sending the ``Request``
@@ -182,14 +182,14 @@ a PUBLISH operation performed by the microservice. The topic used for
 the reply is often included within the ``Request`` message contents, or
 is otherwise made known to the microservice prior to the ``Request``.
 
-.. _fig:intersect:arch:ms:interact:request-reply:
-.. figure:: images/request-interaction.svg
+.. figure:: interaction/request.svg
+   :name: intersect:arch:ms:interaction:request-reply
    :alt: Microservice Request-Reply Interaction Pattern
 
    Microservice Request-Reply Interaction Pattern
 
 As shown in
-:numref:`fig:intersect:arch:ms:interact:async-event`, the
+:numref:`intersect:arch:ms:interaction:async-event`, the
 *Asynchronous Status or Event Interaction Pattern* is easily implemented
 using a PUBLISH operation with asynchronous messaging, where interested
 clients are assumed to have subscribed to the topic to which the
@@ -202,8 +202,8 @@ microservice. Then, when the microservice needs to send an ``Event`` or
 ``Status``, it iterates to send an HTTP POST message to all interested
 clients.
 
-.. _fig:intersect:arch:ms:interact:async-event:
-.. figure:: images/asyncevent-interaction.svg
+.. figure:: interaction/asyncevent.svg
+   :name: intersect:arch:ms:interaction:async-event
    :alt: Microservice Asynchronous Status or Event Interaction Pattern
 
    Microservice Asynchronous Status or Event Interaction Pattern

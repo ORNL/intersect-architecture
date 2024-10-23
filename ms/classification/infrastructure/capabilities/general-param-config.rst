@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:utility:param_config`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:general_param_config:
 
 Capability - Utility :: Parameter Configuration
 -----------------------------------------------

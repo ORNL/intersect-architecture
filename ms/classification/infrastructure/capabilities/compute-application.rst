@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:computing:app_execution`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:compute_application:
 
 Capability - Compute :: Application Execution
 -----------------------------------------------------
@@ -16,12 +16,12 @@ Capability - Compute :: Application Execution
 :Related Capabilities:
    - Extends:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`
 
    - Requires:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:computing:allocation` **OR**
-        :ref:`intersect:arch:ms:capability:infrastructure:computing:batch_queue`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_allocation` **OR**
+        :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_queue`
 
 :Interactions:
    - Asynchronous: ``ApplicationExecutionStatusChange``

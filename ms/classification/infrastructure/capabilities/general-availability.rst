@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:utility:avail_status`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:general_availability:
 
 Capability - Utility :: Availability Status
 -------------------------------------------

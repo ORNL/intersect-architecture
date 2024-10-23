@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:data_info:transfer_endpoint`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:data_transfer_endpoint:
 
 Capability - Data and Information Management :: Data Transfer Endpoint
 ----------------------------------------------------------------------
@@ -14,8 +14,8 @@ Capability - Data and Information Management :: Data Transfer Endpoint
    - Extends: None
    - Requires:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:storage`
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:stream`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_storage`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_stream`
 
 :Interactions:
    - Asynchronous: ``DataTransferSourceEndpointCreation``,

@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:computing:queue_reservation`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:compute_reservation:
 
 Capability - Compute :: Compute Queue Reservation
 ---------------------------------------------------------
@@ -13,7 +13,7 @@ Capability - Compute :: Compute Queue Reservation
 :Related Capabilities:
    - Extends:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:computing:batch_queue`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_queue`
 
    - Requires: None
 

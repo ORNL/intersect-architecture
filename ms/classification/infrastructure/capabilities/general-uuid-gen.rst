@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:utility:uuid_gen`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:general_uuid_gen:
 
 Capability - Utility :: UUID Generation
 ---------------------------------------

@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:computing:batch_queue`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:compute_queue:
 
 Capability - Compute :: Compute Queue
 ---------------------------------------------
@@ -6,7 +6,7 @@ Capability - Compute :: Compute Queue
 :Description:
    Interact with batch job queueing systems to run compute jobs and
    monitor job and queue status.
-   :numref:`fig:intersect:arch:ms:sequences:compute:resource:job`
+   :numref:`intersect:arch:ms:classification:infrastructure:compute:applications:job`
    shows an example orchestration seqence for running an application
    program within a batch computing job.
 
@@ -16,7 +16,7 @@ Capability - Compute :: Compute Queue
 :Related Capabilities:
    - Extends:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`
 
    - Requires: None
 

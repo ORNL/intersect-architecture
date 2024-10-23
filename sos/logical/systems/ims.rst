@@ -20,41 +20,47 @@ to the :ref:`intersect:arch:ms`):
 
 - Domain Registrar Service
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:system_mgmt:sys_registrar`: *Create and lookup the :term:`UUID` for a system, subsystem, service, and resource*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:system_registrar`: *Create and lookup the :term:`UUID` for a system, subsystem, service, and resource*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:control_status`: *Read controller status information*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_controller`: *Read controller status information*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:avail_status`: *Read availability status information*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_availability`: *Read availability status information*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`: *Read and update service configuration paramaters*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`: *Read and update service configuration paramaters*
 
 - System Management Service
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:system_mgmt:sys_manager`: *Register a service with a system or subsystem; enable/disable and aggregate status information for systems, subsystems, services, and resources*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:system_manager`: *Register a service with a system or subsystem; enable/disable and aggregate status information for systems, subsystems, services, and resources*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:system_mgmt:sys_info_catalog`: *Create a system, subsystem, service, or resource and read system, subsystem, service, or resource :term:`UUID`\ s, names, and other information*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:system_info_catalog`: *Create a system, subsystem, service, or resource and read system, subsystem, service, or resource :term:`UUID`\ s, names, and other information*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:data_info:er_catalog`: *Maintains names, descriptions, properties, and labels for systems, subsystems, services, and resources*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_er_catalog`: *Maintains names, descriptions, properties, and labels for systems, subsystems, services, and resources*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:control_status`: *Read availability status information*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_controller`: *Read controller status information*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:avail_status`: *Read availability status information*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_availability`: *Read availability status information*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`: *Read and update service configuration paramaters*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`: *Read and update service configuration paramaters*
 
 - Compute Service
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:computing:allocation`: *Allocate immediate access to compute resources for a specified period of time*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_allocation`: *Allocate immediate access to compute resources for a specified period of time*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:computing:app_execution`: *Execute a packaged application on a computing resource*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_application`: *Execute a packaged application on a computing resource*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:computing:container_execution`: *Execute a containerized application on a computing resource*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_container`: *Execute a containerized application on a computing resource*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:computing:host_command_execution`: *Executes an arbitrary host command on a computing resource*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_host`: *Executes an arbitrary host command on a computing resource*
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:computing:batch_queue`: *Run compute jobs and monitor job and queue status*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_queue`: *Run compute jobs and monitor job and queue status*
   
-  - :ref:`intersect:arch:ms:capability:infrastructure:computing:queue_reservation`: *Reserve dedicated compute resources access*
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_reservation`: *Reserve dedicated compute resources access*
+
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_controller`: *Read controller status information*
+
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_availability`: *Read availability status information*
+
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`: *Read and update service configuration paramaters*
 
 .. admonition:: Minimum requrement
    :name: intersect:arch:sos:logical:systems:ims:minimum

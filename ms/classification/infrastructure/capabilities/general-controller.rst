@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:utility:control_status`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:general_controller:
 
 Capability - Utility :: Controller Status
 -----------------------------------------

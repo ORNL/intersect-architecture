@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:data_info:er_catalog`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:data_er_catalog:
 
 Capability - Data and Information Management :: Entity-Relationship Catalog
 ---------------------------------------------------------------------------

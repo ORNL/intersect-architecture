@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:data_info:storage`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:data_storage:
 
 Capability - Data and Information Management :: Data Storage
 ------------------------------------------------------------
@@ -6,7 +6,7 @@ Capability - Data and Information Management :: Data Storage
 :Description:
    Provides storage for data items and collections of data items within
    one or more namespaces as shown in
-   :ref:`fig:intersect:arch:ms:class:infrastructure:data_info:data_model`.
+   :ref:`intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:model`.
 
 :Version:
    0.1 - Initial capability definition.

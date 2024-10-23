@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:class:infrastructure:data_info:
+.. _intersect:arch:ms:classification:infrastructure:data_info:
 
 Microservice Capabilities for Data and Information Management
 =============================================================
@@ -74,15 +74,15 @@ Apache Cassandra :cite:`Apache:Cassandra`, Google BigTable
 :cite:`Google:BigTable`), and graph databases (e.g., 
 Neo4J :cite:`neo4j` and Amazon Neptune :cite:`Amazon:Neptune`).
 
-.. _intersect:arch:ms:class:infrastructure:data_info:data_mgmt:
+.. _intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:
 
 Data Management Microservices for Campaigns
 -------------------------------------------
 
 The INTERSECT microservice capabilities for data management are designed
 around a flexible, generalized data model as shown in
-:numref:`fig:intersect:arch:ms:class:infrastructure:data_info:data_model`.
-A campaign workflow produces or consumes data from one or more 
+:numref:`intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:model`.
+A campaign workflow produces or consumes data from one or more
 *Data Namespaces*, which are uniquely-named logical containers for 
 *Data Items*, *Data Collections*, and *Data Streams*. *Data Items* 
 represent uniquely-named pieces of data such as files, objects, or 
@@ -93,8 +93,8 @@ mechanisms such as directories, object buckets, or table records.
 support multiple stream consumers. The data stream elements are *Data
 Items* with names corresponding to the element indices.
 
-.. _fig:intersect:arch:ms:class:infrastructure:data_info:data_model:
-.. figure:: ../../images/data-storage-model.png
+.. figure:: data_info/model.png
+   :name: intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:model
    :alt: INTERSECT Microservices Data Model
 
    INTERSECT Microservices Data Model
@@ -111,44 +111,44 @@ producers and consumers.
 Explicit management of data products is key to enabling campaign workflow 
 orchestration within INTERSECT ecosystems. Currently, the microservice 
 capabilities for data management include storage (see 
-:ref:`intersect:arch:ms:capability:infrastructure:data_info:storage`), 
-publishing (see 
-:ref:`intersect:arch:ms:capability:infrastructure:data_info:data_catalog`), 
-and transfer (see 
-:ref:`intersect:arch:ms:capability:infrastructure:data_info:transfer` and 
-:ref:`intersect:arch:ms:capability:infrastructure:data_info:transfer_endpoint`).
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_storage`),
+publishing (see
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_product_catalog`),
+and transfer (see
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_transfer_orchestration` and
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_transfer_endpoint`).
 
 An application or service that produces data to be consumed by other 
 applications or services must first store the data item or collection 
 within its system's data management service. 
-:numref:`fig:intersect:arch:ms:sequences:data:storage:namespace` shows an 
-example orchestration sequence for an application to manage its data 
+:numref:`intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:storage_namespace` shows an
+example orchestration sequence for an application to manage its data
 namespaces. 
-:numref:`fig:intersect:arch:ms:sequences:data:storage:collection` 
-shows an example orchestration sequence for 
+:numref:`intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:storage_collection`
+shows an example orchestration sequence for
 an application to manage a data collection within its namespace. 
-:numref:`fig:intersect:arch:ms:sequences:data:storage:item` 
-shows an example orchestration sequence for an application 
+:numref:`intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:storage_item`
+shows an example orchestration sequence for an application
 to manage data items within its namespace.
 
-.. _fig:intersect:arch:ms:sequences:data:storage:namespace:
-.. figure:: ../../images/data-storage-namespace.png
+.. figure:: data_info/storage-namespace.png
+   :name: intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:storage_namespace
    :scale: 25
    :alt: Interaction sequence for managing a data namespace
 
    Microservice interaction sequence for an application to 
    manage a data namespace.
 
-.. _fig:intersect:arch:ms:sequences:data:storage:collection:
-.. figure:: ../../images/data-storage-collection.png
+.. figure:: data_info/storage-collection.png
+   :name: intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:storage_collection
    :scale: 25
    :alt: Interaction sequence for managing a data collection
 
    Microservice interaction sequence for an application to 
    manage a data collection.
 
-.. _fig:intersect:arch:ms:sequences:data:storage:item:
-.. figure:: ../../images/data-storage-item.png
+.. figure:: data_info/storage-item.png
+   :name: intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:storage_item
    :scale: 25
    :alt: Interaction sequence for managing data items
 
@@ -157,13 +157,13 @@ to manage data items within its namespace.
 
 Once stored, the data product can be published to a data catalog service 
 to alert orchestrators or consumers that the data is available. 
-:numref:`fig:intersect:arch:ms:sequences:data:catalog:product` 
-shows an example orchestration sequence for a workflow to 
+:numref:`intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:catalog_product`
+shows an example orchestration sequence for a workflow to
 allocate application data product UUIDs for use by an application to 
 publish its data products to a campaign data catalog.
 
-.. _fig:intersect:arch:ms:sequences:data:catalog:product:
-.. figure:: ../../images/data-catalog-product.png
+.. figure:: data_info/catalog-product.png
+   :name: intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:catalog_product
    :scale: 25
    :alt: Interaction sequence for publishing data products
 
@@ -174,28 +174,28 @@ When the workflow requires the data product(s) to be made available
 on remote systems, the orchestrator can arrange for the data to be 
 transferred to the data management service of the consumer's system, 
 as shown in 
-:numref:`fig:intersect:arch:ms:sequences:data:transfer:negotiate`, 
-:numref:`fig:intersect:arch:ms:sequences:data:transfer:product`, and 
-:numref:`fig:intersect:arch:ms:sequences:data:transfer:item`.
+:numref:`intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:transfer_negotiate`,
+:numref:`intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:transfer_product`, and
+:numref:`intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:transfer_item`.
 
-.. _fig:intersect:arch:ms:sequences:data:transfer:negotiate:
-.. figure:: ../../images/data-transfer-negotiate.png
+.. figure:: data_info/transfer-negotiate.png
+   :name: intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:transfer_negotiate
    :scale: 25
    :alt: Interaction sequence for negotiating data transfers
 
    Microservice interaction sequence for negotiating data transfers 
    between INTERSECT systems.
 
-.. _fig:intersect:arch:ms:sequences:data:transfer:product:
-.. figure:: ../../images/data-transfer-product.png
+.. figure:: data_info/transfer-product.png
+   :name: intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:transfer_product
    :scale: 25
    :alt: Interaction sequence for transfering a data product
 
    Microservice interaction sequence for transfering a data product 
    between INTERSECT systems.
 
-.. _fig:intersect:arch:ms:sequences:data:transfer:item:
-.. figure:: ../../images/data-transfer-item.png
+.. figure:: data_info/transfer-item.png
+   :name: intersect:arch:ms:classification:infrastructure:data_info:data_mgmt:transfer_item
    :scale: 25
    :alt: Interaction sequence for transfering a data item
 
@@ -203,7 +203,7 @@ as shown in
    between INTERSECT systems.
 
 
-.. _intersect:arch:ms:class:infrastructure:data_info:info_mgmt:
+.. _intersect:arch:ms:classification:infrastructure:data_info:info_mgmt:
 
 Information Management Microservices for Campaigns
 --------------------------------------------------
@@ -216,7 +216,7 @@ An :term:`ER model` provides a flexible representation
 of arbitrary information about unique entities and their relationships
 to other entities. Such models have widespread uses and are supported by
 services providing the *Entity-Relationship Catalog* capability (see 
-:ref:`intersect:arch:ms:capability:infrastructure:data_info:er_catalog`). 
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_er_catalog`). 
 
 Relational databases provide :term:`ACID` transactions
 and complex queries over structured relations defined by a schema in one or
@@ -227,7 +227,7 @@ Non-relational databases provide
 non-transactional data updates and queries over unstructured data and
 information such as objects, columnar data, time-series data, or graphs.
 
-.. _intersect:arch:ms:capability:infrastructure:data_info:
+.. _intersect:arch:ms:classification:infrastructure:data_info:capability:
 
 Capability Definitions for Data and Information Management
 ----------------------------------------------------------

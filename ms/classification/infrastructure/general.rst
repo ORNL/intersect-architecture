@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:class:infrastructure:general:
+.. _intersect:arch:ms:classification:infrastructure:general:
 
 Microservice Capabilities with General Utility
 ==============================================
@@ -14,17 +14,17 @@ deployed service. These capabilities include *Parameter Configuration*,
 *Availability Status*, and *Controller Status*. 
 
 The *Parameter Configuration* capability (see 
-:ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`) 
-enables each service and its constituent capabilities to expose parameters 
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`)
+enables each service and its constituent capabilities to expose parameters
 that affect their behavior.
 
 The *Availability Status* capability (see 
-:ref:`intersect:arch:ms:capability:infrastructure:utility:avail_status`) 
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_availability`)
 provides service availability status information to other
 services in an INTERSECT ecosystem.
 
 The *Controller Status* capability (see 
-:ref:`intersect:arch:ms:capability:infrastructure:utility:control_status`) 
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_controller`) 
 manages the primary and secondary controllers for a service.
 The primary controller of a given service is typically the INTERSECT service
 responsible for control actions such as deploying that service, making 
@@ -35,7 +35,7 @@ Secondary control is often necessary for services that provide adapters for
 exclusive system resources that are not easily time-shared among multiple 
 clients.
 
-.. _`intersect:arch:ms:capability:infrastructure:utility`:
+.. _intersect:arch:ms:classification:infrastructure:general:capability:
 
 Capability Definitions for General Service Utilities
 ----------------------------------------------------

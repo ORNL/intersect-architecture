@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:class:experiment:
+.. _intersect:arch:ms:classification:experiment:
 
 Microservice Capabilities for Experiment Services
 #################################################

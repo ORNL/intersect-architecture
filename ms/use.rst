@@ -8,7 +8,7 @@ experiment-specific microservices that may be useful within an interconnected
 science ecosystem. All microservices are defined to facilitate composition 
 within federated :term:`SoS` architectures, where each system corresponds to 
 one or more microservices coordinating through well-defined 
-:ref:`microservice interaction patterns <intersect:arch:ms:interactions>`.
+:ref:`microservice interaction patterns <intersect:arch:ms:interaction>`.
 
 *Infrastructure microservices* represent common service
 functionality and capabilities, such as data management, computing,
@@ -25,15 +25,15 @@ constraints.
 The INTERSECT science use case design patterns help
 identify the relevant infrastructure and experiment-specific
 microservices for a given science ecosystem.
-:numref:`fig:intersect:arch:ms:use:overview` provides an
+:numref:`intersect:arch:ms:use:overview` provides an
 architectural overview of the potential classes of microservices that
 may be involved with a given interconnected science ecosystem.
-:ref:`intersect:arch:ms:class`
+:ref:`intersect:arch:ms:classification`
 provides additional information on the various INTERSECT microservice
 classes and their shared capabilities and data requirements.
 
-.. _fig:intersect:arch:ms:use:overview:
-.. figure:: images/ms-classes.svg
+.. figure:: use/overview.svg
+   :name: intersect:arch:ms:use:overview
    :alt: Potential classes of INTERSECT microservices
 
    Potential Classes of INTERSECT Microservices

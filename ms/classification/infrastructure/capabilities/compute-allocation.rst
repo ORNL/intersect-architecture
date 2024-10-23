@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:computing:allocation`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:compute_allocation:
 
 Capability - Compute :: Compute Allocation
 --------------------------------------------------
@@ -6,10 +6,10 @@ Capability - Compute :: Compute Allocation
 :Description:
    Interact with computing systems to allocate immediate access to a set
    of compute hosts for a specified period of time.
-   :numref:`fig:intersect:arch:ms:sequences:compute:resource:allocation`
+   :numref:`intersect:arch:ms:classification:infrastructure:compute:applications:allocation`
    shows an example orchestration seqence for on-demand allocation of
    computing resources.
-   :numref:`fig:intersect:arch:ms:sequences:compute:resource:run`
+   :numref:`intersect:arch:ms:classification:infrastructure:compute:applications:run`
    shows an example orchestration seqence for running an application
    program within an allocation of computing resources.
 

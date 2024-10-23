@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:system_mgmt:sys_registrar`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:system_registrar:
 
 Capability - System Management :: Systems Registrar
 ---------------------------------------------------
@@ -13,7 +13,7 @@ Capability - System Management :: Systems Registrar
 :Related Capabilities:
    - Extends:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:utility:uuid_gen`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_uuid_gen`
 
    - Requires: None
 
@@ -93,7 +93,7 @@ Capability - System Management :: Systems Registrar
         ``organizationName``, and optional ``facilityName``. Successful
         registration will trigger generation of the
         ``SystemRegistration`` event.
-        :numref:`fig:intersect:arch:ms:sequences:systems:registration:system`
+        :numref:`intersect:arch:ms:classification:infrastructure:system:registration:system`
         provides an example orchestration sequence demonstrating the
         use of this method.
 
@@ -202,7 +202,7 @@ Capability - System Management :: Systems Registrar
       + Purpose: Register a new resource within the given parent system.
         Successful registration will trigger generation of the
         ``SystemResourceRegistration`` event.
-        :numref:`fig:intersect:arch:ms:sequences:systems:registration:resource`
+        :numref:`intersect:arch:ms:classification:infrastructure:system:registration:resource`
         provides an example orchestration sequence demonstrating the
         use of this method.
 
@@ -256,7 +256,7 @@ Capability - System Management :: Systems Registrar
         optional association to a given subsystem. Successful
         registration will trigger generation of the
         ``SystemServiceRegistration`` event.
-        :numref:`fig:intersect:arch:ms:sequences:systems:registration:service`
+        :numref:`intersect:arch:ms:classification:infrastructure:system:registration:service`
         provides an example orchestration sequence demonstrating the
         use of this method.
 
