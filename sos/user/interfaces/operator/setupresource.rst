@@ -86,6 +86,6 @@ An example interface is depicted in
    :name: intersect:arch:sos:user:interfaces:operator:requests
    :align: center
    :width: 600
-
+   :alt: An example interface
 
    Alternates can be suggested if the three choices do not suffice.

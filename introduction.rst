@@ -42,6 +42,7 @@ software/characterization tools including integration/feedback with :term:`AI`.
    :name: intersect:arch:pat:introduction:acl
    :align: center
    :width: 600
+   :alt: Autonomous robotic chemistry laboratory example
 
    An autonomous robotic chemistry laboratory that operates 24/7 using analysis
    of experimental data for the design of experiments.
@@ -65,6 +66,7 @@ open architecture standard to enable adoption.
    :name: intersect:arch:pat:introduction:ecosystem
    :align: center
    :width: 600
+   :alt: The INTERSECT ecosystem vision
 
    The :term:`INTERSECT` ecosystem vision connects instruments with edge and
    center computing resources.

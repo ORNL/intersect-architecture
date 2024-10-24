@@ -79,6 +79,7 @@ Solution
    .. figure:: local_workflow/components.png
       :name: intersect:arch:pat:catalog:architectural:local_workflow:components
       :align: center
+      :alt: Pattern components and control/data flow
    
       Local Multi-Experiment Workflow architectural pattern components and
       control/data flow

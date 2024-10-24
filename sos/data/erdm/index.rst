@@ -12,8 +12,9 @@ shown in :numref:`intersect:arch:sos:data:erdm:intersect-erd`.
    :name: intersect:arch:sos:data:erdm:intersect-erd
    :align: center
    :width: 800
+   :alt: The INTERSECT entity-relationship model.
 
-   Tne INTERSECT entity-relationship model.
+   The :term:`INTERSECT` entity-relationship model.
 
 
 .. list-table:: Names and descriptions of :term:`INTERSECT` architecture data entities

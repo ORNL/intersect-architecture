@@ -45,6 +45,7 @@ as follows:
 .. figure:: pat/strategic.png
    :name: intersect:arch:examples:aam:pat:strategic
    :align: center
+   :alt: The INTERSECT autonomous additive manufacturing strategic patterns
    
    Experiment Steering and Design of Experiments strategic patterns for the
    :term:`INTERSECT` :term:`AAM` science use case
@@ -65,6 +66,7 @@ correlation and one for the validation.
 .. figure:: pat/architectural.png
    :name: intersect:arch:examples:aam:pat:architectural
    :align: center
+   :alt: The INTERSECT autonomous additive manufacturing architectural patterns
 
    Distributed Experiment Steering and Distributed Design of Experiments
    strategic patterns for the :term:`INTERSECT` :term:`AAM` science use case

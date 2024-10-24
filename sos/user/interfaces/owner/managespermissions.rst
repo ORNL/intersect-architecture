@@ -69,6 +69,7 @@ An example interface is depicted in
    :name: intersect:arch:sos:user:interfaces:owner:manage
    :align: center
    :width: 800
+   :alt: An example interface
 
    This management is done in project.
   
@@ -76,5 +77,6 @@ An example interface is depicted in
    :name: intersect:arch:sos:user:interfaces:owner:manage-action
    :align: center
    :width: 600
+   :alt: An example interface
 
    Three options are given regarding access.

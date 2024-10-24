@@ -54,6 +54,7 @@ An example user profile is depicted in :numref:`figures:user:user:profile:ex1`
    :name: figures:user:user:profile:ex1
    :width: 600
    :align: center
+   :alt: An example interface
 
    A representation of a registered User’s profile in INTERSECT with
    options to edit their profile.

@@ -65,5 +65,6 @@ An example interface is depicted in
    :name: intersect:arch:sos:user:interfaces:operator:monitor
    :align: center
    :width: 800
+   :alt: Operator / Maintainer monitors resource
 
    Operator / Maintainer monitors resource.

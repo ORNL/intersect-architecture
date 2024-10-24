@@ -51,6 +51,7 @@ Solution
    .. figure:: steering/components.png
       :name: intersect:arch:pat:catalog:strategic:steering:components
       :align: center
+      :alt: Pattern components and control/data flow
 
       Experiment Steering strategic pattern components and control/data flow
 

@@ -94,6 +94,7 @@ Solution
    .. figure:: local_design/components.png
       :name: intersect:arch:pat:catalog:architectural:local_design:components
       :align: center
+      :alt: Pattern components and control/data flow
 
       Local Design of Experiments architectural pattern components and
       control/data flow

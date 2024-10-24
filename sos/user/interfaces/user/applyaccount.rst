@@ -58,6 +58,7 @@ An example INTERSECT account application is depicted in
    :name: figures:user:user:applyaccount:ex1
    :align: center
    :width: 600
+   :alt: An example interface
 
    A representation of the information that a new or potential user of
    INTERSECT would be required to register for an INTERSECT account..

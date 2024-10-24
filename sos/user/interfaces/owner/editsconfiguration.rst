@@ -165,6 +165,7 @@ An example interface is depicted in
    :name: intersect:arch:sos:user:interfaces:owner:editconfig
    :align: center
    :width: 600
+   :alt: An example interface
 
    Options are given to temporarily or permanently remove the resource.
 

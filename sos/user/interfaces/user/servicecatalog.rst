@@ -57,6 +57,7 @@ An example interface is depicted in :numref:`figures:user:user:servicecatalog:se
    :name: figures:user:user:servicecatalog:servicecat
    :align: center
    :width: 600
+   :alt: An example interface
 
    A list of the most common resources is shown.
 
@@ -64,5 +65,6 @@ An example interface is depicted in :numref:`figures:user:user:servicecatalog:se
    :name: figures:user:user:servicecatalog:servicecat-filters
    :align: center
    :width: 600
+   :alt: An example interface
 
    Filters can be applied to specify a search.

@@ -1,5 +1,4 @@
-
-.. _`intersect:arch:sos:user:processes:process-compile`:
+.. _intersect:arch:sos:user:processes:compile:
 
 Compile DAG
 ===========

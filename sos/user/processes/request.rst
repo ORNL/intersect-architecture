@@ -1,5 +1,4 @@
-
-.. _`intersect:arch:sos:user:processes:process-request`:
+.. _intersect:arch:sos:user:processes:request:
 
 Request Resources
 =================
@@ -35,12 +34,3 @@ Post-conditions
 
 -  the user has the option to select from the available resources based
    on a variety of filter options such as tag or entity type.
-
-.. figure:: ./fig-user-login-process.png
-   :name: figures:user:process:login-process
-   :width: 1000
-   :align: center
-
-   Process perspective of logging into INTERSECT and building/executing
-   a workflow. *This figure will be updated in a future version of this
-   document.*

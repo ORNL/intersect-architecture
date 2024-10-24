@@ -80,6 +80,7 @@ architecture splits these views over three different components
    :name: intersect:arch:concept:architecture
    :align: center
    :width: 800
+   :alt: Components of the INTERSECT architecture
 
    Components of the :term:`INTERSECT` architecture in the context of the
    :term:`INTERSECT` Initiative's activities.

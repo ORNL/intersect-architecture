@@ -63,6 +63,7 @@ Solution
    .. figure:: local_control/components.png
       :name: intersect:arch:pat:catalog:architectural:local_control:components
       :align: center
+      :alt: Pattern components and control/data flow
 
       Local Experiment Control architectural pattern components and control/data
       flow

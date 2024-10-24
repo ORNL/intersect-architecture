@@ -95,6 +95,7 @@ Solution
    .. figure:: distributed_design/components.png
       :name: intersect:arch:pat:catalog:architectural:distributed_design:components
       :align: center
+      :alt: Pattern components and control/data flow
 
       Distributed Design of Experiments architectural pattern components and
       control/data flow

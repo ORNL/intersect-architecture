@@ -45,6 +45,7 @@ An example interface is depicted in :numref:`figures:user:user:viewcampaigns:ex1
    :name: figures:user:user:viewcampaigns:ex1
    :width: 600
    :align: center
+   :alt: An example interface
 
    A high-level view representing past, present, and future scientific
    Campaigns that this user has been part of.

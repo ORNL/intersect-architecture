@@ -76,9 +76,10 @@ Methodologies
 
 An example interface is depicted in :numref:`figures:user:user:notification:notif`
 
-   .. figure:: ./fig-userview-notif.png
-      :name: figures:user:user:notification:notif
-      :align: center
-      :width: 600
-	     
-      Notification panel is specific to each user.
+.. figure:: ./fig-userview-notif.png
+   :name: figures:user:user:notification:notif
+   :align: center
+   :width: 600
+   :alt: An example interface
+     
+   Notification panel is specific to each user.

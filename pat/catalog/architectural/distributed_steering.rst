@@ -77,6 +77,7 @@ Solution
    .. figure:: distributed_steering/components.png
       :name: intersect:arch:pat:catalog:architectural:distributed_steering:components
       :align: center
+      :alt: Pattern components and control/data flow
 
       Distributed Experiment Steering architectural pattern components and
       control/data flow

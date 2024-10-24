@@ -59,6 +59,7 @@ their own facility and/or resource).
    :name: intersect:arch:sos:operational:highlevel
    :align: center
    :width: 800
+   :alt: High-level diagram to assist operational view of system
 
    High-level diagram to assist operational view of system; showing
    different facility domains that will be managed by different
@@ -73,8 +74,3 @@ their own facility and/or resource).
    activities/health
    activities/approvals
    activities/cybersecurity
-
-
-.. HIDDEN (in-progress item) activities/registry
-.. HIDDEN (in-progress item) activities/invmgr
-

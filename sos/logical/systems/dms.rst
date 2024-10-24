@@ -25,8 +25,9 @@ following 4 tiers (:numref:`intersect:arch:sos:logical:systems:dms:tiers`):
    :name: intersect:arch:sos:logical:systems:dms:tiers
    :align: center
    :width: 600
+   :alt: The Data Management System tiers
 
-   The Data Management System (DMS) tiers.
+   The Data Management System tiers.
 
 The :term:`DMS` has the following services and microservice capabilities
 (mapping the :ref:`intersect:arch:sos` to the :ref:`intersect:arch:ms`):
@@ -36,11 +37,12 @@ The :term:`DMS` has the following services and microservice capabilities
   Moves data from one storage backend to another. 
    
   .. figure:: ./dms/move_example.png
-      :name: intersect:arch:sos:logical:systems:dms:move_example
-      :align: center
-      :width: 700
+     :name: intersect:arch:sos:logical:systems:dms:move_example
+     :align: center
+     :width: 700
+     :alt: Example of moving a data assets
 
-      Overview of systems in the task of moving a data asset from ``sns.ornl.gov/data`` to  ``data.olcf.ornl.gov``
+     Overview of systems in the task of moving a data asset from ``sns.ornl.gov/data`` to  ``data.olcf.ornl.gov``
 
   - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_transfer_orchestration`:
 
@@ -83,9 +85,12 @@ The :term:`DMS` has the following services and microservice capabilities
 - Data Repository Service
 
   .. figure:: dms/repository-erd.svg
-   :name: intersect:arch:sos:logical:systems:dms:repository-erd
-   :align: center
-   :width: 600
+     :name: intersect:arch:sos:logical:systems:dms:repository-erd
+     :align: center
+     :width: 600
+     :alt: The Data Repository Service relationships
+     
+     The Data Repository Service relationships
 
   - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_product_catalog`
 

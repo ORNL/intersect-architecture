@@ -236,25 +236,26 @@ Methodologies
 An example interface is depicted in :numref:`figures:user:user:detailedview:detailedphy`,
 :numref:`figures:user:user:detailedview:detailedlog` and :numref:`figures:user:user:detailedview:detailedreqacc`
 
+.. figure:: ./fig-userview-detailedphy.png
+   :name: figures:user:user:detailedview:detailedphy
+   :align: center
+   :width: 600
+   :alt: An example interface
+      
+   Detailed view of a physical resource.
+  
+.. figure:: ./fig-userview-detailedlog.png
+   :name: figures:user:user:detailedview:detailedlog
+   :align: center
+   :width: 600
+   :alt: An example interface
+      
+   Detailed view of a logical resource.
 
+.. figure:: ./fig-userview-detailedreqacc.png
+   :name: figures:user:user:detailedview:detailedreqacc
+   :align: center
+   :width: 600
+   :alt: An example interface
 
-   .. figure:: ./fig-userview-detailedphy.png
-      :name: figures:user:user:detailedview:detailedphy
-      :align: center
-      :width: 600
-	      
-      Detailed view of a physical resource.
-	  
-   .. figure:: ./fig-userview-detailedlog.png
-      :name: figures:user:user:detailedview:detailedlog
-      :align: center
-      :width: 600
-	      
-      Detailed view of a logical resource.
-
-   .. figure:: ./fig-userview-detailedreqacc.png
-      :name: figures:user:user:detailedview:detailedreqacc
-      :align: center
-      :width: 600
-
-      Prompt to request access to a resource for a campaign.
+   Prompt to request access to a resource for a campaign.

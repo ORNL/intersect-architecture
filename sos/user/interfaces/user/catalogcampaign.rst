@@ -61,6 +61,7 @@ An example interface is depicted in :numref:`figures:user:user:catalogcampaign:f
    :name: figures:user:user:catalogcampaign:fig-userview-catalogcamp
    :align: center
    :width: 600
+   :alt: An example interface
 
    Buttons are shown for different campaign types.
    
@@ -69,5 +70,6 @@ An example interface is depicted in :numref:`figures:user:user:catalogcampaign:f
    :name: figures:user:user:catalogcampaign:fig-userview-catalogcamp-desc
    :align: center
    :width: 600
+   :alt: An example interface
 
    When a campaign is selected, a basic template is shown.

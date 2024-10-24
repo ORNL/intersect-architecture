@@ -3,12 +3,10 @@
 Service Monitoring
 ==================
 
-
 The observation and reporting on the INTERSECT ecosystem will be a
 common operational procedure. This monitoring will focus on the
 INTERSECT Services and provide base mechanisms to gather high-level
 information about the distributed environment.
-
 
 .. _intersect:arch:sos:operational:activities:monitoring:descr:
 
@@ -123,8 +121,6 @@ security constraints (see also scoping/zones and Messaging on
 monitoring data is also a point that will involve the Messaging and Data
 Plane, as will message ordering/timestamping.
 
-
-
 .. _intersect:arch:sos:operational:activities:monitoring:example:
 
 Example
@@ -165,6 +161,7 @@ historical data.
    :name: fig:intersect:arch:sos:operational:activities:monitoring:seqdiag-mon-full
    :align: center
    :width: 800
+   :alt: INTERSECT Service Monitor sequence diagram
 
    INTERSECT Service Monitor illustrating sequence diagram for
    interfacing with centralized Monitoring Service that stockpiles data
