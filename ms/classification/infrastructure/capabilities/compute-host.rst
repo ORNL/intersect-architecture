@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:computing:host_command_execution`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:compute_host:
 
 Capability - Compute :: Host Command Execution
 ------------------------------------------------------
@@ -13,8 +13,8 @@ Capability - Compute :: Host Command Execution
    - Extends: None
    - Requires:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:computing:allocation` **OR**
-        :ref:`intersect:arch:ms:capability:infrastructure:computing:batch_queue`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_allocation` **OR**
+        :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_queue`
 
 :Interactions:
    - Asynchronous: None

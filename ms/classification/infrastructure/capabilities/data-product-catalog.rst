@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:data_info:data_catalog`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:data_product_catalog:
 
 Capability - Data and Information Management :: Data Catalog
 ------------------------------------------------------------
@@ -13,7 +13,7 @@ Capability - Data and Information Management :: Data Catalog
    - Extends: None
    - Requires:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:er_catalog`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_er_catalog`
 
 :Interactions:
    - Asynchronous: ``DataCatalogProductAvailable``, ``DataCatalogProductRemoval``,

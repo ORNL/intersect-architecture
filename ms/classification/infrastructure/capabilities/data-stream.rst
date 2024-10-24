@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:data_info:stream`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:data_stream:
 
 Capability - Data and Information Management :: Data Stream
 -----------------------------------------------------------
@@ -19,7 +19,7 @@ Capability - Data and Information Management :: Data Stream
 :Related Capabilities:
    - Extends:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:storage`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_storage`
    - Requires: None
 
 :Data Definitions:

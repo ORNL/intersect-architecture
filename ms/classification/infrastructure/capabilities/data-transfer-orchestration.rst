@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:data_info:transfer`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:data_transfer_orchestration:
 
 Capability - Data and Information Management :: Data Transfer Orchestration
 ---------------------------------------------------------------------------
@@ -14,10 +14,10 @@ Capability - Data and Information Management :: Data Transfer Orchestration
    - Extends: None
    - Requires:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:data_catalog`
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:storage`
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:stream`
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:transfer_endpoint`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_er_catalog`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_storage`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_stream`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_transfer_endpoint`
 
 :Interactions:
    - Asynchronous: ``DataTransferChannelCreation``

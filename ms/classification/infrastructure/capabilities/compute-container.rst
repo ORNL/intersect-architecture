@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:computing:container_execution`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:compute_container:
 
 Capability - Compute :: Container Execution
 ---------------------------------------------------
@@ -12,12 +12,12 @@ Capability - Compute :: Container Execution
 :Related Capabilities:
    - Extends:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`
 
    - Requires:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:computing:allocation` **OR**
-        :ref:`intersect:arch:ms:capability:infrastructure:computing:batch_queue`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_allocation` **OR**
+        :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_queue`
 
 :Interactions:
    - Asynchronous: ``ContainerExecutionStatusChange``, ``ContainerImageAvailable``,

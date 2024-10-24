@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:system_mgmt:sys_info_catalog`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:system_info_catalog:
 
 Capability - System Management :: System Information Catalog
 ------------------------------------------------------------
@@ -6,7 +6,7 @@ Capability - System Management :: System Information Catalog
 :Description:
    Provides subsystem, service, and resource information for a single
    parent system. Maintains system relationships as shown in
-   :numref:`fig:intersect:arch:ms:class:infrastructure:system_er_model`.
+   :numref:`intersect:arch:ms:classification:infrastructure:system:er_model`.
 
 :Version:
    0.1 - Initial capability definition.
@@ -15,7 +15,7 @@ Capability - System Management :: System Information Catalog
    - Extends: None
    - Requires:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:er_catalog`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_er_catalog`
 
 :Interactions:
    - Asynchronous: None
@@ -33,7 +33,7 @@ Capability - System Management :: System Information Catalog
         creation will result in the creation of a ``SystemResource``
         entity with the given information and a relationship to the new
         entity with the parent system.
-        :numref:`fig:intersect:arch:ms:sequences:systems:registration:resource`
+        :numref:`intersect:arch:ms:classification:infrastructure:system:registration:resource`
         provides an example orchestration sequence demonstrating the
         use of this method.
 
@@ -61,7 +61,7 @@ Capability - System Management :: System Information Catalog
         ``SystemService`` entity with the given information and
         relationships to the new entity with the parent system or
         subsystem, provided capabilities, and any associated resources.
-        :numref:`fig:intersect:arch:ms:sequences:systems:registration:service`
+        :numref:`intersect:arch:ms:classification:infrastructure:system:registration:service`
         provides an example orchestration sequence demonstrating the
         use of this method.
 

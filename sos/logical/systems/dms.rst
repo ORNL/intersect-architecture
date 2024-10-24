@@ -42,43 +42,43 @@ The :term:`DMS` has the following services and microservice capabilities
 
       Overview of systems in the task of moving a data asset from ``sns.ornl.gov/data`` to  ``data.olcf.ornl.gov``
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:data_info:transfer`:
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_transfer_orchestration`:
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:control_status`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_controller`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:avail_status`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_availability`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`
 
 - Data Transport Endpoint Service
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:data_info:transfer_endpoint`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_transfer_endpoint`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:control_status`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_controller`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:avail_status`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_availability`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`
 
 - Storage Management Service
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:data_info:storage`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_storage`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:control_status`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_controller`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:avail_status`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_availability`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`
 
 - Data Registration Service
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:data_info:er_catalog`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_er_catalog`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:data_info:stream`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_stream`
 
 - Data Deployment Service
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:data_info:transfer`:
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_transfer_orchestration`:
 
 - Data Repository Service
 
@@ -87,17 +87,17 @@ The :term:`DMS` has the following services and microservice capabilities
    :align: center
    :width: 600
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:data_info:er_catalog`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_product_catalog`
 
 - Data Catalog Service
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:data_info:data_catalog`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_product_catalog`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:control_status`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_controller`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:avail_status`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_availability`
 
-  - :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`
+  - :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`
 
 .. admonition:: Minimum requrement
    :name: intersect:arch:sos:logical:systems:dms:minimum

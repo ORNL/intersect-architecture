@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:experiment:instrument:controller`:
+.. _intersect:arch:ms:classification:experiment:capabilities:instrument_control:
 
 Capability - Experiment Control :: Instrument Controller
 --------------------------------------------------------
@@ -20,12 +20,12 @@ Capability - Experiment Control :: Instrument Controller
 :Related Capabilities:
    - Extends:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`
 
    - Requires:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:data_catalog`
-      + :ref:`intersect:arch:ms:capability:infrastructure:data_info:storage`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_product_catalog`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:data_storage`
 
 :Interactions:
    - Asynchronous: ``InstrumentActionCompletion``,

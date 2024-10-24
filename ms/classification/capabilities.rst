@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:class:capability-format:
+.. _intersect:arch:ms:classification:capabilities:
 
 Definition of Microservice Capabilities
 ---------------------------------------
@@ -25,7 +25,7 @@ the included functionality and any custom data type defintions. A
 suitable approach to versioning of microservice APIs is that defined by
 Semantic Versioning :cite:`SemanticVersioning:v2`.
 
-:ref:`intersect:arch:ms:capability:definition` is an example of
+:ref:`intersect:arch:ms:classification:capabilities:definition` is an example of
 the capability definition format that describes the information provided
 by each element of the definition. The data types used in defining each
 capability are generic names for common types and structures supported
@@ -34,14 +34,13 @@ Schema :cite:`IETF:JSON-schema`, XML Schema Definition
 (XSD) :cite:`W3C:XML-Schema-Definition`, and Apache
 Avro :cite:`Apache:Avro`). To avoid confusion with specific
 schema data model types,
-:numref:`tab:intersect:arch:ms:capability:types` provides a
+:numref:`intersect:arch:ms:classification:capabilities:types` provides a
 description for each generic type or structure and lists compatible
 specific types for a few data schema formats commonly used in
 microservice messaging.
 
-.. _tab:intersect:arch:ms:capability:types:
-
 .. list-table:: Generic Data Types and Structures and Associated Schema-specific Representations
+   :name: intersect:arch:ms:classification:capabilities:types
    :header-rows: 1
 
    * - | **Data Type**
@@ -131,8 +130,7 @@ microservice messaging.
        | ``(logicalType: uuid)``
 
 
-
-.. _intersect:arch:ms:capability:definition:
+.. _intersect:arch:ms:classification:capabilities:definition:
 
 Microservice Capability Definition Format
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -165,7 +163,7 @@ Microservice Capability Definition Format
    :Data Definitions:
        A summary list of custom data structures defined by the capability. The
        definitions should only include data members whose type is either one
-       of the generic types defined in :numref:`tab:intersect:arch:ms:capability:types`
+       of the generic types defined in :numref:`intersect:arch:ms:classification:capabilities:types`
        or a custom type defined within this capability definition.
 
    :Interactions:

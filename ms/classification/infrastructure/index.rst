@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:class:infrastructure:
+.. _intersect:arch:ms:classification:infrastructure:
 
 Microservice Capabilities for Infrastructure Services
 #####################################################
@@ -13,5 +13,5 @@ according to their purpose: (1) General Utility, (2) INTERSECT System Management
 
    general
    system
-   data
+   data_info
    compute

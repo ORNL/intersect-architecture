@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:class:infrastructure:system_mgmt:
+.. _intersect:arch:ms:classification:infrastructure:system:
 
 Microservice Capabilities for System Management 
 ===============================================
@@ -20,7 +20,7 @@ include, but are not limited to:
    detectors)
 
 As shown in 
-:numref:`fig:intersect:arch:ms:class:infrastructure:system_hierarchy`,
+:numref:`intersect:arch:ms:classification:infrastructure:system:hierarchy`,
 an *INTERSECT System* consists of one or more *INTERSECT Services* and a
 collection of associated *Resources*. Each service provides utility in
 the form of a set of microservice capabilities. All INTERSECT activities
@@ -35,8 +35,8 @@ that are used by the parent system. Subsystems typically exist to
 maintain operational independence over a group of services that provide
 access and control of one or more system resources.
 
-.. _fig:intersect:arch:ms:class:infrastructure:system_hierarchy:
-.. figure:: ../../images/system-hierarchy.png
+.. figure:: system/hierarchy.png
+   :name: intersect:arch:ms:classification:infrastructure:system:hierarchy
    :alt: INTERSECT System, Subsystem, Service, and Resource Hierarchy
 
    INTERSECT System, Subsystem, Service, and Resource Hierarchy
@@ -46,10 +46,10 @@ optionally a facility (or some other form of sub-organization such as a
 department or division) within that organization. 
 The full :term:`ER model` for components of an INTERSECT ecosystem 
 is shown in
-:numref:`fig:intersect:arch:ms:class:infrastructure:system_er_model`.
+:numref:`intersect:arch:ms:classification:infrastructure:system:er_model`.
 
-.. _fig:intersect:arch:ms:class:infrastructure:system_er_model:
-.. figure:: ../../images/system-er-model.png
+.. figure:: system/er-model.png
+   :name: intersect:arch:ms:classification:infrastructure:system:er_model
    :alt: INTERSECT System Entity-Relationship Model
 
    INTERSECT System Entity-Relationship Model
@@ -68,9 +68,9 @@ service so that other members of the ecosystem may obtain information on
 the system's underlying services, resources, and subsystems. Additional 
 details on the expected microservice interactions related to system, 
 service, and resource registration can be found in
-:ref:`intersect:arch:ms:class:infrastructure:system_mgmt:registration`.
+:ref:`intersect:arch:ms:classification:infrastructure:system:registration`.
 
-.. _intersect:arch:ms:class:infrastructure:system_mgmt:registration:
+.. _intersect:arch:ms:classification:infrastructure:system:registration:
 
 Registration of INTERSECT Systems, Services, and Resources
 ----------------------------------------------------------
@@ -81,42 +81,42 @@ ecosystems. Below we provide example orchestration sequences for each
 of these three registration activities.
 
 Registration of an INTERSECT system is shown in 
-:numref:`fig:intersect:arch:ms:sequences:systems:registration:system`. 
-It is assumed that every INTERSECT system will have an associated management 
+:numref:`intersect:arch:ms:classification:infrastructure:system:registration:system`.
+It is assumed that every INTERSECT system will have an associated management
 service that coordinates all aspects related to system information management, 
 control of services and subsystems, and status monitoring of associated 
 resources, services, and subsystems. In the figure, this service is called 
 the "System-X Management" service. It provides two key microservice 
 capabilities, the *System Information Catalog* (see 
-:ref:`intersect:arch:ms:capability:infrastructure:system_mgmt:sys_info_catalog`)
-and the *System Manager* (see 
-:ref:`intersect:arch:ms:capability:infrastructure:system_mgmt:sys_manager`). 
-The management service is responsible for registering its parent system 
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:system_info_catalog`)
+and the *System Manager* (see
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:system_manager`).
+The management service is responsible for registering its parent system
 with the registrar. The INTERSECT architecture permits a hierarchy of 
 coordinating services providing the *Systems Registrar* capability (see 
-:ref:`intersect:arch:ms:capability:infrastructure:system_mgmt:sys_registrar`). 
-In this figure, we assume each distinct INTERSECT operational domain 
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:system_registrar`).
+In this figure, we assume each distinct INTERSECT operational domain
 (e.g., an organization or facility) provides a registrar. The registrar 
 provides a domain-scoped UUID to the system through use of the 
 namespace UUID generation method of the *UUID Generation* capability (see 
-:ref:`intersect:arch:ms:capability:infrastructure:utility:uuid_gen`).
+:ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_uuid_gen`).
 
-.. _fig:intersect:arch:ms:sequences:systems:registration:system:
-.. figure:: ../../images/systems-register-system.png
+.. figure:: system/registration-system.png
+   :name: intersect:arch:ms:classification:infrastructure:system:registration:system
    :scale: 25
    :alt: INTERSECT System Registration
 
    Microservice interaction sequence for registering an INTERSECT system.
 
 Registration of resources associated with an INTERSECT system is shown in 
-:numref:`fig:intersect:arch:ms:sequences:systems:registration:resource`. 
-The management service is again responsible for registering the resources 
+:numref:`intersect:arch:ms:classification:infrastructure:system:registration:resource`.
+The management service is again responsible for registering the resources
 with the domain registrar to obtain system-scoped UUIDs for each resource. 
 It also needs to update the system information catalog to associated each 
 resource with the parent system and its assigned resource UUID.
 
-.. _fig:intersect:arch:ms:sequences:systems:registration:resource:
-.. figure:: ../../images/systems-register-resource.png
+.. figure:: system/registration-resource.png
+   :name: intersect:arch:ms:classification:infrastructure:system:registration:resource
    :scale: 25
    :alt: INTERSECT System Resource Registration
 
@@ -124,27 +124,27 @@ resource with the parent system and its assigned resource UUID.
    resources.
 
 Registration of services associated with an INTERSECT system is shown in 
-:numref:`fig:intersect:arch:ms:sequences:systems:registration:service`. 
-The newly deployed instrument adapater service in this figure makes a 
+:numref:`intersect:arch:ms:classification:infrastructure:system:registration:service`.
+The newly deployed instrument adapater service in this figure makes a
 request to register with the management service, which in turn registers 
 the service with the domain registrar to obtain a system-scoped UUID for 
 the service. The interaction with the the UUID Generation capability is 
 elided, but follows the same pattern as that used for assigning 
 system-scoped resource UUIDs in 
-:numref:`fig:intersect:arch:ms:sequences:systems:registration:resource`. 
-The managment service then updates the system information catalog to 
+:numref:`intersect:arch:ms:classification:infrastructure:system:registration:resource`.
+The managment service then updates the system information catalog to
 record the capabilities and resources associated with the new service and 
 its assigned service UUID.
 
-.. _fig:intersect:arch:ms:sequences:systems:registration:service:
-.. figure:: ../../images/systems-register-service.png
+.. figure:: system/registration-service.png
+   :name: intersect:arch:ms:classification:infrastructure:system:registration:service
    :scale: 25
    :alt: INTERSECT System Service Registration
 
    Microservice interaction sequence for registering an INTERSECT 
    system service.
 
-.. _`intersect:arch:ms:capability:infrastructure:system_mgmt`:
+.. _intersect:arch:ms:classification:infrastructure:system:capability:
 
 Capability Definitions for System Management
 --------------------------------------------

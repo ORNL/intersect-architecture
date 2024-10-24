@@ -1,4 +1,4 @@
-.. _`intersect:arch:ms:capability:infrastructure:system_mgmt:sys_manager`:
+.. _intersect:arch:ms:classification:infrastructure:capabilities:system_manager:
 
 Capability - System Management :: System Manager
 ------------------------------------------------
@@ -15,8 +15,8 @@ Capability - System Management :: System Manager
    - Extends: None
    - Requires:
 
-      + :ref:`intersect:arch:ms:capability:infrastructure:system_mgmt:sys_info_catalog`
-      + :ref:`intersect:arch:ms:capability:infrastructure:utility:avail_status`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:system_info_catalog`
+      + :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_availability`
 
 :Interactions:
    - Asynchronous: ``SystemStatusChange``
@@ -182,7 +182,7 @@ Capability - System Management :: System Manager
 - *Request-Reply* - ``RegisterService()``
 
       + Purpose: Registers a new service with the target system and an optional subsystem.
-        :numref:`fig:intersect:arch:ms:sequences:systems:registration:service`
+        :numref:`intersect:arch:ms:classification:infrastructure:system:registration:service`
         provides an example orchestration sequence demonstrating the
         use of this method.
 

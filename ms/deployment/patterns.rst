@@ -48,7 +48,8 @@ Related Patterns:
    :ref:`intersect:arch:ms:deployment:patterns:servicemesh`
 
 
-.. figure:: ../images/sidecar-pattern.svg
+.. figure:: patterns/sidecar.svg
+   :name: intersect:arch:ms:deployment:patterns:sidecar:pattern
    :alt: Sidecar Pattern
 
    Sidecar Pattern
@@ -85,7 +86,8 @@ Related Patterns:
    :ref:`intersect:arch:ms:deployment:patterns:servicemesh`
 
 
-.. figure:: ../images/ambassador-pattern.svg
+.. figure:: patterns/ambassador.svg
+   :name: intersect:arch:ms:deployment:patterns:ambassador:pattern
    :alt: Ambassador Proxy Pattern
 
    Ambassador Proxy Pattern
@@ -122,7 +124,8 @@ Related Patterns:
    :ref:`intersect:arch:ms:deployment:patterns:sidecar`
 
 
-.. figure:: ../images/service-mesh-pattern.svg
+.. figure:: patterns/service-mesh.svg
+   :name: intersect:arch:ms:deployment:patterns:service_mesh:pattern
    :alt: Service Mesh Pattern
 
    Service Mesh Pattern

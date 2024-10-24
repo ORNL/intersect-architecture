@@ -21,37 +21,37 @@ As described in the :term:`SoS` :ref:`intersect:arch:examples:aam:sos:logical` f
   planning.
 
 Together, these systems provide microservices for 
-:ref:`system management <intersect:arch:ms:class:infrastructure:system_mgmt>`, 
-:ref:`data management <intersect:arch:ms:class:infrastructure:data_info>`,
-:ref:`experiment control <intersect:arch:ms:class:experiment:control>`, and
-:ref:`computing <intersect:arch:ms:class:infrastructure:compute>`.
+:ref:`system management <intersect:arch:ms:classification:infrastructure:system>`, 
+:ref:`data management <intersect:arch:ms:classification:infrastructure:data_info>`,
+:ref:`experiment control <intersect:arch:ms:classification:experiment:control>`, and
+:ref:`computing <intersect:arch:ms:classification:infrastructure:compute>`.
 
-As described in :ref:`intersect:arch:ms:class:infrastructure:system_mgmt`, each
+As described in :ref:`intersect:arch:ms:classification:infrastructure:system`, each
 :term:`AM` system listed above is expected to provide a *System Management Service*. 
 This service manages a catalog of information about the system and its components including 
 associated resources, services, and subsystems via the 
-:ref:`System Information Catalog capability <intersect:arch:ms:capability:infrastructure:system_mgmt:sys_info_catalog>`.
+:ref:`System Information Catalog capability <intersect:arch:ms:classification:infrastructure:capabilities:system_info_catalog>`.
 The management service also enables control and status monitoring of services and subsystems
-via the :ref:`System Manager capability <intersect:arch:ms:capability:infrastructure:system_mgmt:sys_manager>`.
+via the :ref:`System Manager capability <intersect:arch:ms:classification:infrastructure:capabilities:system_manager>`.
 
 Each of the :term:`AM` systems listed above requires local data storage and thus should
 provide a *Data Management Service* as described in 
-:ref:`intersect:arch:ms:class:infrastructure:data_info:data_mgmt`. This service gives local
+:ref:`intersect:arch:ms:classification:infrastructure:data_info:data_mgmt`. This service gives local
 and remote services access to the local data storage via the
-:ref:`Data Storage capability <intersect:arch:ms:capability:infrastructure:data_info:storage>`
+:ref:`Data Storage capability <intersect:arch:ms:classification:infrastructure:capabilities:data_storage>`
 and enables remote data transfers to and from the local storage via the
-:ref:`Data Transfer Endpoint capability <intersect:arch:ms:capability:infrastructure:data_info:transfer_endpoint>`.
-In addition, to facilitate streaming of experiment observational data from the 
+:ref:`Data Transfer Endpoint capability <intersect:arch:ms:classification:infrastructure:capabilities:data_transfer_endpoint>`.
+In addition, to facilitate streaming of experiment observational data from the
 **Additive Manufacturing System** to the **Experiment Steering Analysis System**, the data management
 services on these systems should provide the
-:ref:`Data Stream capability <intersect:arch:ms:capability:infrastructure:data_info:stream>`
+:ref:`Data Stream capability <intersect:arch:ms:classification:infrastructure:capabilities:data_stream>`
 that extends the functionality of the Data Storage capability.
 
 For experiment control, the **Additive Manufacturing System** and **Spallation Neutron Source System** 
 should each provide an *Instrument Service*.
 In the **Additive Manufacturing System**, this service enables control of the 3D metal printer and observation
 of thermocouple and IR camera data by interfacing with the :term:`ROS` software :cite:`ROS-software` and exposing the
-:ref:`Instrument Controller capability <intersect:arch:ms:capability:experiment:instrument:controller>`.
+:ref:`Instrument Controller capability <intersect:arch:ms:classification:experiment:capabilities:instrument_control>`.
 The ROS Instrument Controller supports three actions: (1) start a print job, (2) stop a print job, and (3) update printer control parameters.
 In addition, it creates data products for the files corresponding to sampled thermocouple and IR camera observations and adds them to data streams for consumption by the :term:`ADAMANTINE` thermomechanical simulation running on the **Experiment Steering Analysis System**.
 The Instrument Service for the **Spallation Neutron Source System** interfaces with the 
@@ -62,11 +62,11 @@ The **Experiment Steering Analysis System** and **Design of Experiments Analysis
 resources for online and post-mortem analysis of the experimental data. Each system is 
 expected to support the execution of a pre-configured application on the associated
 local computational resource via the 
-:ref:`Application Execution capability <intersect:arch:ms:capability:infrastructure:computing:app_execution>`.
-This capability in turn depends on a local *Compute Service* providing either the 
-:ref:`Compute Allocation capability <intersect:arch:ms:capability:infrastructure:computing:allocation>`
-or the 
-:ref:`Compute Queue capability <intersect:arch:ms:capability:infrastructure:computing:batch_queue>`.
+:ref:`Application Execution capability <intersect:arch:ms:classification:infrastructure:capabilities:compute_application>`.
+This capability in turn depends on a local *Compute Service* providing either the
+:ref:`Compute Allocation capability <intersect:arch:ms:classification:infrastructure:capabilities:compute_allocation>`
+or the
+:ref:`Compute Queue capability <intersect:arch:ms:classification:infrastructure:capabilities:compute_queue>`.
 
 .. list-table:: Microservice Capabilities for Infrastructure System Services
    :name: intersect:arch:examples:aam:ms:capabilities

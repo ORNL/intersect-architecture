@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:class:infrastructure:compute:
+.. _intersect:arch:ms:classification:infrastructure:compute:
 
 Microservice Capabilities for Computation
 =========================================
@@ -36,7 +36,7 @@ will be immediately rejected. On-demand computing is currently not widely
 supported by :term:`HPC` systems, but is readily available in cloud or
 edge computing environments.
 
-.. _`intersect:arch:ms:capability:infrastructure:computing:applications`:
+.. _intersect:arch:ms:classification:infrastructure:compute:applications:
 
 Running Applications using On-Demand or Batch Computing Resources
 -----------------------------------------------------------------
@@ -46,11 +46,11 @@ preconfigured for use in a particular computing environment. The application
 program and any dependent libraries are built for the target environment and
 packaged for use in a microservice providing the *Application Execution*
 capability
-(see :ref:`intersect:arch:ms:capability:infrastructure:computing:app_execution`).
+(see :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_application`).
 This microservice provides default settings for the application's run
 configuration and program arguments. Since the *Application Execution*
 capability extends the *Parameter Configuration* capability
-(see :ref:`intersect:arch:ms:capability:infrastructure:utility:param_config`),
+(see :ref:`intersect:arch:ms:classification:infrastructure:capabilities:general_param_config`),
 the application microservice can also expose any configuration or parameter
 settings as client tunables.
 
@@ -58,75 +58,75 @@ The underlying mechanism to execute the application via an on-demand allocation
 or a job script is provided by another microservice that serves as the interface
 to the target environment's compute resource manager. The compute resource manager
 microservice provides the *Compute Allocation* capability
-(see :ref:`intersect:arch:ms:capability:infrastructure:computing:allocation`),
+(see :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_allocation`),
 the *Compute Queue* capability
-(see :ref:`intersect:arch:ms:capability:infrastructure:computing:batch_queue`),
+(see :ref:`intersect:arch:ms:classification:infrastructure:capabilities:compute_queue`),
 or both depending on the usage model of the environment.
 
-:numref:`fig:intersect:arch:ms:sequences:compute:resource:app_ondemand` shows
+:numref:`intersect:arch:ms:classification:infrastructure:compute:applications:ondemand` shows
 an example orchestration sequence for running such an application
 within an on-demand allocation of computing resources.
-:numref:`fig:intersect:arch:ms:sequences:compute:resource:allocation` shows the
+:numref:`intersect:arch:ms:classification:infrastructure:compute:applications:allocation` shows the
 sub-sequence relating to on-demand allocation of computing resources, while
-:numref:`fig:intersect:arch:ms:sequences:compute:resource:run` shows the
+:numref:`intersect:arch:ms:classification:infrastructure:compute:applications:run` shows the
 sub-sequence for running the application program within the allocation.
 
-.. _fig:intersect:arch:ms:sequences:compute:resource:app_ondemand:
-.. figure:: ../../images/compute-app-ondemand.png
+.. figure:: compute/ondemand.png
+   :name: intersect:arch:ms:classification:infrastructure:compute:applications:ondemand
    :scale: 25
    :alt: Interaction sequence for on-demand application execution
 
    Microservice interaction sequence for running an application within an
    on-demand allocation of computing resources.
 
-.. _fig:intersect:arch:ms:sequences:compute:resource:allocation:
-.. figure:: ../../images/compute-resource-allocation.png
+.. figure:: compute/allocation.png
+   :name: intersect:arch:ms:classification:infrastructure:compute:applications:allocation
    :scale: 25
    :alt: Interaction sequence for allocation of computing resources
 
    Microservice interaction sequence for allocating and releasing computing
    resources.
 
-.. _fig:intersect:arch:ms:sequences:compute:resource:run:
-.. figure:: ../../images/compute-resource-run.png
+.. figure:: compute/run.png
+   :name: intersect:arch:ms:classification:infrastructure:compute:applications:run
    :scale: 25
    :alt: Interaction sequence for running within allocated computing resources
 
    Microservice interaction sequence for running and monitoring a program
    within allocated computing resources.
 
-:numref:`fig:intersect:arch:ms:sequences:compute:resource:app_batch` shows an
+:numref:`intersect:arch:ms:classification:infrastructure:compute:applications:batch` shows an
 example orchestration sequence for running such an application
 using a batch computing job.
-:numref:`fig:intersect:arch:ms:sequences:compute:resource:job` shows the
+:numref:`intersect:arch:ms:classification:infrastructure:compute:applications:job` shows the
 sub-sequence capturing the batch job submission.
-:numref:`fig:intersect:arch:ms:sequences:compute:resource:queue` shows
+:numref:`intersect:arch:ms:classification:infrastructure:compute:applications:queue` shows
 the sub-sequence to discover available batch computing queues.
 
-.. _fig:intersect:arch:ms:sequences:compute:resource:app_batch:
-.. figure:: ../../images/compute-app-batch.png
+.. figure:: compute/batch.png
+   :name: intersect:arch:ms:classification:infrastructure:compute:applications:batch
    :scale: 25
    :alt: Interaction sequence for application execution in a batch compute job
 
    Microservice interaction sequence for running an application within a
    batch computing job.
 
-.. _fig:intersect:arch:ms:sequences:compute:resource:job:
-.. figure:: ../../images/compute-resource-job.png
+.. figure:: compute/job.png
+   :name: intersect:arch:ms:classification:infrastructure:compute:applications:job
    :scale: 25
    :alt: Interaction sequence for running and monitoring a batch compute job
 
    Microservice interaction sequence for running and monitoring a batch
    compute job.
 
-.. _fig:intersect:arch:ms:sequences:compute:resource:queue:
-.. figure:: ../../images/compute-resource-queue.png
+.. figure:: compute/queue.png
+   :name: intersect:arch:ms:classification:infrastructure:compute:applications:queue
    :scale: 25
    :alt: Interaction sequence for discovery of batch computing queues
 
    Microservice interaction sequence for discovery of batch computing queues.
 
-.. _`intersect:arch:ms:capability:infrastructure:computing`:
+.. _intersect:arch:ms:classification:infrastructure:compute:capability:
 
 Capability Definitions for Computation
 --------------------------------------

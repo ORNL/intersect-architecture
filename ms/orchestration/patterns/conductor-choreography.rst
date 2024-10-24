@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:orchestration:patterns:choreography:
+.. _intersect:arch:ms:orchestration:patterns:conductor_choreography:
 
 Conductor vs. Choreography
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

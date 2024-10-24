@@ -34,7 +34,7 @@ capabilities (mapping the :ref:`intersect:arch:sos` to the
   - Message Routing Capability: *Route messages between different participants
     in the federation of systems*
 
-The :term:`CS` supports the :ref:`intersect:arch:ms:interactions`.
+The :term:`CS` supports the :ref:`intersect:arch:ms:interaction`.
 
 .. admonition:: Minimum requrement
    :name: intersect:arch:sos:logical:systems:cs:minimum
@@ -47,7 +47,7 @@ The :term:`CS` supports the :ref:`intersect:arch:ms:interactions`.
    once.
 
    At minimum, the :term:`CS` supports the
-   :ref:`intersect:arch:ms:interactions`.
+   :ref:`intersect:arch:ms:interaction`.
 
 .. admonition:: Optional requrement
    :name: intersect:arch:sos:logical:systems:cs:optional

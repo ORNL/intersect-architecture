@@ -1,4 +1,4 @@
-.. _intersect:arch:ms:class:experiment:data:
+.. _intersect:arch:ms:classification:experiment:data:
 
 Microservice Capabilities for Managing Experiment Data 
 ======================================================
