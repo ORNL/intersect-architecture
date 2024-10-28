@@ -76,6 +76,7 @@ Solution
    .. figure:: local_steering/components.png
       :name: intersect:arch:pat:catalog:architectural:local_steering:components
       :align: center
+      :alt: Pattern components and control/data flow
 
       Local Experiment Steering architectural pattern components and
       control/data flow

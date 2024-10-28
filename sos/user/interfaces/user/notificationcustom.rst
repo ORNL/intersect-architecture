@@ -55,5 +55,6 @@ An example interface is depicted in :numref:`figures:user:user:notificationcusto
    :name: figures:user:user:notificationcustom:notifcustom
    :align: center
    :width: 600
+   :alt: An example interface
 
    Users can choose which notifications to get and how to get them.

@@ -48,9 +48,9 @@ Solution
    .. figure:: control/components.png
       :name: intersect:arch:pat:catalog:strategic:control:components
       :align: center
+      :alt: Pattern components and control/data flow
 
       Experiment Control strategic pattern components and control/data flow
-
 
    This pattern offers an open loop control with safety-related feedback on
    the experiment only. Experiment plan execution is automated, i.e., its

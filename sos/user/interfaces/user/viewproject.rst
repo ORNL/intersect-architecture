@@ -43,5 +43,6 @@ An example interface is depicted in :numref:`figures:user:user:viewproject:ex1`.
    :name: figures:user:user:viewproject:ex1
    :width: 600
    :align: center
+   :alt: An example interface
 
    A representation of a User’s project view..

@@ -49,5 +49,6 @@ An example interface is depicted in :numref:`figures:user:user:startcampaign:cam
    :name: figures:user:user:startcampaign:campstart
    :width: 600
    :align: center
+   :alt: An example interface
 
    User authenticates resource for the campaign.

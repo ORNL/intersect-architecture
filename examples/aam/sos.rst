@@ -84,6 +84,7 @@ These physical components interact with each other as follows
 .. figure:: sos/physical.png
    :name: intersect:arch:examples:aam:sos:physical:components
    :align: center
+   :alt: The INTERSECT autonomous additive manufacturing physical components
 
    Physical components of the :term:`INTERSECT` :term:`AAM` system and their
    interactions
@@ -96,7 +97,7 @@ Logical View
 In the :term:`INTERSECT` :term:`AAM`\'s :ref:`intersect:arch:sos:logical`, the
 physical components are abstracted as iteracting :term:`INTERSECT`
 infrastructure systems as follows
-(:numref:`intersect:arch:examples:aam:sos:physical:systems`):
+(:numref:`intersect:arch:examples:aam:sos:logical:infrastructure`):
 
 
 - **Additive Manufacturing System:** The 3D metal printer with its control
@@ -115,8 +116,9 @@ infrastructure systems as follows
   planning.
 
 .. figure:: sos/systems.png
-   :name: intersect:arch:examples:aam:sos:physical:systems
+   :name: intersect:arch:examples:aam:sos:logical:infrastructure
    :align: center
+   :alt: The INTERSECT autonomous additive manufacturing infrastructure systems
 
    Infrastructure systems of the :term:`INTERSECT` :term:`AAM` system and their
    interactions
@@ -300,6 +302,7 @@ aspects that impact the :term:`AM` process depicted in
 .. figure:: sos/aam-process.png
    :name: intersect:arch:examples:aam:sos:operational:process
    :align: center
+   :alt: The INTERSECT autonomous additive manufacturing operational steps
 
    Operational steps of the :term:`AM` process
 
@@ -330,6 +333,7 @@ view of the platform, camera, and laser head are shown in
    :name: intersect:arch:examples:aam:sos:operational:okuma
    :align: center
    :width: 600
+   :alt: The Okuma MU-8000V Laser EX device
 
    The Okuma MU-8000V Laser EX device and its control station. The milling
    platform in the center is in a level position but can rotate as needed. The
@@ -340,6 +344,7 @@ view of the platform, camera, and laser head are shown in
    :name: intersect:arch:examples:aam:sos:operational:okuma-zoom
    :align: center
    :width: 400
+   :alt: The Okuma MU-8000V Laser EX device (closer view)
 
    Closer view of the milling platform, laser head (right - gold tip)
    and thermal camera (left - plastic cover).
@@ -401,15 +406,15 @@ Processes
 The :ref:`intersect:arch:sos:user:processes` implemented by :term:`INTERSECT`
 :term:`AAM` system may include some combination of the following, among others:
 
-:ref:`Login<intersect:arch:sos:user:processes:process-login>`
+:ref:`Login<intersect:arch:sos:user:processes:login>`
    As part of conducting an :term:`INTERSECT` :term:`AAM` experiment, the
    :term:`DE` logs into the :term:`INTERSECT` user interface.
 
-:ref:`Compile DAG<intersect:arch:sos:user:processes:process-compile>`
+:ref:`Compile DAG<intersect:arch:sos:user:processes:compile>`
    The :term:`DE` uses the :term:`INTERSECT` user interface to assemble the
    necessary resources to accomplish an :term:`AAM` experiment.
 
-:ref:`Request resources<intersect:arch:sos:user:processes:process-request>`
+:ref:`Request resources<intersect:arch:sos:user:processes:request>`
    The physical resources depicted in
    :numref:`intersect:arch:examples:aam:sos:physical:components`
    are represented in :term:`INTERSECT` as resources and need to be allocated

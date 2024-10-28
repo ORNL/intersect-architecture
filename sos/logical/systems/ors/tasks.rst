@@ -23,6 +23,7 @@ Task
   :name: intersect:arch:sos:logical:systems:ors:tasks:relationships
   :align: center
   :width: 600
+  :alt: Abstract example of task, command and action relationship
 
   An abstract example of the relationship of task, command and action
 
@@ -37,5 +38,6 @@ B.
   :name: intersect:arch:sos:logical:systems:ors:tasks:example
   :align: center
   :width: 600
+  :alt: Concrete example of task, command and action relationship
 
   A concrete example of the relationship of task, command and action

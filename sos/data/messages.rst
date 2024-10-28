@@ -4,7 +4,7 @@ Messages
 ========
 
 As depicted in :numref:`intersect:arch:sos:data:messages:types`, there are 5
-base message types in the INTERSECT messaging schema:
+base message types in the :term:`INTERSECT` messaging schema:
 
 Command
    The *CommandMessage* type is a command message sent from a source to a
@@ -48,8 +48,9 @@ the need for a single, monolithic schema.
    :name: intersect:arch:sos:data:messages:types
    :align: center
    :width: 600
+   :alt: Base data types for INTERSECT messages.
 
-   Base data types for INTERSECT messages.
+   Base data types for :term:`INTERSECT` messages.
 
 
 .. _intersect:arch:sos:data:messages:schema:

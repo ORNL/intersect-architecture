@@ -85,6 +85,7 @@ Solution
    .. figure:: workflow/dag.png
       :name: intersect:arch:pat:catalog:strategic:workflow:dag
       :align: center
+      :alt: Pattern components and control/data flow
 
       Example of a Multi-Experiment Workflow strategic pattern directed acyclic graph
 

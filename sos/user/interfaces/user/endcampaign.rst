@@ -45,11 +45,10 @@ Methodologies
 
 An example interface is depicted in :numref:`figures:user:user:endcampaign:campend`
 
+.. figure:: ./fig-userview-campend.png
+   :name: figures:user:user:endcampaign:campend
+   :width: 600
+   :align: center
+   :alt: An example interface
 
-
-   .. figure:: ./fig-userview-campend.png
-      :name: figures:user:user:endcampaign:campend
-      :width: 600
-      :align: center
-
-      A dashboard of recent campaigns is shown at the end of the campaign.
+   A dashboard of recent campaigns is shown at the end of the campaign.

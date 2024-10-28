@@ -125,16 +125,18 @@ Methodologies
 
 An example interface is depicted in :numref:`figures:user:user:requestresource:requestres` and :numref:`figures:user:user:requestresource:requestres-cap`
 
-   .. figure:: ./fig-userview-requestres.png
-      :name: figures:user:user:requestresource:requestres
-      :width: 600
-      :align: center
-	     
-      Form to add resource to INTERSECT.
+.. figure:: ./fig-userview-requestres.png
+   :name: figures:user:user:requestresource:requestres
+   :width: 600
+   :align: center
+   :alt: An example interface
+     
+   Form to add resource to INTERSECT.
 
-   .. figure:: ./fig-userview-requestres-cap.png
-      :name: figures:user:user:requestresource:requestres-cap
-      :width: 600
-      :align: center
+.. figure:: ./fig-userview-requestres-cap.png
+   :name: figures:user:user:requestresource:requestres-cap
+   :width: 600
+   :align: center
+   :alt: An example interface
 
-      Capability that resource is capable of supporting.
+   Capability that resource is capable of supporting.

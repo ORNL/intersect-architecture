@@ -30,6 +30,7 @@ the capability to list all the datasets it is holding on both.
    :name: intersect:arch:sos:logical:systems:systems
    :align: center
    :width: 800
+   :alt: Infrastructure systems, logical systems, subsystems, and services
 
    Infrastructure systems, logical systems, subsystems, and services
 

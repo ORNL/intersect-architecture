@@ -159,5 +159,6 @@ An example interface is depicted in
    :name: intersect:arch:sos:user:interfaces:owner:monitor
    :align: center
    :width: 800
+   :alt: An example interface
 
    Owners can see who is contributing to what resource.

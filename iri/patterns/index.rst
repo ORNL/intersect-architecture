@@ -43,6 +43,7 @@ in the :ref:`intersect:arch:iri:patterns:time`,
 .. figure:: intersect.png
    :name: intersect:arch:iri:patterns:intersect
    :align: center
+   :alt: Orthogonal relationship between IRI and INTERSECT patterns
 
    Orthogonal relationship between :term:`IRI` patterns and :term:`INTERSECT`
    :ref:`intersect:arch:pat`

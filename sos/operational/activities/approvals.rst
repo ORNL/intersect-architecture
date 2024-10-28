@@ -46,8 +46,6 @@ per-service/resource basis.
    generally the Users/Projects will already exist and the access
    controls will simply enable/disable the existing accounts/groups.
 
-
-
 .. _intersect:arch:sos:operational:activities:approvals:example:
 
 Example
@@ -66,6 +64,7 @@ approval at different stages of a workflow.
    :name: fig:intersect:arch:sos:operational:activities:approvals:seqdiag-planapprove
    :align: center
    :width: 800
+   :alt: Sequence diagram for experiment planning workflow
 
    Sequence diagram for experiment planning workflow that shows an
    ApprovalRequest/ApprovalRequestStatus message exchange.

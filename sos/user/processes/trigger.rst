@@ -1,5 +1,4 @@
-
-.. _`intersect:arch:sos:user:processes:trigger`:
+.. _intersect:arch:sos:user:processes:trigger:
 
 Trigger Workflow
 ================

@@ -64,6 +64,7 @@ Solution
    .. figure:: design/components.png
       :name: intersect:arch:pat:catalog:strategic:design:components
       :align: center
+      :alt: Pattern components and control/data flow
 
       Design of Experiments strategic pattern components and control/data flow
 

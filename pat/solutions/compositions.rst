@@ -59,6 +59,7 @@ as its experiment to control from an experiment plan perspective.
 .. figure:: compositions/strategic.png
    :name: intersect:arch:pat:compositions:strategic
    :align: center
+   :alt: Example of a strategic pattern composition
 
    Example: Components and control/data flow of
    :ref:`intersect:arch:pat:catalog:strategic:steering`
@@ -83,6 +84,7 @@ architectural pattern composition is shown in
 .. figure:: compositions/architectural.png
    :name: intersect:arch:pat:compositions:architectural
    :align: center
+   :alt: Example of an architectural pattern composition
 
    Example: Components and control/data flow of the
    :ref:`intersect:arch:pat:catalog:architectural:local_steering` and

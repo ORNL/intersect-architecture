@@ -30,11 +30,13 @@ and categorize.
 .. figure:: anatomy/experiment.png
    :name: intersect:arch:pat:anatomy:experiment
    :align: center
+   :alt: Experiment loop control problem
 
    Experiment loop control problem
 
 .. figure:: anatomy/workflow.png
    :name: intersect:arch:pat:anatomy:workflow
    :align: center
+   :alt: Multi-experiment workflow loop control problem
 
    Multi-experiment workflow loop control problem

@@ -19,6 +19,7 @@ are ready and safe to use immediately (i.e., “born qualified”).
    :name: intersect:arch:examples:aam:aam
    :align: center
    :width: 800
+   :alt: The INTERSECT autonomous additive manufacturing approach
 
    The :term:`INTERSECT` :term:`AAM` system performs 3D metal printing with
    in-situ observations and thermo-mechanical simulations to build

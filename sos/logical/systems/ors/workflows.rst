@@ -44,6 +44,7 @@ the cycle to end it.
   :name: intersect:arch:sos:logical:systems:ors:workflows:acyclic
   :align: center
   :width: 1000
+  :alt: Example of an acyclic workflow
 
   Example of an acyclic :term:`INTERSECT` :term:`workflow` using tasks
   containing one or more commands, and each command containing one or more
@@ -53,6 +54,7 @@ the cycle to end it.
   :name: intersect:arch:sos:logical:systems:ors:workflows:cyclic
   :align: center
   :width: 1000
+  :alt: Example of a cyclic workflow
 
   Example of a cyclic :term:`INTERSECT` :term:`workflow` using tasks
   containing one or more commands, and each command containing one or more

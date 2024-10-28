@@ -50,5 +50,6 @@ An example interface is depicted in
    :name: intersect:arch:sos:user:interfaces:owner:viewresource
    :align: center
    :width: 800
+   :alt: An example interface
 
    A list of resources separated by Type, Category, and Provider.

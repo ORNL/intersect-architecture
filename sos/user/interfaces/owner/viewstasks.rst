@@ -39,5 +39,6 @@ An example interface is depicted in
    :name: intersect:arch:sos:user:interfaces:owner:viewtasks
    :align: center
    :width: 800
+   :alt: An example interface
 
    Owner's view of resource notifications regarding access.

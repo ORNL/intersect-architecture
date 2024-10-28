@@ -29,6 +29,7 @@ patterns.
 .. figure:: classification.png
    :name: intersect:arch:pat:catalog:classification
    :align: center
+   :alt: Classification of the science use case design patterns
 
    Classification of the science use case design patterns
 

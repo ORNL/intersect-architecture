@@ -1,5 +1,4 @@
-
-.. _`intersect:arch:sos:user:processes:process-submit`:
+.. _intersect:arch:sos:user:processes:submit:
 
 Submit Job
 ==========

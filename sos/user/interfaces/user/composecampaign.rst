@@ -205,6 +205,7 @@ An example interface is depicted in :numref:`figures:user:user:composecampaign:c
    :name: figures:user:user:composecampaign:composecamp
    :align: center
    :width: 600
+   :alt: An example interface
 	     
    These fields are prompted regardless of chosen template.
 
@@ -212,5 +213,6 @@ An example interface is depicted in :numref:`figures:user:user:composecampaign:c
    :name: figures:user:user:composecampaign:composecamp-run
    :align: center
    :width: 600
+   :alt: An example interface
 
    User must configure run-time behavior before starting campaign.

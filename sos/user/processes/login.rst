@@ -1,10 +1,9 @@
-
-.. _`intersect:arch:sos:user:processes:process-login`:
+.. _intersect:arch:sos:user:processes:login:
 
 Login Web
 =========
 
-:numref:`figures:user:processes:user-login-process` applies to this and
+:numref:`intersect:arch:sos:user:processes:login:process` applies to this and
 following use cases.
 
 The login process is responsible for receiving user login information,
@@ -64,13 +63,13 @@ explicit commands are shown. The ability to share these types of
 commands or scripts enables users to onboard and become effective
 quickly by bootstrapping off one another.
 
-.. _figures:user:processes:user-login-process:
-.. figure:: fig-user-login-process.png
+.. figure:: login/process.png
+   :name: intersect:arch:sos:user:processes:login:process
    :align: center
    :width: 800
+   :alt: Login process for INTERSECT users
 
-   Login process for INTERSECT users.
-
+   Login process for :term:`INTERSECT` users.
 
 Preconditions
 -------------
@@ -84,7 +83,6 @@ Preconditions
 -  User Profile Service is live (optional, but preferred).
 
 -  Federated Recipes is live (optional, but preferred).
-   
 
 Post-conditions
 ---------------

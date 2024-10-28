@@ -1,5 +1,4 @@
-
-.. _`intersect:arch:sos:user:processes:register-job`:
+.. _intersect:arch:sos:user:processes:register-job:
 
 Register Job
 ============

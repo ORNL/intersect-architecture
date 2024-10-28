@@ -32,6 +32,7 @@ An example user INTERSECT dashboard is depicted in :numref:`figures:user:user:lo
    :name: figures:user:user:login:ex1
    :width: 600
    :align: center
+   :alt: An example interface
 
    A representation of the home-screen that would be displayed once a
    User logs into the INTERSECT web interface..

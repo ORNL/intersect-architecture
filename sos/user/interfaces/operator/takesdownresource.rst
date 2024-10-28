@@ -57,5 +57,6 @@ An example interface is depicted in
    :name: intersect:arch:sos:user:interfaces:operator:takedown
    :align: center
    :width: 800
+   :alt: An example interface
 
    This take down takes place in the detailed view.

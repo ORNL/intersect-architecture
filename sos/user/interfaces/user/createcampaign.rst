@@ -190,6 +190,7 @@ An example of creating campaigns is depicted in :numref:`figures:user:user:creat
    :name: figures:user:user:createcampaign:ex1
    :align: center
    :width: 600
+   :alt: An example interface
 
    Detailed view of a single scientific Campaign as viewed by a participant (composer, Owner or
    Operator of a requested Resource, Administrator) of the Campaign. This view focuses on the
@@ -200,6 +201,7 @@ An example of creating campaigns is depicted in :numref:`figures:user:user:creat
    :name: figures:user:user:createcampaign:ex2
    :align: center
    :width: 600
+   :alt: An example interface
 
    Detailed view of a single scientific Campaign as viewed by a participant (composer, Owner or
    Operator of a requested Resource, Administrator) of the Campaign. This view focuses on the
