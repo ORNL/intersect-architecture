@@ -20,3 +20,4 @@ between the different components. The logical view defines
    systems/index
    adapters
    errors
+   resilience/index
