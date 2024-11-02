@@ -29,7 +29,6 @@ Error and Failure Types
 types, such as an outage, a degradation of performance or functionality, or
 erroneous data. They have also different root causes and ocurrence
 propabilities and frequencies.
-
 :ref:`Failures of or errors in<intersect:arch:sos:logical:errors>` essential
 hardware components, such as a sensor in an instrument, a hard drive in an
 instrument controller, or a :term:`general-purpose computing on graphics
@@ -114,3 +113,4 @@ boundary.
 
 Resilience Design Patterns
 --------------------------
+
