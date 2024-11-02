@@ -3,4 +3,114 @@
 Error and Failure Resilience
 ============================
    
-.. todo:: Detail the aspects of error and failure resilience for :ref:`intersect:arch:sos:logical:systems`
+Resilience to :ref:`errors and failures<intersect:arch:sos:logical:errors>` in
+federated ecosystems for instrument science is a critical challenge.
+:ref:`Errors and failures<intersect:arch:sos:logical:errors>` disrupt
+experiments and make them potentially useless, wasting valuable instrument,
+network and computing allocations and creating setbacks for scientists.
+The :ref:`intersect:arch:sos:logical:errors` of the
+:ref:`intersect:arch:sos:logical` defines faults, errors, failures, detection,
+containment, masking, and handling. This part of the
+:ref:`intersect:arch:sos:logical` describes the different options for a
+user-defined response to an error or failure that may enact specific
+containment and mitigation and is within the scope of
+:ref:`intersect:arch:sos:user:roles`. Due to the involved complexities of error
+and failure detection, notification, containment, and mitigation, resilience
+through user-defined responses needs to be an integral part of the federated
+ecosystem through co-design, such that the burden for providing resilience is
+on the system by design and not on the operator or user as an afterthought.
+
+.. _intersect:arch:sos:logical:resilience:types:
+
+Error and Failure Types
+-----------------------
+
+:ref:`Errors and failures<intersect:arch:sos:logical:errors>` have different
+types, such as an outage, a degradation of performance or functionality, or
+erroneous data. They have also different root causes and ocurrence
+propabilities and frequencies.
+
+:ref:`Failures of or errors in<intersect:arch:sos:logical:errors>` essential
+hardware components, such as a sensor in an instrument, a hard drive in an
+instrument controller, or a :term:`general-purpose computing on graphics
+processing unit (GPGPU)<GPGPU>` in a compute resource, are rather rare but do
+exist. Due to the shared nature of the distributed federated ecosystem,
+failures of or errors in essential shared hardware or software components, such
+as due to oversubscription of a shared network or compute resource, are more
+likely. For example, data delivery may get delayed due to high cross-facility
+network usage, or computation in the feedback loop may be slower due to shared
+file system or high-speed network contention. There is also the challenge of
+scalability, since resource contention is more likely with more workflows
+utilizing the shared federated ecosystem. While the federated ecosystem can
+adapt by adding more resources, such adaptation does not happen instantly if
+resources are not available or requires preventative failure mitigation if they
+are.
+
+.. _intersect:arch:sos:logical:resilience:scopes:
+
+Error and Failure Scopes
+------------------------
+
+:ref:`Errors and failures<intersect:arch:sos:logical:errors>` also have
+distinctive impact scopes, depending on location and containment. The
+following failure impact scopes exist in the :term:`INTERSECT` ecosystem:
+
+- A resource exposed by a microservice, e.g., a computer's data storage system
+  or an instrument's sensor'.
+- A microservice exposing resources, e.g., the computer's data storage
+  microservice or the instrument's data transport endpoint microservice.
+- A service consisting of one or more microservices, e.g., the computer's
+  storage management or the instrument's data transfer endpoint service.
+- An infrastructure system with its subsystems, services, and microservices,
+  e.g., the computer's or the instrument's infrastructure system with all of
+  its services and microservices.
+
+User-Defined Responses
+----------------------
+
+Depending on failure type, location, impact, and mitigation, failure
+propagation can be limited by proper containment. For example, a failed
+microservice may be just restarted using a prior checkpoint of its state. Some
+failure scenarios are more complex and involve more elaborate mitigation
+strategies. For example, the failure of a supercomputers’s parallel file system
+will not only make the corresponding data storage microservice, storage
+management service, and data management subsystem fail, but it will also impact
+the compute microservices and services that are part of supercomputers’s
+infrastructure system. Any computation on the supercomputers’s infrastructure
+system would fail and could significantly impact ongoing experiments. In
+contrast, the failure of an instrument's sensor impacts its data transport
+endpoint microservice and data transfer endpoint service, but the experiment
+potentially may continue using other, equivalent sensor data. In stark
+contrast, a failure of an instrument's essential component ends the experiment,
+requiring a safe stop of operation. Mitigation of errors and failures may
+involve:
+
+- Fail-stop, an orderly stop of operation of involved resources, microservices,
+  services, or infrastructure systems (similar to the abort in
+  :ref:`intersect:arch:sos:logical:errors:handling`).
+- Restructuring, reinitializing, rejuvenating, or restarting resources,
+  microservices, services, or infrastructure systems.
+- Failing over to cold, warm, or hot standby resources, microservices,
+  services, or infrastructure systems.
+- Relying on fully redundant resources, microservices, services, or
+  infrastructure systems.
+- Utilizing different versions/implementations of resources, microservices,
+  services, or infrastructure systems.
+- Restructuring, reinitializing, rejuvenating, or restarting workflows
+  impacted by system, service or microservice failures.
+
+This is by no means an exhaustive list of error and failure mitigation options.
+Each individual mitigation solution provides a certain level of resilience,
+i.e., availability, reliability, and performance under failure conditions. Each
+solution also incurs its own cost, such as performance under failure-free
+conditions and the need for additional resources or resource allocations, and
+offers a specific degree of containment, i.e., failures do not propagate
+further. Failure mitigation is either performed completely transparently to
+systems, services, or microservices outside the containment boundary, or
+impacts the :ref:`intersect:arch:sos:logical:systems:ors:workflows:workflow`
+and other systems, services, or microservices using them. A breach of failure
+containment requires further mitigation that creates a new containment
+boundary.
+
+Resilience Design Patterns
+--------------------------
