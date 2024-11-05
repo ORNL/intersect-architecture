@@ -64,6 +64,8 @@ following failure impact scopes exist in the :term:`INTERSECT` ecosystem:
   e.g., the computer's or the instrument's infrastructure system with all of
   its services and microservices.
 
+.. _intersect:arch:sos:logical:resilience:responses:
+
 User-Defined Responses
 ----------------------
 
@@ -111,6 +113,18 @@ and other systems, services, or microservices using them. A breach of failure
 containment requires further mitigation that creates a new containment
 boundary.
 
+.. _intersect:arch:sos:logical:resilience:patterns:
+
 Resilience Design Patterns
 --------------------------
 
+.. todo:: Provide an overview and references to the resilience design patterns
+          and describe how they are being used in the INTERSECT ecosystem
+          context.
+
+.. toctree::
+   :maxdepth: 1
+   :name: intersect:arch:sos:logical:resilience:patterns:toc
+   :caption: Catalog of Resilience Design Patterns
+   
+   checkpoint_recovery
