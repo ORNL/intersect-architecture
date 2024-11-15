@@ -127,4 +127,4 @@ Resilience Design Patterns
    :name: intersect:arch:sos:logical:resilience:patterns:toc
    :caption: Catalog of Resilience Design Patterns
    
-   checkpoint_recovery
+   rollback
