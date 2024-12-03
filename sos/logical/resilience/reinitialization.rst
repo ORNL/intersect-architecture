@@ -1,0 +1,234 @@
+.. _intersect:arch:sos:logical:resilience:patterns::reinitialization:
+
+Reinitialization
+================
+
+.. todo:: Provide an introduction (maybe reuse content from and refer to the
+          strategy, architectural and structural patterns).
+
+.. _intersect:arch:sos:logical:resilience:patterns::nreinitialization:pattern:
+
+Pattern
+-------
+
+Problem
+   A hardware or software error or subsystem failure due to a physical fault
+   (e.g., wear-out or destruction) or a design fault (e.g., resource
+   underprovisioning) causes a software, such as a service, to experience an
+   error or failure.
+
+Context
+   The pattern applies to a system that has the following characteristics:
+   
+   -  The system is deterministic, i.e., forward progress of the system is
+      defined in terms of the input state to the system and the execution steps
+      completed since system initialization.
+   
+   -  The system has well-defined parameters that enable a monitoring system to
+      discover the presence of an existing or future fault, error, or failure
+      in the behavior of the monitored system.
+   
+   -  The interaction between the monitored and monitoring systems is bounded
+      in terms of time.
+   
+   -  The monitoring system has the capability to readily analyze the behavior
+      of the monitored system to detect or predict a fault, error, or failure.
+   
+   -  The experienced fault, error, or failure must not be persistent.
+
+Forces
+   -  The interactions between the monitoring and monitored systems may
+      interfere with the operation of the monitored system, specifically its
+      performance.
+   
+   -  While the frequency and duration of these interactions must be minimized
+      to reduce the monitoring overhead, the interactions must be able to
+      detect or predict a fault, error, or failure in the monitored system.
+   
+   -  The diagnostic resolution, i.e., the degree of accuracy of the fault
+      diagnosis, must be high to be effective.
+   
+   -  The ability of the system to reinitialize subsystems or the entire system
+      must permit system operation that is functionally equivalent to the
+      fault-, error-, and failure-free operation.
+   
+   -  The reinitializing of a subsystem or system is often a slow process and
+      causes an interruption.
+
+Solution
+   This pattern alleviates the impact of a fault, error, or failure on system
+   operation by restoring the affected subsystem or system to its initial
+   state. It has a detection and a containment and mitigation component that
+   acts upon the notification from the detection component.
+   
+   The detection component enables the discovery of an existing or future
+   fault, error, or failure in the system. It enables its containment and
+   mitigation by notifying the system about it with location and type
+   information. The solution requires a monitoring system, which may be a
+   subsystem of the monitored system or an external independent system, to
+   observe key parameters of the monitored system and to notify the monitored
+   system when these parameters deviate. This pattern does not specify the
+   detailed method of detection or prediction.
+   
+   The containment and mitigation component acts upon the notification from the
+   detection component by restoring the affected subsystem or system to its
+   initial state, i.e., a reset. The pattern may create subsystems out of the
+   system to temporarily isolate, but not permanently exclude, the affected
+   subsystem. The interconnection between the subsystems is restored after
+   subsystem or system reinitialization. The components of this pattern are
+   illustrated in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:components`.
+   
+   .. figure:: reinitialization/components.png
+      :name: intersect:arch:sos:logical:resilience:patterns:reinitialization:components
+      :align: center
+      :alt: Reinitialization pattern components
+   
+      Reinitialization pattern components
+
+Capability
+   A system using this pattern is able to continue to operate in the presence
+   of a non-permanent fault, error, or failure with significant interruption
+   and all or at least some loss of progress. This pattern provides
+   detection/prediction, containment, and mitigation of a future or existing
+   fault, error, or failure in the system by restoring the affected subsystem
+   or system to its initial state. The flowchart of the pattern is shown in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:flowchart`,
+   the state diagram in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:state_diagram`,
+   and its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:parameters`.
+   
+   .. figure:: reinitialization/flowchart.png
+      :name: intersect:arch:sos:logical:resilience:patterns:reinitialization:flowchart
+      :align: center
+      :alt: Flowchart
+   
+      Flowchart
+   
+   .. figure:: reinitialization/state_diagram.png
+      :name: intersect:arch:sos:logical:resilience:patterns:reinitialization:state_diagram
+      :align: center
+      :alt: State diagram
+   
+      State diagram
+   
+   .. table:: Reinitialization pattern parameters
+      :name: intersect:arch:sos:logical:resilience:patterns:reinitialization:parameters
+      :align: center
+      
+      +---------------+----------------------------------------------------------+
+      | Parameter     | Definition                                               |
+      +===============+==========================================================+
+      | :math:`T_{e}` | Time to execute system progress                          |
+      +---------------+----------------------------------------------------------+
+      | :math:`T_{d}` | Time to detect or predict a fault, error or failure      |
+      +---------------+----------------------------------------------------------+
+      | :math:`T_{i}` | Time to isolate the affected subsystem(s)                |
+      +---------------+----------------------------------------------------------+
+      | :math:`T_{r}` | Time to reset the entire system or affected subsystem(s) |
+      +---------------+----------------------------------------------------------+
+
+Protection Domain
+   The protection domain extends to the monitored system’s state that is not
+   lost due to a subsystem or system reinitialization and to all of its
+   resources that are able to be operate correctly after a reinitialization.
+
+Resulting Context
+   A fault, error, or failure is prevented from affecting the correct operation
+   of the system. While functional equivalency to the original system
+   configuration is maintained through reinitialization, progress in the system
+   is partially or completely lost. The system is interrupted during
+   reinitialization in response to a detected or predicted fault, error, or
+   failure, but is not interrupted during fault-, error-, and failure-free
+   operation. After reinitialization, the system’s ability to prevent a fault,
+   error, or failure from affecting the correct operation of the system remains
+   the same.
+
+   This pattern may be used in conjunction with other patterns that provide
+   detection, containment, and mitigation in a complementary fashion, where some
+   error/failure types are covered by the other pattern(s) and this pattern covers
+   for the remaining error/failure types.
+
+   Performance
+      The failure-free performance :math:`T_{f=0}` is defined by the task’s
+      total execution time without any resilience strategy :math:`T_{E}` and
+      the time to detect or predict a fault, error, or failure :math:`T_{d}`
+      with the total number of input-execute-output cycles :math:`P`. The
+      performance under failure :math:`T` is defined by :math:`T_{f=0}`, plus
+      the time :math:`T_{i}` to isolate the affected subsystem(s), the time
+      :math:`T_{r}` to remove the affected subsystem(s), and the time for work
+      lost (which is assumed to be half of :math:`T_{E}`), where the total
+      time to isolate the affected subsystem(s), to remove the affected
+      subsystem(s), and the time for work lost is number of faults, errors, or
+      failures time :math:`T_{i}`, :math:`T_{r}`, and half of :math:`T_{E}`.
+      Assuming constant times :math:`T_{d}` (:math:`t_{d}`), :math:`T_{i}`,
+      and, :math:`T_{r}`, :math:`T` can be defined using the :term:`mean-time
+      to failure (MTTF)<MTTF>` :math:`M_{u}` as
+
+      .. math::
+      
+         \begin{aligned}
+           T &=  T_{E} + P(t_{d}) + \frac{T_{E}}{M_{u}} \left(T_{i} + T_{r} + T_{E}*0.5\right)
+         \end{aligned}
+      
+   Reliability
+      Given that the pattern enables the resumption of correct operation after
+      an error or failure, the reliability of a system employing it is defined
+      by errors and failures that are not handled by the pattern, such as
+      failures of the persistent storage system. The reliability after applying
+      the pattern :math:`R(t)` can be obtained using the performance under
+      failure :math:`T` and the failure rate :math:`\lambda_{u}` (or its
+      inverse, the :term:`MTTF`, :math:`M_{u}`) of the unprotected part of the
+      system.
+
+      .. math::
+      
+         \begin{aligned}
+           R(t) &= e^{-\lambda_{u} T} = e^{-T/M_{u}}
+         \end{aligned}
+
+   Availability
+      The availability of pattern can be calculated using the task's total
+      execution time without the pattern :math:`T_{E}` and the performance with
+      the pattern :math:`T`. :math:`T_{E}` is :term:`planned uptime (PU)<PU>`
+      and :math:`T` is :term:`planned uptime (PU)<PU>`, :term:`scheduled
+      downtime (SD)<SD>` and :term:`unscheduled downtime (UD)<UD>`.
+   
+      .. math::
+   
+         \begin{aligned}
+           A &= \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
+         \end{aligned}
+
+Examples
+  A malfunctioning compute node may be rebooted.
+
+Rationale
+   The pattern prevents an existing or future fault, error, or failure from
+   affecting the correct operation of the system through restarting the
+   operation of the system or the affected subsystem. It relies on the ability
+   to assume a configuration in response to a detected or predicted fault,
+   error, or failure that retains functional equivalency with the original
+   system configuration. The pattern may perform proactive actions, such as
+   restarting the system or subsystem before a fault, error, or failure
+   impacts its operation, or reactive actions, such as restarting the system or
+   subsystem upon such an event. Progress in the system is partially or
+   completely lost. Fault, error, or failure detection/prediction is part of
+   the pattern. The containment and mitigation offered by this pattern are
+   independent from the type of fault, error, or failure. The pattern has very
+   little design complexity and has low dependence on a system's architecture.
+
+.. _intersect:arch:sos:logical:resilience:patterns::reinitialization:system:
+
+System Scope
+------------
+
+.. todo:: Describe the application of the pattern in the system scope.
+
+.. _intersect:arch:sos:logical:resilience:patterns::reinitialization:service:
+
+Service Scope
+-------------
+
+.. todo:: Describe the application of the pattern in the service scope.
