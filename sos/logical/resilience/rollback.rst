@@ -21,7 +21,7 @@ Problem
 Context
    The pattern applies to a system that has the following characteristics:
    
-   -  The system is deterministic, i.e. forward progress of the system is
+   -  The system is deterministic, i.e., forward progress of the system is
       defined in terms of the input state to the system and the execution
       steps completed since system initialization.
    
@@ -70,10 +70,10 @@ Solution
    known error/failure-free state of the system. The **log-based strategy**
    relies on logging, i.e., storing the information of events, such as
    messages sent between different parts of the system or to the system as
-   input, on a persistent storage system that is not affected by the error or
-   failure. Upon detection of an error or failure, the log is replayed to
-   recreate the last known error/failure-free state of the system. In contrast
-   to the checkpoint-based strategy, the log-based strategy is able to offer
+   input, on a persistent storage that is not affected by the error or failure.
+   Upon detection of an error or failure, the log is replayed to recreate the
+   last known error/failure-free state of the system. In contrast to the
+   checkpoint-based strategy, the log-based strategy is able to offer
    resilience in the presence of non-deterministic events and for
    non-deterministic systems, as replaying the event log deterministically
    recreates system state.
@@ -87,18 +87,18 @@ Solution
    coordinate the process of checkpointing. The pattern may use the
    following checkpointing methods:
    
-   Coordinated
+   Coordinated Checkpointing
       The subsystems to coordinate the process of creating checkpoints. The
       coordination enables a globally consistent checkpoint state, which
       simplifies the recovery.
    
-   Uncoordinated
+   Uncoordinated Checkpointing
       The subsystems each independently decides when to create their respective
       checkpoints. This has the potential to cause a domino effect, where
       rollbacks propagate among system components due to lack of consistency,
       potentially back to the initial state.
    
-   Communication-based
+   Communication-based Checkpointing
       Each subsystem creates local checkpoints, but periodically also enforces
       coordinated checkpoints between all subsystems as backstop for the domino
       effect.
@@ -109,19 +109,19 @@ Solution
    following logging protocols for non-deterministic events may be used by the
    pattern:
    
-   Pessimistic
+   Pessimistic Message Logging
      The protocol assumes that an error or failure occurs after a
      nondeterministic event in the system. Therefore, the determinant of each
      nondeterministic event is immediately logged to persistent storage. The
      error/failure-free overhead of this approach is high.
    
-   Optimistic
+   Optimistic Message Logging
       The determinants are held in a volatile storage and written to persistent
       storage asynchronously. This protocol makes the optimistic assumption
       that the logging is completed before the occurrence of an error or
       failure. The error/failure-free overhead of this approach is low.
    
-   Causal
+   Causal Message Logging
       This protocol provides a balanced approach by avoiding immediate writing
       to persistent storage (much like the optimistic protocol to reduce
       error/failure-free overhead), but each subsystem commits output
@@ -148,9 +148,9 @@ Capability
    A system using this pattern is able to continue to operate in the presence
    of an error or failure with some interruption and some loss of progress.
    This pattern provides mitigation of an error or failure in the system by
-   preserving system state on a persistent storage system before an error or
-   failure, using a checkpoint-based and or log-based strategy, and restoring
-   the previously preserved system state upon such an event to resume operation
+   preserving system state on a persistent storage before an error or failure,
+   using a checkpoint-based and/or log-based strategy, and restoring the
+   previously preserved system state upon such an event to resume operation
    from a previously preserved known correct state. The flowchart of the
    pattern is shown in
    :numref:`intersect:arch:sos:logical:resilience:patterns::rollback:flowchart`,
@@ -177,23 +177,23 @@ Capability
       :name: intersect:arch:sos:logical:resilience:patterns::rollback:parameters
       :align: center
    
-      +---------------+-----------------------------------------------------+
-      | Parameter     | Definition                                          |
-      +===============+=====================================================+
-      | :math:`T_{e}` | Time to execute (sub-) system progress              |
-      +---------------+-----------------------------------------------------+
-      | :math:`T_{d}` | Time to detect an error/failure (not part of this   |
-      |               | pattern, but shown for completeness)                |
-      +---------------+-----------------------------------------------------+
-      | :math:`T_{l}` | Time to load consistent (sub-) system state and     |
-      |               | progress from storage                               |
-      +---------------+-----------------------------------------------------+
-      | :math:`T_{r}` | Time to rollback to the last known correct state    |
-      |               | (initial and/or previously saved)                   |
-      +---------------+-----------------------------------------------------+
-      | :math:`T_{s}` | Time to save (sub-) system state and progress to    |
-      |               | storage                                             |
-      +---------------+-----------------------------------------------------+
+      +---------------+---------------------------------------------------+
+      | Parameter     | Definition                                        |
+      +===============+===================================================+
+      | :math:`T_{e}` | Time to execute system progress                   |
+      +---------------+---------------------------------------------------+
+      | :math:`T_{d}` | Time to detect an error/failure (not part of this |
+      |               | pattern, but shown for completeness)              |
+      +---------------+---------------------------------------------------+
+      | :math:`T_{l}` | Time to load consistent system state and          |
+      |               | progress from storage                             |
+      +---------------+---------------------------------------------------+
+      | :math:`T_{r}` | Time to rollback to the last known correct state  |
+      |               | (initial and/or previously saved)                 |
+      +---------------+---------------------------------------------------+
+      | :math:`T_{s}` | Time to save system state and progress to         |
+      |               | storage                                           |
+      +---------------+---------------------------------------------------+
 
 Protection Domain
    The protection domain extends to the previously preserved system state that
@@ -271,11 +271,11 @@ Resulting Context
       Given that the pattern enables the resumption of correct operation after
       an error or failure, the reliability of a system employing it is defined
       by errors and failures that are not handled by the pattern, such as
-      failures of the persistent storage system. The reliability after applying
-      the pattern :math:`R(t)` can be obtained using the performance under
-      failure :math:`T` and the failure rate :math:`\lambda_{u}` (or its
-      inverse, the :term:`mean-time to failure (MTTF)<MTTF>`, :math:`M_{u}`) of
-      the unprotected part of the system.
+      failures of the persistent storage. The reliability after applying the
+      pattern :math:`R(t)` can be obtained using the performance under failure
+      :math:`T` and the failure rate :math:`\lambda_{u}` (or its inverse, the
+      :term:`mean-time to failure (MTTF)<MTTF>`, :math:`M_{u}`) of the
+      unprotected part of the system.
       
       .. math::
       
@@ -284,11 +284,11 @@ Resulting Context
          \end{aligned}
       
    Availability
-      The availability of pattern can be calculated using the task's total
-      execution time without pattern :math:`T_{E}` and the performance with
-      pattern :math:`T`. :math:`T_{E}` is :term:`planned uptime (PU)<PU>` and
-      :math:`T` is :term:`planned uptime (PU)<PU>`, :term:`scheduled downtime
-      (SD)<SD>` and :term:`unscheduled downtime (UD)<UD>`.
+      The availability of the pattern can be calculated using the task's total
+      execution time without the pattern :math:`T_{E}` and the performance with
+      the pattern :math:`T`. :math:`T_{E}` is :term:`planned uptime (PU)<PU>`
+      and :math:`T` is :term:`planned uptime (PU)<PU>`, :term:`scheduled
+      downtime (SD)<SD>` and :term:`unscheduled downtime (UD)<UD>`.
    
       .. math::
    
@@ -298,9 +298,9 @@ Resulting Context
 
 Examples
    Many :term:`HPC` applications implement application-level rollback by
-   regularly saving intermediate results to stable storage as checkpoints and
-   supporting the capability to load such a checkpoint in addition to some or
-   all of the original data upon restart to recreate the last known correct
+   regularly saving intermediate results to persistent storage as checkpoints
+   and supporting the capability to load such a checkpoint in addition to some
+   or all of the original data upon restart to recreate the last known correct
    state. Library-based solutions, such as FTI :cite:`Bautista-Gomez:2011`,
    permit tracking of state that needs to be saved and restored. System-level
    solutions, such as DMTCP :cite:`ansel2009dmtcp`, support transparent state
