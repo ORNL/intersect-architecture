@@ -129,3 +129,4 @@ Resilience Design Patterns
    
    reinitialization
    rollback
+   n-modular_redundancy
