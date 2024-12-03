@@ -241,6 +241,9 @@ Acronym and Terminology Definitions
    MD
       Molecular Dynamics
 
+   MDS
+      Metadata service
+
    MDF
       Manufacturing Demonstration Facility
 
@@ -253,11 +256,17 @@ Acronym and Terminology Definitions
    MoDAF
       United Kingdom Ministry of Defence Architecture Framework
 
+   MPI
+      Message passing interface
+
    MTBF
       A system's expected mean-time between failures.
 
    MTTF
       A system's expected mean-time to failure.
+
+   MTTR
+      A system's expected mean-time to recover.
 
    Multi-experiment workflow
       A set of experiments performed in serial (one after another) and/or in
