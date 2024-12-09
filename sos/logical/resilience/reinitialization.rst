@@ -1,4 +1,4 @@
-.. _intersect:arch:sos:logical:resilience:patterns::reinitialization:
+.. _intersect:arch:sos:logical:resilience:patterns:reinitialization:
 
 Reinitialization
 ================
@@ -6,7 +6,7 @@ Reinitialization
 .. todo:: Provide an introduction (maybe reuse content from and refer to the
           strategy, architectural and structural patterns).
 
-.. _intersect:arch:sos:logical:resilience:patterns::nreinitialization:pattern:
+.. _intersect:arch:sos:logical:resilience:patterns:reinitialization:pattern:
 
 Pattern
 -------
@@ -219,14 +219,14 @@ Rationale
    independent from the type of fault, error, or failure. The pattern has very
    little design complexity and has low dependence on a system's architecture.
 
-.. _intersect:arch:sos:logical:resilience:patterns::reinitialization:system:
+.. _intersect:arch:sos:logical:resilience:patterns:reinitialization:system:
 
 System Scope
 ------------
 
 .. todo:: Describe the application of the pattern in the system scope.
 
-.. _intersect:arch:sos:logical:resilience:patterns::reinitialization:service:
+.. _intersect:arch:sos:logical:resilience:patterns:reinitialization:service:
 
 Service Scope
 -------------

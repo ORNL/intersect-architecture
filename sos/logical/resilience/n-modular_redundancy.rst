@@ -1,4 +1,4 @@
-.. _intersect:arch:sos:logical:resilience:patterns::n-modular_redundancy:
+.. _intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:
 
 N-Modular Redundancy
 ====================
@@ -6,7 +6,7 @@ N-Modular Redundancy
 .. todo:: Provide an introduction (maybe reuse content from and refer to the
           strategy, architectural and structural patterns).
 
-.. _intersect:arch:sos:logical:resilience:patterns::n-modular_redundancy:pattern:
+.. _intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:pattern:
 
 Pattern
 -------
@@ -17,7 +17,7 @@ Problem
    experience an error and potentially a subsequent failure.
 
 Context
-  This pattern applies to a system that has the following characteristics:
+   This pattern applies to a system that has the following characteristics:
 
    -  The system is deterministic, i.e., forward progress of the system is
       defined in terms of the input state to the system and the execution steps
@@ -55,10 +55,10 @@ Solution
    and space is possible as well, where there are more functionally identical
    replicas than additional (redundant) system resources. The components of
    this pattern are illustrated in
-   :numref:`intersect:arch:sos:logical:resilience:patterns::n-modular_redundancy:components`.
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:components`.
 
    .. figure:: n-modular_redundancy/components.png
-      :name: intersect:arch:sos:logical:resilience:patterns::n-modular_redundancy:components
+      :name: intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:components
       :align: center
       :alt: N-modular Redundancy pattern components
 
@@ -73,28 +73,28 @@ Capability
    redundancy to system state and optionally to system resources, such that the
    system continues to operate correctly in the presence of such an event. The
    flowchart of the pattern is shown in
-   :numref:`intersect:arch:sos:logical:resilience:patterns::n-modular_redundancy:flowchart`,
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:flowchart`,
    the state diagram in
-   :numref:`intersect:arch:sos:logical:resilience:patterns::n-modular_redundancy:state_diagram`,
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:state_diagram`,
    and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns::n-modular_redundancy:parameters`.
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:parameters`.
 
    .. figure:: n-modular_redundancy/flowchart.png
-      :name: intersect:arch:sos:logical:resilience:patterns::n-modular_redundancy:flowchart
+      :name: intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:flowchart
       :align: center
       :alt: Flowchart
    
       Flowchart
    
    .. figure:: n-modular_redundancy/state_diagram.png
-      :name: intersect:arch:sos:logical:resilience:patterns::n-modular_redundancy:state_diagram
+      :name: intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:state_diagram
       :align: center
       :alt: State diagram
    
       State diagram
    
    .. table:: N-modular Redundancy pattern parameters
-      :name: intersect:arch:sos:logical:resilience:patterns::n-modular_redundancy:parameters
+      :name: intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:parameters
       :align: center
 
       +---------------+---------------------------------------------------+
@@ -205,3 +205,17 @@ Rationale
    failure detection is part of the pattern in the form of output comparison.
    The pattern has some design complexity, as input needs to be replicated and
    output needs to be compared.
+
+.. _intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:system:
+
+System Scope
+------------
+
+.. todo:: Describe the application of the pattern in the system scope.
+
+.. _intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:service:
+
+Service Scope
+-------------
+
+.. todo:: Describe the application of the pattern in the service scope.

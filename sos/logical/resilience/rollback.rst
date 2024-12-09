@@ -1,4 +1,4 @@
-.. _intersect:arch:sos:logical:resilience:patterns::rollback:
+.. _intersect:arch:sos:logical:resilience:patterns:rollback:
 
 Rollback
 ========
@@ -6,7 +6,7 @@ Rollback
 .. todo:: Provide an introduction (maybe reuse content from and refer to the
           strategy, architectural and structural patterns).
 
-.. _intersect:arch:sos:logical:resilience:patterns::rollback:pattern:
+.. _intersect:arch:sos:logical:resilience:patterns:rollback:pattern:
 
 Pattern
 -------
@@ -324,14 +324,14 @@ Rationale
    very little design complexity and has low dependence on a system's
    architecture, which makes it appealing as a general and portable solution.
 
-.. _intersect:arch:sos:logical:resilience:patterns::rollback:system:
+.. _intersect:arch:sos:logical:resilience:patterns:rollback:system:
 
 System Scope
 ------------
 
 .. todo:: Describe the application of the pattern in the system scope.
 
-.. _intersect:arch:sos:logical:resilience:patterns::rollback:service:
+.. _intersect:arch:sos:logical:resilience:patterns:rollback:service:
 
 Service Scope
 -------------
