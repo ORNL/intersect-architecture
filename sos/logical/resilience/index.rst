@@ -129,4 +129,5 @@ Resilience Design Patterns
    
    reinitialization
    rollback
+   active_standby
    n-modular_redundancy
