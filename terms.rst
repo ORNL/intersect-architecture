@@ -241,6 +241,9 @@ Acronym and Terminology Definitions
    MD
       Molecular Dynamics
 
+   MDS
+      Metadata service
+
    MDF
       Manufacturing Demonstration Facility
 
@@ -252,6 +255,18 @@ Acronym and Terminology Definitions
 
    MoDAF
       United Kingdom Ministry of Defence Architecture Framework
+
+   MPI
+      Message passing interface
+
+   MTBF
+      A system's expected mean-time between failures.
+
+   MTTF
+      A system's expected mean-time to failure.
+
+   MTTR
+      A system's expected mean-time to recover.
 
    Multi-experiment workflow
       A set of experiments performed in serial (one after another) and/or in
@@ -325,6 +340,9 @@ Acronym and Terminology Definitions
    PID
       Proportional-integral-derivative
 
+   PU
+     A system's planned uptime or service delivery time.
+
    REST
       REpresentational State Transfer (REST) is an architectural
       pattern for communication between stateless :term:`WWW`
@@ -347,6 +365,9 @@ Acronym and Terminology Definitions
 
    SDC
       Silent data corruption
+
+   SD
+     A system's scheduled downtime or service outage time.
 
    SDK
       Software development kit
@@ -406,6 +427,9 @@ Acronym and Terminology Definitions
       A procedure or a method to evaluate the characteristics of a product,
       service, or system under specific conditions. For example, characterizing
       the chemical composition of a compound in a gas chromatograph.
+
+   UD
+     A system's unscheduled downtime or service outage time.
 
    UI
       User interface
