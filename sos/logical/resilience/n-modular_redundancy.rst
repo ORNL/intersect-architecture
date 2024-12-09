@@ -162,27 +162,28 @@ Resulting Context
            T &= \alpha T_{E} + (1 - \alpha) N T_{E} + T_{a} + P(t_{i} + t_{o}) + \frac{T_{E}}{M_{u}}\left( T_{r} \right)
          \end{aligned}
 
-Reliability
-   Reliability is defined by the parallel reliability of the
-   :math:`N`-redundant execution and the performance under failure :math:`T`.
-
-   .. math::
-
-      \begin{aligned}
-        R_{i}(t) &= 1 - (1 - e^{-\lambda T})^{N}
-      \end{aligned}
-
-Availability
-   The availability :math:`A` of :math:`N`-parallel syaytems is defined by
-   :math:`M_{n}` (or :math:`M`) and :math:`R_{n}` (or :math:`R`) where
-   :math:`M` is the :term:`MTTF` and :math:`R` is the :term:`mean-time to
-   recover (MTTR)<MTTR>` of each individual system.
-
-   .. math::
-
-      \begin{aligned}
-        A_{i} &= 1 - \left(1 - \frac{M}{M + R}\right)^{N}
-      \end{aligned}
+   Reliability
+      Reliability is defined by the parallel reliability of the
+      :math:`N`-redundant execution and the performance under failure
+      :math:`T`.
+   
+      .. math::
+   
+         \begin{aligned}
+           R_{i}(t) &= 1 - (1 - e^{-\lambda T})^{N}
+         \end{aligned}
+   
+   Availability
+      The availability :math:`A` of :math:`N`-parallel syaytems is defined by
+      :math:`M_{n}` (or :math:`M`) and :math:`R_{n}` (or :math:`R`) where
+      :math:`M` is the :term:`MTTF` and :math:`R` is the :term:`mean-time to
+      recover (MTTR)<MTTR>` of each individual system.
+   
+      .. math::
+   
+         \begin{aligned}
+           A_{i} &= 1 - \left(1 - \frac{M}{M + R}\right)^{N}
+         \end{aligned}
 
 Examples
    The use of the pattern in various hardware and software systems enables

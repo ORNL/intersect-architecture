@@ -206,44 +206,45 @@ Resulting Context
         & T = \alpha T_{E} + (1 - \alpha) N T_{E} + T_{a} + P(t_{i} +t_{d} + t_{r}) + \frac{T_{E}}{M}\left( T_{f} \right)
       \end{aligned}
 
-Reliability
-   Reliability :math:`R(t)` is defined by the parallel reliability of the
-   :math:`N`-redundant execution and the performance under failure :math:`T`.
-   It can be simplified for redundancy of identical systems :math:`R_{i}(t)`.
-
-   .. math::
+   Reliability
+      Reliability :math:`R(t)` is defined by the parallel reliability of the
+      :math:`N`-redundant execution and the performance under failure
+      :math:`T`. It can be simplified for redundancy of identical systems
+      :math:`R_{i}(t)`.
    
-      \begin{aligned}
-        R(t)     &= 1 - \prod_{n=1}^{N}(1-e^{-\lambda_{n} T})
-        R_{i}(t) &= 1 - (1 - e^{-\lambda T})^{N}
-      \end{aligned}
-
-Availability
-   The availability :math:`A` of the pattern is defined by :math:`N`-parallel
-   availability and the performance under failure :math:`T`. It can be
-   simplified for redundancy of identical systems :math:`A_{i}`. If
-   :math:`T_{a}`, :math:`T_{i}`, :math:`T_{d}`, :math:`T_{r}`, and
-   :math:`T_{f}` are small enough, non-identical and identical availability can
-   be simplified further, where :math:`M_{n}` (or :math:`M`) is the
-   :term:`mean-time to failure (MTTF)<MTTF>` and :math:`R_{n}` (or :math:`R`)
-   is the  :term:`mean-time to recover (MTTR)<MTTR>` of each individual system
-   (:math:`T_{f}`).
-
-   .. math::
+      .. math::
    
-      \begin{aligned}
-        A     &= 1 - \prod_{n=1}^{N} (1 - A_{n})\notag\\
-              &= 1 - \prod_{n=1}^{N} \left(1 - \frac{T_{E,n}}{T_{n}}\right)
-        A_{i} &= 1 - (1-A)^{N}\notag\\
-              &= 1 - \left(1 - \frac{T_{E}}{T}\right)^{N}
-      \end{aligned}
+         \begin{aligned}
+           R(t)     &= 1 - \prod_{n=1}^{N}(1-e^{-\lambda_{n} T})
+           R_{i}(t) &= 1 - (1 - e^{-\lambda T})^{N}
+         \end{aligned}
    
-   .. math::
+   Availability
+      The availability :math:`A` of the pattern is defined by
+      :math:`N`-parallel availability and the performance under failure
+      :math:`T`. It can be simplified for redundancy of identical systems
+      :math:`A_{i}`. If :math:`T_{a}`, :math:`T_{i}`, :math:`T_{d}`,
+      :math:`T_{r}`, and :math:`T_{f}` are small enough, non-identical and
+      identical availability can be simplified further, where :math:`M_{n}` (or
+      :math:`M`) is the :term:`mean-time to failure (MTTF)<MTTF>` and
+      :math:`R_{n}` (or :math:`R`) is the  :term:`mean-time to recover
+      (MTTR)<MTTR>` of each individual system (:math:`T_{f}`).
    
-      \begin{aligned}
-        A     &= 1 - \prod_{n=1}^{N} \left(1 - \frac{M_{n}}{M_{n} + R_{n}}\right)
-        A_{i} &= 1 - \left(1 - \frac{M}{M + R}\right)^{N}
-      \end{aligned}
+      .. math::
+   
+         \begin{aligned}
+           A     &= 1 - \prod_{n=1}^{N} (1 - A_{n})\notag\\
+                 &= 1 - \prod_{n=1}^{N} \left(1 - \frac{T_{E,n}}{T_{n}}\right)
+           A_{i} &= 1 - (1-A)^{N}\notag\\
+                 &= 1 - \left(1 - \frac{T_{E}}{T}\right)^{N}
+         \end{aligned}
+   
+      .. math::
+   
+         \begin{aligned}
+           A     &= 1 - \prod_{n=1}^{N} \left(1 - \frac{M_{n}}{M_{n} + R_{n}}\right)
+           A_{i} &= 1 - \left(1 - \frac{M}{M + R}\right)^{N}
+         \end{aligned}
 
 Examples
    This pattern is typically used for critical hardware or software systems in
