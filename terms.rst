@@ -211,6 +211,9 @@ Acronym and Terminology Definitions
    INTERSECT
       INTERconnected Science ECosysTem
 
+   IPMI
+      Intelligent Platform Management Interface
+
    IR
       infrared
 
@@ -448,6 +451,9 @@ Acronym and Terminology Definitions
 
    UUID
       Universally Unique Identifier
+
+   VM
+      Virtual machine
 
    VOC
       Volatile organic compound

@@ -56,7 +56,7 @@ Forces
       causes an interruption.
 
 Solution
-   This pattern alleviates the impact of a fault, error, or failure on system
+   The pattern alleviates the impact of a fault, error, or failure on system
    operation by restoring the affected subsystem or system to its initial
    state. It has a detection and a containment and mitigation component that
    acts upon the notification from the detection component.
@@ -145,10 +145,10 @@ Resulting Context
    error, or failure from affecting the correct operation of the system remains
    the same.
 
-   This pattern may be used in conjunction with other patterns that provide
-   detection, containment, and mitigation in a complementary fashion, where some
-   error/failure types are covered by the other pattern(s) and this pattern covers
-   for the remaining error/failure types.
+   The pattern may be used in conjunction with other patterns that provide
+   detection, containment, and mitigation in a complementary fashion, where
+   some error/failure types are covered by the other pattern(s) and this
+   pattern covers for the remaining error/failure types.
 
    Performance
       The failure-free performance :math:`T_{f=0}` is defined by the task’s
