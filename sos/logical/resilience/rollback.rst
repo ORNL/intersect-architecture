@@ -57,7 +57,7 @@ Forces
       forward progress.
 
 Solution
-   This pattern enables the resumption of correct operation of a system
+   The pattern enables the resumption of correct operation of a system
    impacted by an error or failure. It supports resilient operation by
    restoring the system to a known correct state in the event of an error or
    failure. Rollback solutions are classified into checkpoint-based and
@@ -135,10 +135,10 @@ Solution
    known error/failure-free state of the system, skipping snapshots containing
    illegal state and going further back in time in terms of when the snapshot
    was made. The components of this pattern are illustrated in
-   :numref:`intersect:arch:sos:logical:resilience:patterns::rollback:components`.
+   :numref:`intersect:arch:sos:logical:resilience:patterns:rollback:components`.
    
    .. figure:: rollback/components.png
-      :name: intersect:arch:sos:logical:resilience:patterns::rollback:components
+      :name: intersect:arch:sos:logical:resilience:patterns:rollback:components
       :align: center
       :alt: Rollback pattern components
    
@@ -153,28 +153,28 @@ Capability
    previously preserved system state upon such an event to resume operation
    from a previously preserved known correct state. The flowchart of the
    pattern is shown in
-   :numref:`intersect:arch:sos:logical:resilience:patterns::rollback:flowchart`,
+   :numref:`intersect:arch:sos:logical:resilience:patterns:rollback:flowchart`,
    the state diagram in
-   :numref:`intersect:arch:sos:logical:resilience:patterns::rollback:state_diagram`,
+   :numref:`intersect:arch:sos:logical:resilience:patterns:rollback:state_diagram`,
    and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns::rollback:parameters`.
+   :numref:`intersect:arch:sos:logical:resilience:patterns:rollback:parameters`.
    
    .. figure:: rollback/flowchart.png
-      :name: intersect:arch:sos:logical:resilience:patterns::rollback:flowchart
+      :name: intersect:arch:sos:logical:resilience:patterns:rollback:flowchart
       :align: center
       :alt: Flowchart
    
       Flowchart
    
    .. figure:: rollback/state_diagram.png
-      :name: intersect:arch:sos:logical:resilience:patterns::rollback:state_diagram
+      :name: intersect:arch:sos:logical:resilience:patterns:rollback:state_diagram
       :align: center
       :alt: State diagram
    
       State diagram
    
    .. table:: Rollback pattern parameters
-      :name: intersect:arch:sos:logical:resilience:patterns::rollback:parameters
+      :name: intersect:arch:sos:logical:resilience:patterns:rollback:parameters
       :align: center
    
       +---------------+---------------------------------------------------+
@@ -307,7 +307,7 @@ Examples
    saving and restoration using :term:`OS` support.
 
 Rationale
-   This pattern enables a system to tolerate an error or failure through
+   The pattern enables a system to tolerate an error or failure through
    resumption of correct operation after impact. It relies on the capability to
    preserve system state before an error or failure, often in a periodic
    fashion, and restore the previously preserved system state upon such an

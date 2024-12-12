@@ -17,7 +17,7 @@ Problem
    experience an error and potentially a subsequent failure.
 
 Context
-   This pattern applies to a system that has the following characteristics:
+   The pattern applies to a system that has the following characteristics:
 
    -  The system is deterministic, i.e., forward progress of the system is
       defined in terms of the input state to the system and the execution
@@ -38,7 +38,7 @@ Forces
       determine its execution time and resource requirement overhead.
 
 Solution
-   This pattern enables the continuous correct operation of a system impacted
+   The pattern enables the continuous correct operation of a system impacted
    by an error or failure. It supports resilient operation by applying
    redundancy to system state and to system resources. This redundancy is in
    the form of :math:`N` functionally identical replicas, using redundancy in
@@ -103,7 +103,7 @@ Solution
       Active/Standby pattern components
 
 Capability
-   A system using this pattern is able to continue to operate in the presence
+   A system using the pattern is able to continue to operate in the presence
    of an error or failure with none-to-significant interruption and loss of
    progress, depending on the active/standby mode. This pattern provides error
    and/or failure detection and containment in the system by monitoring the
@@ -247,15 +247,15 @@ Resulting Context
          \end{aligned}
 
 Examples
-   This pattern is typically used for critical hardware or software systems in
+   The pattern is typically used for critical hardware or software systems in
    :term:`high-performance computing (HPC)<HPC>` environments. For example,
    power supplies, voltage regulators, the parallel file system :term:`metadata
-   service (MDS)<MDS>` in Lustre :cite:`yu06benefits` and the
+   service (MDS)<MDS>` in Lustre :cite:`yu06benefits`, and the
    SLURM :cite:`yoo03slurm` job and resource manager are often implemented in
    an active/standby fashion.
 
 Rationale
-   This pattern enables a system to tolerate an error or failure through
+   The pattern enables a system to tolerate an error or failure through
    continuation of correct operation after impact. It relies on system state
    and on system resource redundancy in the form of functionally identical
    replicas. The pattern performs mostly proactive actions, such as maintaining

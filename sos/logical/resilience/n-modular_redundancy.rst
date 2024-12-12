@@ -17,7 +17,7 @@ Problem
    experience an error and potentially a subsequent failure.
 
 Context
-   This pattern applies to a system that has the following characteristics:
+   The pattern applies to a system that has the following characteristics:
 
    -  The system is deterministic, i.e., forward progress of the system is
       defined in terms of the input state to the system and the execution steps
@@ -35,7 +35,7 @@ Forces
       determine its execution time and resource requirement overhead.
 
 Solution
-   This pattern enables the continuous correct operation of a system impacted
+   The pattern enables the continuous correct operation of a system impacted
    by an error or failure. It supports resilient operation by applying
    redundancy to system state and optionally to system resources. This
    redundancy is in the form of :math:`N` functionally identical replicas. The

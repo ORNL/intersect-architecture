@@ -127,6 +127,10 @@ Resilience Design Patterns
    :name: intersect:arch:sos:logical:resilience:patterns:toc
    :caption: Catalog of Resilience Design Patterns
    
+   monitoring
+   prediction
+   restructure
+   rejuvenation
    reinitialization
    rollback
    active_standby
