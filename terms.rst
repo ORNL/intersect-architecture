@@ -8,6 +8,9 @@ Acronym and Terminology Definitions
    AAM
       Autonomous additive manufacturing
 
+   ABFT
+      Algorithm-based fault tolerance
+
    ACE
       Advanced Computing Ecosystem testbed at the Oak Ridge Leadership
       Computing Facility
@@ -177,6 +180,9 @@ Acronym and Terminology Definitions
 
    GUI
       Graphical User Interface
+
+   GVR
+      Global view resilience
 
    GWAS
       Genome-wide association studies

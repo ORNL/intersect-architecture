@@ -193,7 +193,17 @@ Resulting Context
    covers for the remaining error/failure types.
 
    Performance
-      The pattern detection component is same as the Monitoring pattern. The containment and mitigation component impact the task total execution time same as in Rollback or Rollforward pattern (described later). We define performance using the Rollback pattern. We calculate performance under failure :math:`T` by adding the time to detect or predict a fault, error, or failure :math:`T_{d}` with the total number of input-execute-output cycles :math:`P`. :math:`T_{l}`, :math:`T_{r}`, and :math:`T_{s}` represent :math:`T_{i}` time to isolate the affected subsystem(s) and :math:`T_{r}` time to restore or replace the state of the affected subsystem(s). Assuming constant times :math:`T_{d}` (:math:`t_{d}`), :math:`T_{l}`, :math:`T_{r}`, and :math:`T_{s}`, T can be defined.
+      The pattern detection component is same as the Monitoring pattern. The
+      containment and mitigation component impact the task total execution time
+      same as in Rollback or Rollforward pattern (described later). We define
+      performance using the Rollback pattern. We calculate performance under
+      failure :math:`T` by adding the time to detect or predict a fault, error,
+      or failure :math:`T_{d}` with the total number of input-execute-output
+      cycles :math:`P`. :math:`T_{l}`, :math:`T_{r}`, and :math:`T_{s}`
+      represent :math:`T_{i}` time to isolate the affected subsystem(s) and
+      :math:`T_{r}` time to restore or replace the state of the affected
+      subsystem(s). Assuming constant times :math:`T_{d}` (:math:`t_{d}`),
+      :math:`T_{l}`, :math:`T_{r}`, and :math:`T_{s}`, T can be defined.
 
       .. math::
       
@@ -208,7 +218,13 @@ Resulting Context
          \end{aligned}
 
    Reliability
-      Given that the pattern enables the resumption of correct operation after an error or failure, the reliability of a system employing it is defined by errors and failures that are not handled by the pattern, such as failures of the persistent storage system. The reliability after applying the pattern :math:`R(t)` can be obtained using the performance under failure :math:`T` and the failure rate :math:`\lambda_{u}` (or MTTF :math:`M_{u}`) of the unprotected part of the system.
+      Given that the pattern enables the resumption of correct operation after
+      an error or failure, the reliability of a system employing it is defined
+      by errors and failures that are not handled by the pattern, such as
+      failures of the persistent storage. The reliability after applying the
+      pattern :math:`R(t)` can be obtained using the performance under failure
+      :math:`T` and the failure rate :math:`\lambda_{u}` (or its inverse, the
+      :term:`MTTF`, :math:`M_{u}`) of the unprotected part of the system.
 
       .. math::
       
@@ -217,7 +233,13 @@ Resulting Context
          \end{aligned}
 
    Availability
-      The availability of pattern can be calculated using the task’s total execution time without pattern :math:`T_{E}` and the performance with pattern :math:`T`. :math:`T_{E}` is PU and :math:`T` is PU, SD and UD.
+      The availability of the pattern can be calculated using the task's total
+      execution time without the pattern :math:`T_{E}` and the performance with
+      the pattern :math:`T`. :math:`T_{E}` is the :term:`planned uptime
+      (PU)<PU>`, :math:`t_{pu}`, and :math:`T` is the :term:`planned uptime
+      (PU)<PU>`, :math:`t_{pu}`, the :term:`scheduled downtime (SD)<SD>`,
+      :math:`t_{sd}`, and the :term:`unscheduled downtime (UD)<UD>`,
+      :math:`t_{ud}`.
 
       .. math::
       
