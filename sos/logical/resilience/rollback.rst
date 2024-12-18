@@ -274,9 +274,8 @@ Resulting Context
       failures of the persistent storage. The reliability after applying the
       pattern :math:`R(t)` can be obtained using the performance under failure
       :math:`T` and the failure rate :math:`\lambda_{u}` (or its inverse, the
-      :term:`mean-time to failure (MTTF)<MTTF>`, :math:`M_{u}`) of the
-      unprotected part of the system.
-      
+      :term:`MTTF`, :math:`M_{u}`) of the unprotected part of the system.
+
       .. math::
       
          \begin{aligned}
@@ -286,12 +285,14 @@ Resulting Context
    Availability
       The availability of the pattern can be calculated using the task's total
       execution time without the pattern :math:`T_{E}` and the performance with
-      the pattern :math:`T`. :math:`T_{E}` is :term:`planned uptime (PU)<PU>`
-      and :math:`T` is :term:`planned uptime (PU)<PU>`, :term:`scheduled
-      downtime (SD)<SD>` and :term:`unscheduled downtime (UD)<UD>`.
-   
+      the pattern :math:`T`. :math:`T_{E}` is the :term:`planned uptime
+      (PU)<PU>`, :math:`t_{pu}`, and :math:`T` is the :term:`planned uptime
+      (PU)<PU>`, :math:`t_{pu}`, the :term:`scheduled downtime (SD)<SD>`,
+      :math:`t_{sd}`, and the :term:`unscheduled downtime (UD)<UD>`,
+      :math:`t_{ud}`.
+
       .. math::
-   
+      
          \begin{aligned}
            A &= \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
          \end{aligned}

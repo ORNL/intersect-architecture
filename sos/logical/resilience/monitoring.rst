@@ -252,7 +252,17 @@ Examples
       situations.
 
 Rationale
-   The pattern enables a system to discover and treat a defect or anomaly in the system that has the potential to activate and become an error or failure or already has activated. It relies on a monitoring system to observe the monitored system, identifying deviations in monitored parameters. A discovered defect or anomaly is treated by raising a notification about a fault with location and type information, permitting the monitored system to provide containment and mitigation. A key benefit of this pattern is preemptive discovery of faults in the system, before they are activated and result in errors or failures. Preventive actions taken upon such discovery avoid the need for expensive error/failure recovery, compensation, or correction actions.
+   The pattern enables a system to discover and treat a defect or anomaly in
+   the system that has the potential to activate and become an error or failure
+   or already has activated. It relies on a monitoring system to observe the
+   monitored system, identifying deviations in monitored parameters. A
+   discovered defect or anomaly is treated by raising a notification about a
+   fault with location and type information, permitting the monitored system to
+   provide containment and mitigation. A key benefit of this pattern is
+   preemptive discovery of faults in the system, before they are activated and
+   result in errors or failures. Preventive actions taken upon such discovery
+   avoid the need for expensive error/failure recovery, compensation, or
+   correction actions.
 
 .. _intersect:arch:sos:logical:resilience:patterns:monitoring:system:
 

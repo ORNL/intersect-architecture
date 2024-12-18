@@ -160,7 +160,18 @@ Resulting Context
    covers for the remaining error/failure types.
 
    Performance
-      In case when monitoring system is a part of monitored system, the failure-free performance :math:`T_{f=0}` of the pattern is defined by the task’s total execution time without any resilience strategy :math:`T_{E}` and the time to detect or predict a fault, error or failure :math:`T_{d}` with the total number of input-execute-output cycles :math:`P`. The performance under failure :math:`T` is defined by :math:`T_{f=0}`, plus the time :math:`T_{i}` to isolate the affected subsystem(s) and the time :math:`T_{r}` to remove the affected subsystem(s), where the total time to isolate the affected subsystem(s) and to remove the affected subsystem(s) is number of faults, errors, or failures time :math:`T_{i}` and :math:`T_{r}`. Assuming constant times :math:`T_{d}` (:math:`t_{d}`), :math:`T_{i}`, and :math:`T_{r}`, :math:`T` can be defined.
+      In case when monitoring system is a part of monitored system, the
+      failure-free performance :math:`T_{f=0}` of the pattern is defined by the
+      task’s total execution time without any resilience strategy :math:`T_{E}`
+      and the time to detect or predict a fault, error or failure :math:`T_{d}`
+      with the total number of input-execute-output cycles :math:`P`. The
+      performance under failure :math:`T` is defined by :math:`T_{f=0}`, plus
+      the time :math:`T_{i}` to isolate the affected subsystem(s) and the time
+      :math:`T_{r}` to remove the affected subsystem(s), where the total time
+      to isolate the affected subsystem(s) and to remove the affected
+      subsystem(s) is number of faults, errors, or failures time :math:`T_{i}`
+      and :math:`T_{r}`. Assuming constant times :math:`T_{d}` (:math:`t_{d}`),
+      :math:`T_{i}`, and :math:`T_{r}`, :math:`T` can be defined.
 
       .. math::
       
@@ -169,16 +180,28 @@ Resulting Context
          \end{aligned}
 
    Reliability
-      Given that the pattern enables the resumption of correct operation after an error or failure, the    reliability of a system employing it is defined by errors and failures that are not handled by    the pattern, such as failures of the persistent storage system. The reliability after applying    the pattern :math:`R(t)` can be obtained using the performance under failure :math:`T` and the    failure rate :math:`\lambda_{u}` (or MTTF :math:`M_{u}`) of the unprotected part of the system.
-   
+      Given that the pattern enables the resumption of correct operation after
+      an error or failure, the reliability of a system employing it is defined
+      by errors and failures that are not handled by the pattern, such as
+      failures of the persistent storage. The reliability after applying the
+      pattern :math:`R(t)` can be obtained using the performance under failure
+      :math:`T` and the failure rate :math:`\lambda_{u}` (or its inverse, the
+      :term:`MTTF`, :math:`M_{u}`) of the unprotected part of the system.
+
       .. math::
-   
+      
          \begin{aligned}
            R(t) &= e^{-\lambda_{u} T} = e^{-T/M_{u}}
          \end{aligned}
 
    Availability
-      The availability of pattern can be calculated using the task’s total execution time without pattern :math:`T_{E}` and the performance with pattern :math:`T`. :math:`T_{E}` is PU and :math:`T` is PU, SD and UD.
+      The availability of the pattern can be calculated using the task's total
+      execution time without the pattern :math:`T_{E}` and the performance with
+      the pattern :math:`T`. :math:`T_{E}` is the :term:`planned uptime
+      (PU)<PU>`, :math:`t_{pu}`, and :math:`T` is the :term:`planned uptime
+      (PU)<PU>`, :math:`t_{pu}`, the :term:`scheduled downtime (SD)<SD>`,
+      :math:`t_{sd}`, and the :term:`unscheduled downtime (UD)<UD>`,
+      :math:`t_{ud}`.
 
       .. math::
       
@@ -188,7 +211,7 @@ Resulting Context
 
 Examples
    Unhealthy, erroneous, or failed system resources, such as compute nodes or
-   :term:`general-purpose computing graphics processing unit (GPGPU)<GPGPU>'
+   :term:`general-purpose computing graphics processing unit (GPGPU)<GPGPU>`
    memory pages :cite:`Nvidia:DPR`, are removed from the system’s pool of
    resources though restructuring. A programming model, such as the proposed
    extension to the :term:`Message Passing Interface (MPI)<MPI>`
