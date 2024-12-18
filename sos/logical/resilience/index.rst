@@ -137,3 +137,4 @@ Resilience Design Patterns
    active_standby
    n-modular_redundancy
    n-version_design
+   recovery_block
