@@ -73,7 +73,7 @@ Solution
    system. The components of this pattern are illustrated in
    :numref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:components`.
    
-   .. figure:: rollback/components.png
+   .. figure:: recovery_block/components.png
       :name: intersect:arch:sos:logical:resilience:patterns:recovery_block:components
       :align: center
       :alt: Recovery Block pattern components
