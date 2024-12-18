@@ -136,3 +136,4 @@ Resilience Design Patterns
    rollforward
    active_standby
    n-modular_redundancy
+   n-version_design

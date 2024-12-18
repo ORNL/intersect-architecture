@@ -148,14 +148,14 @@ Capability
    and its parameters in
    :numref:`intersect:arch:sos:logical:resilience:patterns:rollforward:parameters`.
    
-   .. figure:: rollback/flowchart.png
+   .. figure:: rollforward/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:rollforward:flowchart
       :align: center
       :alt: Flowchart
    
       Flowchart
    
-   .. figure:: rollback/state_diagram.png
+   .. figure:: rollforward/state_diagram.png
       :name: intersect:arch:sos:logical:resilience:patterns:rollforward:state_diagram
       :align: center
       :alt: State diagram
