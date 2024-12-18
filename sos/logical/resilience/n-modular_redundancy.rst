@@ -62,7 +62,7 @@ Solution
       :align: center
       :alt: N-modular Redundancy pattern components
 
-      N-modular Redundancy pattern components
+      N-Modular Redundancy pattern components
 
 Capability
    A system using this pattern is able to continue to operate in the presence
@@ -93,7 +93,7 @@ Capability
    
       State diagram
    
-   .. table:: N-modular Redundancy pattern parameters
+   .. table:: N-Modular Redundancy pattern parameters
       :name: intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:parameters
       :align: center
 
