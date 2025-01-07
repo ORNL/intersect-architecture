@@ -51,7 +51,7 @@ architecture splits these views over three different components
    systems and components, and evolutionary development through pluggability
    and extensibility. Similar to the :term:`DoDAF`, the
    :ref:`intersect:arch:sos` offers different architectural viewpoints: a
-   :ref:`intersect:arch:sos:logical`, an :ref:`intersect:arch:sos:operational`
+   :ref:`intersect:arch:sos:logical`, an :ref:`intersect:arch:sos:operational`,
    a :ref:`intersect:arch:sos:user`, a :ref:`intersect:arch:sos:data`, a
    :ref:`intersect:arch:sos:physical`, and a
    :ref:`intersect:arch:sos:standards`.
@@ -97,5 +97,5 @@ control, data transfer and compute microservices are being used and how. The
 viewpoints of the :term:`DoDAF`. :ref:`intersect:arch:examples` describe
 how each of these architecture components is applied to real-world use cases.
 The :term:`DOE`\ 's recent efforts in an :ref:`intersect:arch:iri` are
-addressed as well, specifically the the relationships between its
+addressed as well, specifically the relationships between its
 :ref:`intersect:arch:iri:patterns` and the :ref:`intersect:arch:pat`.
