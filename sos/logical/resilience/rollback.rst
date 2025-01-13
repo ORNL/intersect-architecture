@@ -3,8 +3,12 @@
 Rollback
 ========
 
-.. todo:: Provide an introduction (maybe reuse content from and refer to the
-          strategy, architectural and structural patterns).
+The Rollback structural pattern is a derivative of the Checkpoint Recovery
+architectural pattern and the Fault Recovery strategy pattern in the original
+resilience design pattern specification
+(:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
+:cite:`engelmann22rdp-20`. It offers containment and mitigation with recovery
+backward to the time when the snapshot occurred.
 
 .. _intersect:arch:sos:logical:resilience:patterns:rollback:pattern:
 

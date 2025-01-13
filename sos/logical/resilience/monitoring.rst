@@ -3,8 +3,12 @@
 Monitoring
 ==========
 
-.. todo:: Provide an introduction (maybe reuse content from and refer to the
-          strategy, architectural and structural patterns).
+The Monitoring structural pattern is a derivative of the Fault Diagnosis
+architectural pattern and the Fault Treatment strategy pattern in the
+original resilience design pattern specification
+(:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
+:cite:`engelmann22rdp-20`. It detects existing faults in the system that
+already have or have not been activated to an error.
 
 .. _intersect:arch:sos:logical:resilience:patterns:monitoring:pattern:
 

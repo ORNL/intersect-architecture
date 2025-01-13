@@ -3,8 +3,13 @@
 Prediction
 ==========
 
-.. todo:: Provide an introduction (maybe reuse content from and refer to the
-          strategy, architectural and structural patterns).
+The Prediction structural pattern is a derivative of the Fault Diagnosis
+architectural pattern and the Fault Treatment strategy pattern in the
+original resilience design pattern specification
+(:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
+:cite:`engelmann22rdp-20`. It predicts future faults that have not been
+activated based on the idea that such future faults have detectable
+precursors.
 
 .. _intersect:arch:sos:logical:resilience:patterns:prediction:pattern:
 

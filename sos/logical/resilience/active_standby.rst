@@ -3,8 +3,13 @@
 Active/Standby
 ==============
 
-.. todo:: Provide an introduction (maybe reuse content from and refer to the
-          strategy, architectural and structural patterns).
+The Active/Standby structural pattern is a derivative of the Redundancy
+architectural pattern and the Compensation strategy pattern in the original
+resilience design pattern specification
+(:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
+:cite:`engelmann22rdp-20`. It offers containment and mitigation with continuous
+operatation in the presence of an error or failure with none-to-significant
+interruption and loss of progress.
 
 .. _intersect:arch:sos:logical:resilience:patterns:active_standby:pattern:
 

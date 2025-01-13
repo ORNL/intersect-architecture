@@ -3,8 +3,13 @@
 Restructure
 ===========
 
-.. todo:: Provide an introduction (maybe reuse content from and refer to the
-          strategy, architectural and structural patterns).
+The Restructure structural pattern is a derivative of the Reconfiguration
+architectural pattern and the Fault Treatment and Fault Recovery strategy
+patterns in the original resilience design pattern specification
+(:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
+:cite:`engelmann22rdp-20`. It offers detection, containment, and mitigation
+without restoring previously preserved state, employing redundancy, or
+self-masking or self-correcting illegal system state.
 
 .. _intersect:arch:sos:logical:resilience:patterns:restructure:pattern:
 
