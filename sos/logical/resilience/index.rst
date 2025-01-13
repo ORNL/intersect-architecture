@@ -151,7 +151,8 @@ individual resilience solutions that are applied to
 :ref:`intersect:arch:sos:logical:systems`. The corresponding higher-level
 architectural and strategy patterns can be found in the original resilience
 design pattern specification :cite:`engelmann22rdp-20` and are not repeated
-here for brevity.
+here for brevity. The Self Stabilization derived patterns Natural Tolerance,
+Self-Healing, and Self-Aware are currently not included.
 
 .. toctree::
    :maxdepth: 1
