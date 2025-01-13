@@ -79,6 +79,9 @@ Acronym and Terminology Definitions
       compounds are created and characterized to find an optimal compound
       for a specific practical application.
 
+   BCH
+      Bose-Chaudhuri-Hocquenghem code
+
    BLOB
       Binary large object, or BLOB, used in object storage systems.
 
@@ -97,6 +100,9 @@ Acronym and Terminology Definitions
 
    CPU
       Central Processing Unit
+
+   CRC
+      Cyclic redundancy check
 
    CRUD
       Create, read, update and delete, which are the four basic operations of persistent storage.
@@ -350,7 +356,10 @@ Acronym and Terminology Definitions
       Proportional-integral-derivative
 
    PU
-     A system's planned uptime or service delivery time.
+      A system's planned uptime or service delivery time.
+
+   RAID
+      Redundant array of independent disks
 
    REST
       REpresentational State Transfer (REST) is an architectural

@@ -165,6 +165,7 @@ here for brevity.
    reinitialization
    rollback
    rollforward
+   forward_error_correction_code
    active_standby
    n-modular_redundancy
    n-version_design
