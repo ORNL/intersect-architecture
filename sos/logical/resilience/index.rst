@@ -118,9 +118,40 @@ boundary.
 Resilience Design Patterns
 --------------------------
 
-.. todo:: Provide an overview and references to the resilience design patterns
-          and describe how they are being used in the INTERSECT ecosystem
-          context.
+Resilience design patterns offer a structured hardware/software design approach
+for improving resilience by identifying and evaluating repeatedly occurring
+resilience problems and coordinating corresponding solutions. They permit
+resilience to become an integral part of the federated ecosystem through
+co-design, such that the burden for providing resilience is on the system by
+design and not on the operator or user as an afterthought.
+
+The concept of resilience design patterns was pioneered in the context of the
+high-performance computing hardware/software ecosystem
+:cite:`hukerikar17resilience`. The resilience design pattern specification from
+this effort :cite:`engelmann22rdp-20` is applied in the context of federated
+ecosystems for instrument science. Specifically, the structural patterns of the
+resilience design pattern classification
+(:numref:`intersect:arch:sos:logical:resilience:patterns:classification`) are
+adopted, as they are universally applicable.
+
+.. figure:: classification.png
+   :name: intersect:arch:sos:logical:resilience:patterns:classification
+   :align: center
+   :alt: Classification of resilience design patterns in the context of
+         high-performance computing
+
+   Classification of resilience design patterns in the context of
+   high-performance computing
+
+The :ref:`intersect:arch:sos:logical:resilience:patterns:toc` provides a
+variety of solutions to problems that repeatedly appear in the design of error
+and failure resilience capabilities for federated instrument-science
+ecosystems. These structural patterns provide concrete descriptions of
+individual resilience solutions that are applied to
+:ref:`intersect:arch:sos:logical:systems`. The corresponding higher-level
+architectural and strategy patterns can be found in the original resilience
+design pattern specification :cite:`engelmann22rdp-20` and are not repeated
+here for brevity.
 
 .. toctree::
    :maxdepth: 1
