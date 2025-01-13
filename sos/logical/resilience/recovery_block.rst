@@ -7,9 +7,9 @@ The Recovery Block structural pattern is a derivative of the Design Diversity
 architectural pattern and the Compensation strategy pattern in the original
 resilience design pattern specification
 (:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
-:cite:`engelmann22rdp-20`. It offers containment and mitigation with continuous
-operatation in the presence of an error or failure with some interruption and
-no loss of progress.
+:cite:`engelmann22rdp-20`. It offers detection, containment, and mitigation
+with continuous operatation in the presence of an error or failure, and with
+some interruption and no loss of progress.
 
 .. _intersect:arch:sos:logical:resilience:patterns:recovery_block:pattern:
 
