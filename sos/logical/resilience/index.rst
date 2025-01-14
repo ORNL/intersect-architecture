@@ -141,7 +141,7 @@ adopted, as they are universally applicable.
          high-performance computing
 
    Classification of resilience design patterns in the context of
-   high-performance computing
+   high-performance computing :cite:`engelmann22rdp-20`
 
 The :ref:`intersect:arch:sos:logical:resilience:patterns:toc` provides a
 variety of solutions to problems that repeatedly appear in the design of error
@@ -153,6 +153,20 @@ architectural and strategy patterns can be found in the original resilience
 design pattern specification :cite:`engelmann22rdp-20` and are not repeated
 here for brevity. The Self Stabilization derived patterns Natural Tolerance,
 Self-Healing, and Self-Aware are currently not included.
+
+A specific resilience solution may require the composition of multiple
+resilience design patterns, such as to provide different
+:ref:`intersect:arch:sos:logical:errors:containment` and
+:ref:`intersect:arch:sos:logical:resilience:responses`
+for different :ref:`intersect:arch:sos:logical:resilience:types`. For example,
+the :ref:`intersect:arch:sos:logical:resilience:patterns:active_standby`
+pattern may be used to provide a fail-over capability from an active system to
+a backup system in case the active system fails. The
+:ref:`intersect:arch:sos:logical:resilience:patterns:rollback` pattern may be
+additionally used to provide a restart capability for a service running on the
+active system in case the service fails but the active system does not. More
+details on resilience pattern composition can be found in the original
+resilience design pattern specification :cite:`engelmann22rdp-20`.
 
 .. toctree::
    :maxdepth: 1
