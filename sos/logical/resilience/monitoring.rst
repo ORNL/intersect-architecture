@@ -8,7 +8,14 @@ architectural pattern and the Fault Treatment strategy pattern in the
 original resilience design pattern specification
 (:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
 :cite:`engelmann22rdp-20`. It detects existing faults in the system that
-already have or have not been activated to an error.
+already have or have not been activated to an error. The following describes
+the
+:ref:`intersect:arch:sos:logical:resilience:patterns:monitoring:pattern`
+and its application in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:monitoring:system`
+and in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:monitoring:service`
+of the :term:`INTERSECT` federated ecosystem for instrument science.
 
 .. _intersect:arch:sos:logical:resilience:patterns:monitoring:pattern:
 

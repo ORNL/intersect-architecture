@@ -9,7 +9,13 @@ original resilience design pattern specification
 (:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
 :cite:`engelmann22rdp-20`. It predicts future faults that have not been
 activated based on the idea that such future faults have detectable
-precursors.
+precursors. The following describes the
+:ref:`intersect:arch:sos:logical:resilience:patterns:prediction:pattern`
+and its application in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:prediction:system`
+and in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:prediction:service`
+of the :term:`INTERSECT` federated ecosystem for instrument science.
 
 .. _intersect:arch:sos:logical:resilience:patterns:prediction:pattern:
 

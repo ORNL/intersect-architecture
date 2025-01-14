@@ -9,7 +9,13 @@ resilience design pattern specification
 (:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
 :cite:`engelmann22rdp-20`. It offers detection, containment, and mitigation
 with continuous operatation in the presence of an error or failure, and with
-some interruption and no loss of progress.
+some interruption and no loss of progress. The following describes the
+:ref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:pattern`
+and its application in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:system`
+and in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:service`
+of the :term:`INTERSECT` federated ecosystem for instrument science.
 
 .. _intersect:arch:sos:logical:resilience:patterns:recovery_block:pattern:
 

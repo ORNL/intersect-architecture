@@ -8,7 +8,13 @@ architectural pattern and the Fault Recovery strategy pattern in the original
 resilience design pattern specification
 (:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
 :cite:`engelmann22rdp-20`. It offers containment and mitigation with recovery
-backward to the time when the snapshot occurred.
+backward to the time when the snapshot occurred. The following describes the
+:ref:`intersect:arch:sos:logical:resilience:patterns:rollback:pattern`
+and its application in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:rollback:system`
+and in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:rollback:service`
+of the :term:`INTERSECT` federated ecosystem for instrument science.
 
 .. _intersect:arch:sos:logical:resilience:patterns:rollback:pattern:
 

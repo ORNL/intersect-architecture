@@ -8,7 +8,14 @@ architectural pattern and the Fault Recovery strategy pattern in the original
 resilience design pattern specification
 (:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
 :cite:`engelmann22rdp-20`. It offers containment and mitigation with recovery
-forward to the time when the error/failure event occurred.
+forward to the time when the error/failure event occurred. The following
+describes the
+:ref:`intersect:arch:sos:logical:resilience:patterns:rollforward:pattern`
+and its application in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:rollforward:system`
+and in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:rollforward:service`
+of the :term:`INTERSECT` federated ecosystem for instrument science.
 
 .. _intersect:arch:sos:logical:resilience:patterns:rollforward:pattern:
 

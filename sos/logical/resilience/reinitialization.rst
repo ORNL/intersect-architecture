@@ -8,7 +8,14 @@ architectural pattern and the Fault Treatment and Fault Recovery strategy
 patterns in the original resilience design pattern specification
 (:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
 :cite:`engelmann22rdp-20`. It offers detection, containment, and mitigation,
-but does not necessarily restore the preserved state of the entire system.
+but does not necessarily restore the preserved state of the entire system. The
+following describes the
+:ref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:pattern`
+and its application in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:system`
+and in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:service`
+of the :term:`INTERSECT` federated ecosystem for instrument science.
 
 .. _intersect:arch:sos:logical:resilience:patterns:reinitialization:pattern:
 

@@ -9,7 +9,14 @@ resilience design pattern specification
 (:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
 :cite:`engelmann22rdp-20`. It offers detection, containment and mitigation
 with continuous operatation in the presence of an error or failure, and with
-none-to-significant interruption and loss of progress.
+none-to-significant interruption and loss of progress. The following describes
+the
+:ref:`intersect:arch:sos:logical:resilience:patterns:active_standby:pattern`
+and its application in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:active_standby:system`
+and in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:active_standby:service`
+of the :term:`INTERSECT` federated ecosystem for instrument science.
 
 .. _intersect:arch:sos:logical:resilience:patterns:active_standby:pattern:
 

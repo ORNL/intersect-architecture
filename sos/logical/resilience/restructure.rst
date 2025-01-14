@@ -9,7 +9,14 @@ patterns in the original resilience design pattern specification
 (:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)
 :cite:`engelmann22rdp-20`. It offers detection, containment, and mitigation
 without restoring previously preserved state, employing redundancy, or
-self-masking or self-correcting illegal system state.
+self-masking or self-correcting illegal system state. The following describes
+the
+:ref:`intersect:arch:sos:logical:resilience:patterns:restructure:pattern`
+and its application in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:restructure:system`
+and in the
+:ref:`intersect:arch:sos:logical:resilience:patterns:restructure:service`
+of the :term:`INTERSECT` federated ecosystem for instrument science.
 
 .. _intersect:arch:sos:logical:resilience:patterns:restructure:pattern:
 
