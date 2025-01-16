@@ -270,8 +270,8 @@ Resulting Context
       can be calculated :cite:`daly06higher` using a first-order
       (:math:`T_{f!=0,first}`) and a higher-order (:math:`T_{f!=0,higher}`)
       approximation for an optimal checkpoint interval :math:`\tau_{first}` and
-      :math:`\tau_{higher}`, respectively, and a the :term:`mean-time to
-      failure (MTTF)<MTTF>` :math:`M`.
+      :math:`\tau_{higher}`, respectively, and the :term:`mean-time to
+      interrupt (MTTI)<MTTI>` :math:`M`.
       
       .. math::
       
@@ -300,7 +300,7 @@ Resulting Context
       :math:`T_{f!=0}` and the assumed constant propabalistic rate
       :math:`\lambda_{u}` of errors and failures of the unprotected part of the
       system that are not handled (or its corresponding inverse, the
-      :term:`MTTF` :math:`M_{u}`).
+      :term:`MTTI` :math:`M_{u}`).
 
       .. math::
       

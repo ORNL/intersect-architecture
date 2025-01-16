@@ -229,8 +229,8 @@ Resulting Context
    Reliability
       As the pattern only detects errors or failures, the reliability remains
       the same with an assumed constant propabalistic error/failure rate
-      :math:`\lambda` (or its corresponding inverse, the :term:`mean-time to
-      failure (MTTF)<MTTF>`, :math:`M`).
+      :math:`\lambda` (or its corresponding inverse, the
+      :term:`mean-time to interrupt (MTTI)<MTTI>` :math:`M`).
 
       .. math::
       
