@@ -15,7 +15,15 @@ and its application in the
 :ref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:system`
 and in the
 :ref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:service`
-of the :term:`INTERSECT` federated ecosystem for instrument science.
+of the :term:`INTERSECT` federated ecosystem for instrument science. Note that
+the
+:ref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:pattern`
+description uses the terms system, subsystem, and service in an abstract way,
+while the
+:ref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:system`
+and the
+:ref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:service`
+map those terms to the :term:`INTERSECT` federated ecosystem.
 
 .. _intersect:arch:sos:logical:resilience:patterns:recovery_block:pattern:
 
@@ -229,11 +237,16 @@ Rationale
 System Scope
 ------------
 
-.. todo:: Describe the application of the pattern in the system scope.
+In the context of :term:`INTERSECT` :ref:`intersect:arch:sos:logical:systems`,
+this pattern is not applicable to :term:`INTERSECT` systems and subsystems, as
+redundancy is in the form of a functionally equivalent alternate implementation
+encapsulated in a recovery block and such :term:`INTERSECT` system and
+subsystem funtionality is provided by :term:`INTERSECT` services.
 
 .. _intersect:arch:sos:logical:resilience:patterns:recovery_block:service:
 
 Service Scope
 -------------
 
-.. todo:: Describe the application of the pattern in the service scope.
+In the context of :term:`INTERSECT` :ref:`intersect:arch:sos:logical:systems`,
+this pattern can be applied to an :term:`INTERSECT` service.

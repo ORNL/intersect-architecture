@@ -15,7 +15,15 @@ and its application in the
 :ref:`intersect:arch:sos:logical:resilience:patterns:prediction:system`
 and in the
 :ref:`intersect:arch:sos:logical:resilience:patterns:prediction:service`
-of the :term:`INTERSECT` federated ecosystem for instrument science.
+of the :term:`INTERSECT` federated ecosystem for instrument science. Note that
+the
+:ref:`intersect:arch:sos:logical:resilience:patterns:prediction:pattern`
+description uses the terms system, subsystem, and service in an abstract way,
+while the
+:ref:`intersect:arch:sos:logical:resilience:patterns:prediction:system`
+and the
+:ref:`intersect:arch:sos:logical:resilience:patterns:prediction:service`
+map those terms to the :term:`INTERSECT` federated ecosystem.
 
 .. _intersect:arch:sos:logical:resilience:patterns:prediction:pattern:
 
@@ -286,11 +294,20 @@ Rationale
 System Scope
 ------------
 
-.. todo:: Describe the application of the pattern in the system scope.
+In the context of :term:`INTERSECT` :ref:`intersect:arch:sos:logical:systems`,
+this pattern can be applied to :term:`INTERSECT` systems and subsystems. It
+would be primarily applied to an entire infrastructure system and its
+subsystems, but it could also be applied an entire logical system that spans
+across multiple infrastructure systems. It could be applied to a logical
+subsystem of an infrastructure system only.
 
 .. _intersect:arch:sos:logical:resilience:patterns:prediction:service:
 
 Service Scope
 -------------
 
-.. todo:: Describe the application of the pattern in the service scope.
+In the context of :term:`INTERSECT` :ref:`intersect:arch:sos:logical:systems`,
+this pattern can be applied to an :term:`INTERSECT` service. If it is applied
+to a group of services, then this is typically within the
+:ref:`intersect:arch:sos:logical:resilience:patterns:prediction:system`.
+
