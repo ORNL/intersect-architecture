@@ -199,41 +199,58 @@ Resulting Context
    Performance
       In the case when monitoring system is not a part of monitored system,
       the monitoring system doesn’t impact the task total execution time
-      :math:`T_{E}`. If the monitoring system is a part of monitored system,
-      then it can impact the task total execution time by :math:`\delta`, the
-      ratio of available resources utilized by monitored system. The
-      performance :math:`T` when the monitoring system is a part of monitored
-      system is defined by:
+      :math:`T_{E}`. The error/failure-free performance :math:`T_{f=0}` when
+      the monitoring system is not a part of monitored system is :math:`T_{E}`.
+      
+      When the monitoring system is a part of monitored system, then it can
+      impact the task total execution time without any resilience strategy by
+      :math:`\delta`, the ratio of available resources utilized by monitored
+      system. The error/failure-free performance :math:`T_{f=0}` when the
+      monitoring system is a part of monitored system is defined by:
 
       .. math::
       
          \begin{aligned}
-           T &= \frac{T_{E}}{1-\delta}
+            T_{f=0} = \frac{T_{E}}{1-\delta}
+         \end{aligned}
+
+      The performance under errors/failures :math:`T_{f!=0}` is defined by the
+      error/failure-free performance :math:`T_{f=0}`, plus the time
+      :math:`T_{n}` to raise :math:`N` notifications with type and location.
+      Assuming constant time for :math:`T_{n}`, :math:`T_{f!=0}` can be defined
+      as:
+
+      .. math::
+      
+         \begin{aligned}
+            T_{f!=0} = T_{f=0} + N T_{n}
          \end{aligned}
 
    Reliability
-      As the pattern is not impacted by an error or failure, the reliability
-      remains the same.
+      As the pattern only detects errors or failures, the reliability remains
+      the same with an assumed constant propabalistic error/failure rate
+      :math:`\lambda` (or its corresponding inverse, the :term:`mean-time to
+      failure (MTTF)<MTTF>`, :math:`M`).
 
       .. math::
       
          \begin{aligned}
-           R(t) &= e^{-\lambda t}
+            R(t) = e^{-\lambda T_{f!=0}} = e^{-T_{f!=0}/M}
          \end{aligned}
 
    Availability
       The availability of the pattern can be calculated using the task's total
-      execution time without the pattern :math:`T_{E}` and the performance with
-      the pattern :math:`T`. :math:`T_{E}` is the :term:`planned uptime
-      (PU)<PU>`, :math:`t_{pu}`, and :math:`T` is the :term:`planned uptime
-      (PU)<PU>`, :math:`t_{pu}`, the :term:`scheduled downtime (SD)<SD>`,
-      :math:`t_{sd}`, and the :term:`unscheduled downtime (UD)<UD>`,
-      :math:`t_{ud}`.
+      execution time without the pattern :math:`T_{E}` and performance under
+      errors/failures :math:`T_{f!=0}`. :math:`T_{E}` is the :term:`planned
+      uptime (PU)<PU>` :math:`t_{pu}` and :math:`T_{f!=0}` is the
+      :term:`planned uptime (PU)<PU>` :math:`t_{pu}`, the :term:`scheduled
+      downtime (SD)<SD>` :math:`t_{sd}`, and the :term:`unscheduled downtime
+      (UD)<UD>` :math:`t_{ud}`.
 
       .. math::
       
          \begin{aligned}
-           A &= \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
+           A = \frac{T_{E}}{T_{f!=0}} = \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
          \end{aligned}
 
 Examples
