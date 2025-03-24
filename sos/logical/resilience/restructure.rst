@@ -294,3 +294,13 @@ to a group of services, then this is typically within the
 :ref:`intersect:arch:sos:logical:resilience:patterns:restructure:system`.
 However, it could also be applied to interconnected services, such as to
 services participating in the same :term:`campaign`.
+
+.. _intersect:arch:sos:logical:resilience:patterns:restructure:microservice:
+
+Microservice Scope
+------------------
+
+In the context of the :term:`INTERSECT` :ref:`intersect:arch:ms`, this pattern
+can be applied to an :term:`INTERSECT` microservice. If it is applied
+to a group of microservices, then this is typically within the
+:ref:`intersect:arch:sos:logical:resilience:patterns:restructure:service`.
