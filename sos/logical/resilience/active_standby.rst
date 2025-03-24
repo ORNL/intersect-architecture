@@ -201,60 +201,73 @@ Resulting Context
    covers for the remaining error/failure types.
 
    Performance
-      The failure-free performance :math:`T_{f=0}` of the pattern is defined by
-      the task total execution time without any resilience strategy
-      :math:`T_{E}`, the total time to activate the active and (sub-) standby
-      systems :math:`T_{a}`, the time to replicate the input to the active and
+      The error/failure-free free performance :math:`T_{f=0}` of the pattern is
+      defined by the task total execution time without any resilience strategy
+      :math:`T_{E}`, the time to activate the active and (sub-) standby systems
+      :math:`T_{a}`, and the time to replicate the input to the active and
       standby (sub-) systems :math:`T_{i}`, the time to detect an error in or
       failure of the active (sub-) system :math:`T_{d}`, and the time to
       replicate system state from the active (sub-) system to the standby
       (sub-) systems :math:`T_{r}` with the total number of
-      input-execute-output cycles :math:`P`. The performance under failure T is
-      defined by :math:`T_{f=0}` plus the time :math:`T_{f}` to isolate the
-      active (sub-) system and fail-over to a standby (sub-) system, where
-      total time to isolate is number of error or failure times :math:`T_{f}`.
-      Assuming constant times :math:`T_{a}`, :math:`T_{i}` (:math:`t_{i}`),
-      :math:`T_{d}` (:math:`t_{d}`), :math:`T_{r}` (:math:`t_{r}`), and
-      :math:`T_{f}`, :math:`T` can be defined. When the redundancy is in space,
-      using a ratio for replication in space vs. in time :math:`\alpha`,
-      :math:`T` can be reformulated.
+      input-execute-output cycles :math:`P`.
 
-   .. math::
-   
-      \begin{aligned}
-        & T = T_{E} + T_{a} + P(t_{i} +t_{d} + t_{r}) + \frac{T_{E}}{M}\left(T_{f}\right)\\
-        & T = \alpha T_{E} + (1 - \alpha) N T_{E} + T_{a} + P(t_{i} +t_{d} + t_{r}) + \frac{T_{E}}{M}\left( T_{f} \right)
-      \end{aligned}
-
-   Reliability
-      Reliability :math:`R(t)` is defined by the parallel reliability of the
-      :math:`N`-redundant execution and the performance under failure
-      :math:`T`. It can be simplified for redundancy of identical systems
-      :math:`R_{i}(t)`.
-   
       .. math::
    
          \begin{aligned}
-           R(t)     &= 1 - \prod_{n=1}^{N}(1-e^{-\lambda_{n} T})
-           R_{i}(t) &= 1 - (1 - e^{-\lambda T})^{N}
+           T_{f=0} = T_{E} + T_{a} + P (T_{i} + T_{d} + T_{r})
+         \end{aligned}
+
+      The performance under errors/failures :math:`T_{f!=0}` is defined by the
+      failure free performance :math:`T_{f=0}` plus the time to isolate the
+      active (sub-) system and fail-over to a standby (sub-) system
+      :math:`T_{f}` for each of the errors or failures :math:`N`. Assuming
+      constant times to isolate the active (sub-) system and fail-over to a
+      standby (sub-) system :math:`T_{f}` and a ratio for replication in space
+      vs. in time of :math:`\alpha`, the performance under errors/failures
+      :math:`T_{f!=0}` can be reformulated to:
+
+      .. math::
+   
+         \begin{aligned}
+           T_{f!=0} = \alpha T_{E} + (1 - \alpha) N T_{E} + T_{a} + P (T_{i} + T_{d} + T_{r}) + N T_{f}
+         \end{aligned}
+
+   Reliability
+      The reliability :math:`R(t)` of a system applying this pattern is defined
+      by the parallel reliability of the :math:`N`-redundant execution and the
+      performance under errors/failures :math:`T_{f!=0}`, assuming constant
+      propabalistic rate :math:`\lambda_{n}` of errors and failures for each
+      redundant execution (or its corresponding inverse, the :term:`MTTI`
+      :math:`M`). It can be simplified for redundancy of identical systems
+      :math:`R_{i}(t)`, assuming an identical constant propabalistic
+      error/failure rate :math:`\lambda` (or its corresponding inverse
+      :math:`M`).
+
+      .. math::
+   
+         \begin{aligned}
+           R(t)     &= 1 - \prod_{n=1}^{N}(1-e^{-\lambda_{n} T_{f!=0}})
+                     = 1 - \prod_{n=1}^{N}(1-e^{-T_{f!=0}/M})\\
+           R_{i}(t) &= 1 - (1 - e^{-\lambda T_{f!=0}})^{N}
+                     = 1 - (1 - e^{-T_{f!=0}/M})^{N}
          \end{aligned}
    
    Availability
-      The availability :math:`A` of the pattern is defined by
-      :math:`N`-parallel availability and the performance under failure
-      :math:`T`. It can be simplified for redundancy of identical systems
-      :math:`A_{i}`. If :math:`T_{a}`, :math:`T_{i}`, :math:`T_{d}`,
+      The availability :math:`A` of a system applying this pattern is defined
+      by :math:`N`-parallel availability and the performance under failure
+      :math:`T_{f!=0}`. It can be simplified for redundancy of identical
+      systems :math:`A_{i}`. If :math:`T_{a}`, :math:`T_{i}`, :math:`T_{d}`,
       :math:`T_{r}`, and :math:`T_{f}` are small enough, non-identical and
       identical availability can be simplified further, where :math:`M_{n}` (or
-      :math:`M`) is the :term:`mean-time to failure (MTTF)<MTTF>` and
-      :math:`R_{n}` (or :math:`R`) is the  :term:`mean-time to recover
-      (MTTR)<MTTR>` of each individual system (:math:`T_{f}`).
+      :math:`M`) is the :term:`MTTI` and :math:`R_{n}` (or :math:`R`) is the
+      :term:`mean-time to recover (MTTR)<MTTR>` of each individual system
+      (:math:`T_{f}`).
    
       .. math::
    
          \begin{aligned}
            A     &= 1 - \prod_{n=1}^{N} (1 - A_{n})\notag\\
-                 &= 1 - \prod_{n=1}^{N} \left(1 - \frac{T_{E,n}}{T_{n}}\right)
+                 &= 1 - \prod_{n=1}^{N} \left(1 - \frac{T_{E,n}}{T_{n}}\right)\\
            A_{i} &= 1 - (1-A)^{N}\notag\\
                  &= 1 - \left(1 - \frac{T_{E}}{T}\right)^{N}
          \end{aligned}

@@ -170,25 +170,29 @@ Resulting Context
    pattern covers for the remaining error/failure types.
 
    Performance
-      The failure-free performance :math:`T_{f=0}` is defined by the task’s
-      total execution time without any resilience strategy :math:`T_{E}` and
-      the time to detect or predict a fault, error, or failure :math:`T_{d}`
-      with the total number of input-execute-output cycles :math:`P`. The
-      performance under failure :math:`T` is defined by :math:`T_{f=0}`, plus
-      the time :math:`T_{i}` to isolate the affected subsystem(s), the time
-      :math:`T_{r}` to remove the affected subsystem(s), and the time for work
-      lost (which is assumed to be half of :math:`T_{E}`), where the total
-      time to isolate the affected subsystem(s), to remove the affected
-      subsystem(s), and the time for work lost is number of faults, errors, or
-      failures time :math:`T_{i}`, :math:`T_{r}`, and half of :math:`T_{E}`.
-      Assuming constant times :math:`T_{d}` (:math:`t_{d}`), :math:`T_{i}`,
-      and, :math:`T_{r}`, :math:`T` can be defined using the :term:`mean-time
-      to failure (MTTF)<MTTF>` :math:`M_{u}` as
+      In the case when the monitoring system is not a part of the monitored
+      system, the monitoring system doesn’t impact the task's total execution
+      time :math:`T_{E}`. The error/failure-free performance :math:`T_{f=0}` is
+      :math:`T_{E}`.
+
+      When the monitoring system is a part of the monitored system, the
+      failure-free performance :math:`T_{f=0}` of the pattern is defined by the
+      task’s total execution time without any resilience strategy :math:`T_{E}`
+      and the time to detect or predict a fault, error or failure :math:`T_{d}`
+      with the total number of input-execute-output cycles :math:`P`.
+
+      The performance under errors/failures :math:`T_{f!=0}` is defined by
+      :math:`T_{f=0}`, plus the time to isolate the affected subsystem(s)
+      :math:`T_{i}`, the time to reset the entire system or affected
+      subsystem(s) :math:`T_{r}`, and the time for work lost :math:`T_{n}`, for
+      each of the encountered faults, errors or failures :math:`N`. Assuming
+      constant times for :math:`T_{i}` and :math:`T_{r}`, :math:`T_{f!=0}`
+      can be defined as:
 
       .. math::
       
          \begin{aligned}
-           T &=  T_{E} + P(t_{d}) + \frac{T_{E}}{M_{u}} \left(T_{i} + T_{r} + T_{E}*0.5\right)
+            T_{f!=0} = T_{f=0} + N (T_{i} + T_{r}) + \sum_{n=0}^{N} T_{n}
          \end{aligned}
       
    Reliability
@@ -198,27 +202,28 @@ Resulting Context
       failures of the persistent storage. The reliability after applying the
       pattern :math:`R(t)` can be obtained using the performance under failure
       :math:`T` and the failure rate :math:`\lambda_{u}` (or its inverse, the
-      :term:`MTTF`, :math:`M_{u}`) of the unprotected part of the system.
+      :term:`mean-time to interrupt (MTTI)<MTTI>`, :math:`M_{u}`) of the
+      unprotected part of the system.
 
       .. math::
       
          \begin{aligned}
-           R(t) &= e^{-\lambda_{u} T} = e^{-T/M_{u}}
+            R(t) = e^{-\lambda_{u} T} = e^{-T/M_{u}}
          \end{aligned}
 
    Availability
       The availability of the pattern can be calculated using the task's total
-      execution time without the pattern :math:`T_{E}` and the performance with
-      the pattern :math:`T`. :math:`T_{E}` is the :term:`planned uptime
-      (PU)<PU>`, :math:`t_{pu}`, and :math:`T` is the :term:`planned uptime
-      (PU)<PU>`, :math:`t_{pu}`, the :term:`scheduled downtime (SD)<SD>`,
-      :math:`t_{sd}`, and the :term:`unscheduled downtime (UD)<UD>`,
-      :math:`t_{ud}`.
+      execution time without the pattern :math:`T_{E}` and performance under
+      errors/failures :math:`T_{f!=0}`. :math:`T_{E}` is the :term:`planned
+      uptime (PU)<PU>` :math:`t_{pu}`. :math:`T_{f!=0}` is the
+      :term:`planned uptime (PU)<PU>` :math:`t_{pu}`, the :term:`scheduled
+      downtime (SD)<SD>` :math:`t_{sd}`, and the :term:`unscheduled downtime
+      (UD)<UD>` :math:`t_{ud}`.
 
       .. math::
       
          \begin{aligned}
-           A &= \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
+           A = \frac{T_{E}}{T_{f!=0}} = \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
          \end{aligned}
 
 Examples

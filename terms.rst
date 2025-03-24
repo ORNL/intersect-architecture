@@ -274,11 +274,23 @@ Acronym and Terminology Definitions
    MPI
       Message passing interface
 
+   MTBE
+      A system's expected mean-time between errors.
+
    MTBF
       A system's expected mean-time between failures.
 
+   MTBI
+      A system's expected mean-time between interrups (errors or failures).
+
+   MTTE
+      A system's expected mean-time to error.
+
    MTTF
       A system's expected mean-time to failure.
+
+   MTTI
+      A system's expected mean-time to interrup (error or failure).
 
    MTTR
       A system's expected mean-time to recover.

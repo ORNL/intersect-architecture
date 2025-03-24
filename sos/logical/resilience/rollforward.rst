@@ -233,22 +233,41 @@ Resulting Context
    error/failure types.
 
    Performance
-      The pattern avoids losing any work as it recovers the system to stable
-      state immediately before the error or failure event. Assuming constant
-      times :math:`T_{s}`, :math:`T_{l}`, and :math:`T_{r}`, the performance
-      :math:`T` can be calculated by getting rid of lost work :math:`T_{EL}`.
+      The error/failure-free performance :math:`T_{f=0}` of the pattern is
+      defined by the task's total execution time without any resilience
+      strategy :math:`T_{E}` and the time spent on saving system state and
+      progress to storage :math:`T_{s}` during task execution, with a total
+      number of checkpoints :math:`N`. Assuming a constant checkpoint interval
+      :math:`\tau`, the total number of checkpoints :math:`N_{constant}` is
+      defined by the task's total execution time without any resilience
+      strategy :math:`T_{E}` divided by :math:`\tau`. :math:`T_{d}`, time to
+      detect an error/failure, is not part of this pattern.
 
       .. math::
       
          \begin{aligned}
-           T &= T_{E} +
-                \left( \frac{T_{E}}{\tau} - 1 \right) T_{s} +
-                \frac{T_{E}}{M} T_{e,f} (\tau + T_{s}) +
-                \frac{T_{E}}{M} (T_{l} + T_{r}),\notag\\
-           \tau &= \sqrt{2 M T_{s}}\\
-           T &= T_{E} +
-                \left( \frac{T_{E}}{\tau} - 1 \right) T_{s} +
-                \frac{T_{E}}{M} (T_{l} + T_{r}), \tau = \sqrt{2 M T_{s}}
+           T_{f=0} &= T_{E} + N T_{s}\\
+           N_{constant} &= T_{E} / \tau
+         \end{aligned}
+
+      The performance under errors/failures :math:`T_{f!=0}` is defined by the
+      error/failure-free performance :math:`T_{f=0}`, plus the total lost time
+      to execute system progress :math:`T_{EL}` and the total time to load
+      consistent system state and progress from storage and to rollforward to
+      the correct state before the event :math:`T_{R}`. Assuming constant times
+      to save system state and progress to storage :math:`T_{s}`, to load
+      consistent system state and progress from storage :math:`T_{l}`, and to
+      rollforward to the correct state before the event :math:`T_{r}`, the
+      performance under error/failure :math:`T_{f!=0}` can be further
+      simplified with a total number of errors/failures
+      (:math:`T_{f!=0,constant}`), using the the :term:`mean-time to interrupt
+      (MTTI)<MTTI>` :math:`M`.
+      
+      .. math::
+      
+         \begin{aligned}
+            T_{f!=0}          &= T_{E} + N T_{s} + T_{EL} + T_{R}\\
+            T_{f!=0,constant} &= T_{E} + N T_{s} + T_{EL} + \frac{T_{E}}{M}(T_{l} + T_{r})
          \end{aligned}
 
    Reliability
@@ -256,44 +275,46 @@ Resulting Context
       an error or failure, the reliability of a system employing it is defined
       by errors and failures that are not handled by the pattern, such as
       failures of the persistent storage. The reliability after applying the
-      pattern :math:`R(t)` can be obtained using the performance under failure
-      :math:`T` and the failure rate :math:`\lambda_{u}` (or its inverse, the
-      :term:`MTTF`, :math:`M_{u}`) of the unprotected part of the system.
+      pattern :math:`R(t)` can be obtained using the performance under errors
+      or failures that are handled as part of the protected the system
+      :math:`T_{f!=0}` and the assumed constant propabalistic rate
+      :math:`\lambda_{u}` of errors and failures of the unprotected part of the
+      system that are not handled (or its corresponding inverse, the
+      :term:`MTTI` :math:`M_{u}`).
 
       .. math::
       
          \begin{aligned}
-           R(t) &= e^{-\lambda_{u} T} = e^{-T/M_{u}}
+            R(t) = e^{-\lambda_{u} T_{f!=0}} = e^{-T_{f!=0}/M_{u}}
          \end{aligned}
-
+      
    Availability
       The availability of the pattern can be calculated using the task's total
-      execution time without the pattern :math:`T_{E}` and the performance with
-      the pattern :math:`T`. :math:`T_{E}` is the :term:`planned uptime
-      (PU)<PU>`, :math:`t_{pu}`, and :math:`T` is the :term:`planned uptime
-      (PU)<PU>`, :math:`t_{pu}`, the :term:`scheduled downtime (SD)<SD>`,
-      :math:`t_{sd}`, and the :term:`unscheduled downtime (UD)<UD>`,
-      :math:`t_{ud}`.
+      execution time without the pattern :math:`T_{E}` and performance under
+      errors/failures :math:`T_{f!=0}`. :math:`T_{E}` is the :term:`planned
+      uptime (PU)<PU>` :math:`t_{pu}`. :math:`T_{f!=0}` is the
+      :term:`planned uptime (PU)<PU>` :math:`t_{pu}`, the :term:`scheduled
+      downtime (SD)<SD>` :math:`t_{sd}`, and the :term:`unscheduled downtime
+      (UD)<UD>` :math:`t_{ud}`.
 
       .. math::
       
          \begin{aligned}
-           A &= \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
+           A = \frac{T_{E}}{T_{f!=0}} = \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
          \end{aligned}
 
 Examples
-      :term:`Global View Resilience (GVR)<GVR>` :cite:`Chien:2016` is a runtime
-      system that provides fault tolerance to applications by versioning
-      distributed arrays for rollforward recovery, while the
-      checkpoint-on-failure protocol :cite:`ansel2009dmtcp` for :term:`Message
-      Passing Interface (MPI)<MPI>` applications leverages the features of a
-      high-quality fault-tolerant :term:`MPI` implementation. In either case,
-      algorithm-specific knowledge is needed to perform rollforward recovery,
-      Some :term:`algorithm-based fault tolerance (ABFT)<ABFT>`
-      solutions :cite:`ltaief08fault` can utilize the original or previously
-      saved data as a replacement for lost or erroneous data and rollforward
-      recover their state to the point at which the error/failure event
-      occurred.
+   :term:`Global View Resilience (GVR)<GVR>` :cite:`Chien:2016` is a runtime
+   system that provides fault tolerance to applications by versioning
+   distributed arrays for rollforward recovery, while the
+   checkpoint-on-failure protocol :cite:`ansel2009dmtcp` for :term:`Message
+   Passing Interface (MPI)<MPI>` applications leverages the features of a
+   high-quality fault-tolerant :term:`MPI` implementation. In either case,
+   algorithm-specific knowledge is needed to perform rollforward recovery,
+   Some :term:`algorithm-based fault tolerance (ABFT)<ABFT>` solutions
+   :cite:`ltaief08fault` can utilize the original or previously saved data as a
+   replacement for lost or erroneous data and rollforward recover their state
+   to the point at which the error/failure event occurred.
 
 Rationale
    The pattern enables a system to tolerate an error or failure through

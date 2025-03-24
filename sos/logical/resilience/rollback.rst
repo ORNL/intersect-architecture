@@ -264,14 +264,18 @@ Resulting Context
       to execute system progress :math:`T_{EL}` and the total time to load
       consistent system state and progress from storage and to rollback to the
       last known correct state :math:`T_{R}`. Assuming constant times
-      :math:`T_{s}`, :math:`T_{l}`, and :math:`T_{r}`, the performance under
-      error/failure :math:`T_{f!=0}` can be further simplified with a total
-      number of errors/failures (:math:`T_{f!=0,constant}`). :math:`T_{f!=0}`
-      can be calculated :cite:`daly06higher` using a first-order
-      (:math:`T_{f!=0,first}`) and a higher-order (:math:`T_{f!=0,higher}`)
-      approximation for an optimal checkpoint interval :math:`\tau_{first}` and
-      :math:`\tau_{higher}`, respectively, and the :term:`mean-time to
-      interrupt (MTTI)<MTTI>` :math:`M`.
+      to save system state and progress to storage :math:`T_{s}`, to load
+      consistent system state and progress from storage :math:`T_{l}`, and to
+      rollback to the last known correct state :math:`T_{r}`, the performance
+      under error/failure :math:`T_{f!=0}` can be further simplified with a total
+      number of errors/failures (:math:`T_{f!=0,constant}`), using the the
+      :term:`mean-time to interrupt (MTTI)<MTTI>` :math:`M`. The performance
+      under errors/failures :math:`T_{f!=0}` can also be calculated
+      :cite:`daly06higher` using a first-order (:math:`T_{f!=0,first}`) and a
+      higher-order (:math:`T_{f!=0,higher}`) approximation for an optimal
+      checkpoint interval :math:`\tau_{first}` and :math:`\tau_{higher}`,
+      respectively, and the :term:`mean-time to interrupt (MTTI)<MTTI>`
+      :math:`M`.
       
       .. math::
       
@@ -289,7 +293,7 @@ Resulting Context
                                  \frac{1}{9}\left(\frac{T_{s}}{2M}\right)\right] -
                                   T_{s}
          \end{aligned}
-      
+
    Reliability
       Given that the pattern enables the resumption of correct operation after
       an error or failure, the reliability of a system employing it is defined
@@ -312,7 +316,7 @@ Resulting Context
       The availability of the pattern can be calculated using the task's total
       execution time without the pattern :math:`T_{E}` and performance under
       errors/failures :math:`T_{f!=0}`. :math:`T_{E}` is the :term:`planned
-      uptime (PU)<PU>` :math:`t_{pu}` and :math:`T_{f!=0}` is the
+      uptime (PU)<PU>` :math:`t_{pu}`. :math:`T_{f!=0}` is the
       :term:`planned uptime (PU)<PU>` :math:`t_{pu}`, the :term:`scheduled
       downtime (SD)<SD>` :math:`t_{sd}`, and the :term:`unscheduled downtime
       (UD)<UD>` :math:`t_{ud}`.
@@ -320,7 +324,7 @@ Resulting Context
       .. math::
       
          \begin{aligned}
-            A = \frac{T_{E}}{T_{f!=0}} = \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
+           A = \frac{T_{E}}{T_{f!=0}} = \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
          \end{aligned}
 
 Examples

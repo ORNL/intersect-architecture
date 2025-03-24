@@ -165,54 +165,67 @@ Resulting Context
    covers for the remaining error/failure types.
 
    Performance
-      The failure free performance :math:`T_{f=0}` of the pattern is defined by
-      the task total execution time without any resilience strategy
+      The error/failure-free free performance :math:`T_{f=0}` of the pattern is
+      defined by the task total execution time without any resilience strategy
       :math:`T_{E}`, the total time to activate the redundant information
       storage :math:`T_{a}`, the time to encode :math:`T_{en}`, and the time to
       decode and detect :math:`T_{d}` with the total number of
-      input-execute-output cycles :math:`P`. The performance under failure T is
-      defined by :math:`T_{f=0}` plus the time :math:`T_{c}` to correct using
-      redundant information, where total time to correct using redundant
-      information is number of error or failure times :math:`T_{c}`. Assuming
-      constant times :math:`T_{a}`, :math:`T_{en}` (:math:`t_{en}`),
-      :math:`T_{d}` (:math:`t_{d}`), and :math:`T_{c}`, :math:`T` can be
-      defined by:
+      input-execute-output cycles :math:`P`.
 
       .. math::
 
          \begin{aligned}
-            T = T_{E} + T_{a} + P(t_{en} +t_{d}) + \frac{T_{E}}{M}\left( T_{c} \right)
+            T_{f=0} = T_{E} + T_{a} + P(t_{en} +t_{d})
+         \end{aligned}
+      
+      The performance under errors/failures :math:`T_{f!=0}` is defined by the
+      failure free performance :math:`T_{f=0}` plus the time :math:`T_{c}` to
+      correct using redundant information, where total time to correct using
+      redundant information is the number of errors or failures :math:`N` times
+      :math:`T_{c}`. Assuming constant time to activate the redundant
+      information storage :math:`T_{a}`, time to encode :math:`T_{en}`
+      (:math:`t_{en}`), time to decode :math:`T_{d}` (:math:`t_{d}`), and time
+      to correct :math:`T_{c}`, the performance under errors/failures
+      :math:`T_{f!=0}` can be further simplified using the :term:`mean-time to
+      interrupt (MTTI)<MTTI>` :math:`M`.
+
+      .. math::
+
+         \begin{aligned}
+            T_{f!=0} = T_{f=0} + \frac{T_{E}}{M} T_{c}
          \end{aligned}
 
    Reliability
       Given that the pattern enables the resumption of correct operation after
       an error or failure, the reliability of a system employing it is defined
       by errors and failures that are not handled by the pattern, such as
-      failures of the persistent storage system. The reliability after applying
-      the pattern :math:`R(t)` can be obtained using the performance under
-      failure :math:`T` and the failure rate :math:`\lambda_{u}` (or its
-      inverse, the :term:`MTTF`, :math:`M_{u}`) of the unprotected part of the
-      system.
+      failures of the persistent storage. The reliability after applying the
+      pattern :math:`R(t)` can be obtained using the performance under errors
+      or failures that are handled as part of the protected the system
+      :math:`T_{f!=0}` and the assumed constant propabalistic rate
+      :math:`\lambda_{u}` of errors and failures of the unprotected part of the
+      system that are not handled (or its corresponding inverse, the
+      :term:`MTTI` :math:`M_{u}`).
 
       .. math::
       
          \begin{aligned}
-           R(t) &= e^{-\lambda_{u} T} = e^{-T/M_{u}}
+            R(t) = e^{-\lambda_{u} T_{f!=0}} = e^{-T_{f!=0}/M_{u}}
          \end{aligned}
-
+      
    Availability
       The availability of the pattern can be calculated using the task's total
-      execution time without the pattern :math:`T_{E}` and the performance with
-      the pattern :math:`T`. :math:`T_{E}` is the :term:`planned uptime
-      (PU)<PU>`, :math:`t_{pu}`, and :math:`T` is the :term:`planned uptime
-      (PU)<PU>`, :math:`t_{pu}`, the :term:`scheduled downtime (SD)<SD>`,
-      :math:`t_{sd}`, and the :term:`unscheduled downtime (UD)<UD>`,
-      :math:`t_{ud}`.
+      execution time without the pattern :math:`T_{E}` and performance under
+      errors/failures :math:`T_{f!=0}`. :math:`T_{E}` is the :term:`planned
+      uptime (PU)<PU>` :math:`t_{pu}`. :math:`T_{f!=0}` is the
+      :term:`planned uptime (PU)<PU>` :math:`t_{pu}`, the :term:`scheduled
+      downtime (SD)<SD>` :math:`t_{sd}`, and the :term:`unscheduled downtime
+      (UD)<UD>` :math:`t_{ud}`.
 
       .. math::
       
          \begin{aligned}
-           A &= \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
+           A = \frac{T_{E}}{T_{f!=0}} = \frac{t_{pu}}{t_{pu}+t_{ud}+t_{sd}}
          \end{aligned}
 
 Examples

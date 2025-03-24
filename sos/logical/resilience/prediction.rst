@@ -210,22 +210,21 @@ Resulting Context:
    modeling with a reasonable degree of precision and recall.
 
    Performance
-      In the case when monitoring system is not a part of monitored system,
-      the monitoring system doesn’t impact the task total execution time
-      :math:`T_{E}`. The error/failure-free performance :math:`T_{f=0}` when
-      the monitoring system is not a part of monitored system is :math:`T_{E}`.
+      In the case when the monitoring system is not a part of the monitored
+      system, the monitoring system doesn’t impact the task's total execution
+      time :math:`T_{E}`. The error/failure-free performance :math:`T_{f=0}` is
+      :math:`T_{E}`.
 
       When the monitoring system is a part of the monitored system, then it
-      does impact the task total execution time. The error/failure-free
-      performance :math:`T_{f=0}` of the pattern is defined by the task’s total
-      execution time without any resilience strategy :math:`T_{E}`, the time to
-      monitor sub-system parameters :math:`T_{mon}`, the time to perform the
-      filtering :math:`T_{f}`, the time to perform the
-      regression :math:`T_{r}`, and the time to perform the
-      statistical/rule-based modeling :math:`T_{mod}` with the total number of
-      input-execute-output cycles :math:`P`. Assuming constant times for
-      :math:`T_{mon}`, :math:`T_{f}`, :math:`T_{r}`, and :math:`T_{mod}`,
-      :math:`T_{f=0}` can be defined as:
+      does impact the task's' total execution time. The error/failure-free
+      performance :math:`T_{f=0}` of the pattern is defined by the task’s
+      total execution time :math:`T_{E}`, the time to monitor sub-system
+      parameters :math:`T_{mon}`, the time to perform the filtering
+      :math:`T_{f}`, the time to perform the regression :math:`T_{r}`, and the
+      time to perform the statistical/rule-based modeling :math:`T_{mod}` with
+      the total number of input-execute-output cycles :math:`P`. Assuming
+      constant times for :math:`T_{mon}`, :math:`T_{f}`, :math:`T_{r}`, and
+      :math:`T_{mod}`, :math:`T_{f=0}` can be defined as:
 
       .. math::
       
@@ -261,7 +260,7 @@ Resulting Context:
       The availability of the pattern can be calculated using the task's total
       execution time without the pattern :math:`T_{E}` and performance under
       errors/failures :math:`T_{f!=0}`. :math:`T_{E}` is the :term:`planned
-      uptime (PU)<PU>` :math:`t_{pu}` and :math:`T_{f!=0}` is the
+      uptime (PU)<PU>` :math:`t_{pu}`. :math:`T_{f!=0}` is the
       :term:`planned uptime (PU)<PU>` :math:`t_{pu}`, the :term:`scheduled
       downtime (SD)<SD>` :math:`t_{sd}`, and the :term:`unscheduled downtime
       (UD)<UD>` :math:`t_{ud}`.

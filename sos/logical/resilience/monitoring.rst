@@ -197,16 +197,15 @@ Resulting Context
    reasonable degree of precision and recall.
 
    Performance
-      In the case when monitoring system is not a part of monitored system,
-      the monitoring system doesn’t impact the task total execution time
-      :math:`T_{E}`. The error/failure-free performance :math:`T_{f=0}` when
-      the monitoring system is not a part of monitored system is :math:`T_{E}`.
-      
-      When the monitoring system is a part of monitored system, then it can
-      impact the task total execution time without any resilience strategy by
-      :math:`\delta`, the ratio of available resources utilized by monitored
-      system. The error/failure-free performance :math:`T_{f=0}` when the
-      monitoring system is a part of monitored system is defined by:
+      In the case when the monitoring system is not a part of the monitored
+      system, the monitoring system doesn’t impact the task's' total execution
+      time :math:`T_{E}`. The error/failure-free performance :math:`T_{f=0}` is
+      :math:`T_{E}`.
+
+      When the monitoring system is a part of the monitored system, then it can
+      impact the task's total execution time by :math:`\delta`, the ratio of
+      available resources utilized by monitored system. The error/failure-free
+      performance :math:`T_{f=0}` is defined by:
 
       .. math::
       
@@ -242,7 +241,7 @@ Resulting Context
       The availability of the pattern can be calculated using the task's total
       execution time without the pattern :math:`T_{E}` and performance under
       errors/failures :math:`T_{f!=0}`. :math:`T_{E}` is the :term:`planned
-      uptime (PU)<PU>` :math:`t_{pu}` and :math:`T_{f!=0}` is the
+      uptime (PU)<PU>` :math:`t_{pu}`. :math:`T_{f!=0}` is the
       :term:`planned uptime (PU)<PU>` :math:`t_{pu}`, the :term:`scheduled
       downtime (SD)<SD>` :math:`t_{sd}`, and the :term:`unscheduled downtime
       (UD)<UD>` :math:`t_{ud}`.
