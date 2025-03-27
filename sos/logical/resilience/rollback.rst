@@ -106,12 +106,12 @@ Solution
    following checkpointing methods:
    
    Coordinated Checkpointing
-      The subsystems to coordinate the process of creating checkpoints. The
+      The subsystems coordinate the process of creating checkpoints. The
       coordination enables a globally consistent checkpoint state, which
       simplifies the recovery.
    
    Uncoordinated Checkpointing
-      The subsystems each independently decides when to create their respective
+      The subsystems each independently decide when to create their respective
       checkpoints. This has the potential to cause a domino effect, where
       rollbacks propagate among system components due to lack of consistency,
       potentially back to the initial state.
@@ -222,14 +222,14 @@ Resulting Context
    Correct operation is resumed after an error or failure impacted the system.
    Progress in the system is lost after an error or failure, since the recovery
    is only able to recreate the system state to the time when the snapshot
-   occurred. The system is interrupted during error-/failure-free operation for
+   occurred. The system is interrupted during error/failure-free operation for
    creating system state snapshots and maintaining them on a persistent storage
    system. The system is interrupted upon an error or failure for recreating
    the last known error/failure-free state of the system.
    
    A trade-off exists between the creation frequency of system state snapshots
    and/or event logging and the corresponding execution time overhead during
-   error-/failure-free operation vs. the amount of lost progress. The optimal
+   error/failure-free operation vs. the amount of lost progress. The optimal
    solution of this trade-off depends on the :term:`MTBF`, the time it takes to
    save and load a system state snapshot, the time it takes to log events, and
    the time it takes to recreate the system state.
@@ -301,7 +301,7 @@ Resulting Context
       failures of the persistent storage. The reliability after applying the
       pattern :math:`R(t)` can be obtained using the performance under errors
       or failures that are handled as part of the protected the system
-      :math:`T_{f!=0}` and the assumed constant propabalistic rate
+      :math:`T_{f!=0}` and the assumed constant probabilistic rate
       :math:`\lambda_{u}` of errors and failures of the unprotected part of the
       system that are not handled (or its corresponding inverse, the
       :term:`MTTI` :math:`M_{u}`).

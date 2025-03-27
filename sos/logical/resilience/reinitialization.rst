@@ -3,7 +3,7 @@
 Reinitialization
 ================
 
-The Rejuvenation structural pattern is a derivative of the Reconfiguration
+The Reinitialization structural pattern is a derivative of the Reconfiguration
 architectural pattern and the Fault Treatment and Fault Recovery strategy
 patterns in the original resilience design pattern specification
 (:numref:`intersect:arch:sos:logical:resilience:patterns:classification`)

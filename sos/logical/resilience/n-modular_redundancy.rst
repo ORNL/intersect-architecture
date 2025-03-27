@@ -143,7 +143,7 @@ Protection Domain
 Resulting Context
    Correct operation is performed despite an error or failure impacting the
    system. Progress in the system is not lost due to an error or failure. The
-   system is not interrupted during error-/failure-free operation or when
+   system is not interrupted during error/failure-free operation or when
    encountering an error or failure. Resource usage in time or space is
    increased according to the amount of redundancy employed in the form of
    :math:`N` functionally identical replicas and due to the replication of
@@ -192,10 +192,10 @@ Resulting Context
       The reliability :math:`R(t)` of a system applying this pattern is defined
       by the parallel reliability of the :math:`N`-redundant execution and the
       performance under errors/failures :math:`T_{f!=0}`, assuming constant
-      propabalistic rate :math:`\lambda_{n}` of errors and failures for each
+      probabilistic rate :math:`\lambda_{n}` of errors and failures for each
       redundant execution (or its corresponding inverse, the :term:`MTTI`
       :math:`M`). It can be simplified for redundancy of identical systems
-      :math:`R_{i}(t)`, assuming an identical constant propabalistic
+      :math:`R_{i}(t)`, assuming an identical constant probabilistic
       error/failure rate :math:`\lambda` (or its corresponding inverse
       :math:`M`).
 

@@ -28,19 +28,19 @@ Error and Failure Types
 :ref:`Errors and failures<intersect:arch:sos:logical:errors>` have different
 types, such as an outage, a degradation of performance or functionality, or
 erroneous data. They have also different root causes and ocurrence
-propabilities and frequencies.
-:ref:`Failures of or errors in<intersect:arch:sos:logical:errors>` essential
-hardware components, such as a sensor in an instrument, a hard drive in an
+probabilities and frequencies.
+:ref:`Failures or errors<intersect:arch:sos:logical:errors>` in essential
+hardware components (e.g., a sensor in an instrument, a hard drive in an
 instrument controller, or a :term:`general-purpose computing on graphics
-processing unit (GPGPU)<GPGPU>` in a compute resource, are rather rare but do
-exist. Due to the shared nature of the distributed federated ecosystem,
-failures of or errors in essential shared hardware or software components, such
+processing unit (GPGPU)<GPGPU>` in a compute resource) are rather rare but do
+occur. Due to the shared nature of the distributed federated ecosystem,
+failures or errors in essential shared hardware or software components, such
 as due to oversubscription of a shared network or compute resource, are more
-likely. For example, data delivery may get delayed due to high cross-facility
+likely. For example, data delivery may be delayed due to high cross-facility
 network usage, or computation in the feedback loop may be slower due to shared
 file system or high-speed network contention. There is also the challenge of
 scalability, since resource contention is more likely with more workflows
-utilizing the shared federated ecosystem. While the federated ecosystem can
+utilizing the shared federated ecosystem. While the federated ecosystem may
 adapt by adding more resources, such adaptation does not happen instantly if
 resources are not available or requires preventative failure mitigation if they
 are.
@@ -55,7 +55,7 @@ distinctive impact scopes, depending on location and containment. The
 following failure impact scopes exist in the :term:`INTERSECT` ecosystem:
 
 - A resource exposed by a microservice, e.g., a computer's data storage system
-  or an instrument's sensor'.
+  or an instrument's sensor.
 - A microservice exposing resources, e.g., the computer's data storage
   microservice or the instrument's data transport endpoint microservice.
 - A service consisting of one or more microservices, e.g., the computer's
@@ -71,13 +71,13 @@ User-Defined Responses
 
 Depending on failure type, location, impact, and mitigation, failure
 propagation can be limited by proper containment. For example, a failed
-microservice may be just restarted using a prior checkpoint of its state. Some
+microservice may be restarted using a prior checkpoint of its state. Other
 failure scenarios are more complex and involve more elaborate mitigation
-strategies. For example, the failure of a supercomputers’s parallel file system
+strategies. For example, the failure of a supercomputer's parallel file system
 will not only make the corresponding data storage microservice, storage
 management service, and data management subsystem fail, but it will also impact
-the compute microservices and services that are part of supercomputers’s
-infrastructure system. Any computation on the supercomputers’s infrastructure
+the compute microservices and services that are part of supercomputer's
+infrastructure system. Any computation on the supercomputer's infrastructure
 system would fail and could significantly impact ongoing experiments. In
 contrast, the failure of an instrument's sensor impacts its data transport
 endpoint microservice and data transfer endpoint service, but the experiment
@@ -149,7 +149,7 @@ and failure resilience capabilities for federated instrument-science
 ecosystems. These structural patterns provide concrete descriptions of
 individual resilience solutions that are applied to
 :ref:`intersect:arch:sos:logical:systems`, and correspondingly to the
-microservices that make up servives in the :ref:`intersect:arch:ms`.
+microservices that make up services in the :ref:`intersect:arch:ms`.
 Higher-level architectural and strategy patterns can be found in the original
 resilience design pattern specification :cite:`engelmann22rdp-20` and are not
 repeated here for brevity. The Self Stabilization derived patterns Natural

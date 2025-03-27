@@ -148,7 +148,7 @@ Protection Domain
 Resulting Context
    Correct operation is performed despite an error or failure impacting the
    system. Progress in the system is not lost due to an error or failure. The
-   system is not interrupted during error-/failure-free operation or when
+   system is not interrupted during error/failure-free operation or when
    encountering an error or failure. Resource usage in time or space is
    increased according to the amount of redundancy employed in the form of
    encoded system state and due to the encoding of input and decoding and
@@ -202,7 +202,7 @@ Resulting Context
       failures of the persistent storage. The reliability after applying the
       pattern :math:`R(t)` can be obtained using the performance under errors
       or failures that are handled as part of the protected the system
-      :math:`T_{f!=0}` and the assumed constant propabalistic rate
+      :math:`T_{f!=0}` and the assumed constant probabilistic rate
       :math:`\lambda_{u}` of errors and failures of the unprotected part of the
       system that are not handled (or its corresponding inverse, the
       :term:`MTTI` :math:`M_{u}`).
