@@ -10,6 +10,7 @@ federated hardware/software architecture is currently being developed at
 The current team involves :term:`ORNL` scientists and engineers, but the
 project is open for external contributions.
 
+
 .. _intersect:arch:about:team:
 
 Team
@@ -46,7 +47,7 @@ Team
     - `Rohit Srivastava <https://www.ornl.gov/staff-profile/rohit-srivastava>`_
 
 
-.. _intersect:arch:about:Acknowledgements:
+.. _intersect:arch:about:acknowledgements:
 
 Acknowledgements
 ----------------
