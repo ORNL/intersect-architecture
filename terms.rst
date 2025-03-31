@@ -8,6 +8,9 @@ Acronym and Terminology Definitions
    AAM
       Autonomous additive manufacturing
 
+   ABFT
+      Algorithm-based fault tolerance
+
    ACE
       Advanced Computing Ecosystem testbed at the Oak Ridge Leadership
       Computing Facility
@@ -76,6 +79,9 @@ Acronym and Terminology Definitions
       compounds are created and characterized to find an optimal compound
       for a specific practical application.
 
+   BCH
+      Bose-Chaudhuri-Hocquenghem code
+
    BLOB
       Binary large object, or BLOB, used in object storage systems.
 
@@ -94,6 +100,9 @@ Acronym and Terminology Definitions
 
    CPU
       Central Processing Unit
+
+   CRC
+      Cyclic redundancy check
 
    CRUD
       Create, read, update and delete, which are the four basic operations of persistent storage.
@@ -178,6 +187,9 @@ Acronym and Terminology Definitions
    GUI
       Graphical User Interface
 
+   GVR
+      Global view resilience
+
    GWAS
       Genome-wide association studies
 
@@ -211,6 +223,9 @@ Acronym and Terminology Definitions
    INTERSECT
       INTERconnected Science ECosysTem
 
+   IPMI
+      Intelligent Platform Management Interface
+
    IR
       infrared
 
@@ -241,6 +256,9 @@ Acronym and Terminology Definitions
    MD
       Molecular Dynamics
 
+   MDS
+      Metadata service
+
    MDF
       Manufacturing Demonstration Facility
 
@@ -252,6 +270,30 @@ Acronym and Terminology Definitions
 
    MoDAF
       United Kingdom Ministry of Defence Architecture Framework
+
+   MPI
+      Message passing interface
+
+   MTBE
+      A system's expected mean-time between errors.
+
+   MTBF
+      A system's expected mean-time between failures.
+
+   MTBI
+      A system's expected mean-time between interrups (errors or failures).
+
+   MTTE
+      A system's expected mean-time to error.
+
+   MTTF
+      A system's expected mean-time to failure.
+
+   MTTI
+      A system's expected mean-time to interrup (error or failure).
+
+   MTTR
+      A system's expected mean-time to recover.
 
    Multi-experiment workflow
       A set of experiments performed in serial (one after another) and/or in
@@ -325,6 +367,12 @@ Acronym and Terminology Definitions
    PID
       Proportional-integral-derivative
 
+   PU
+      A system's planned uptime or service delivery time.
+
+   RAID
+      Redundant array of independent disks
+
    REST
       REpresentational State Transfer (REST) is an architectural
       pattern for communication between stateless :term:`WWW`
@@ -347,6 +395,9 @@ Acronym and Terminology Definitions
 
    SDC
       Silent data corruption
+
+   SD
+     A system's scheduled downtime or service outage time.
 
    SDK
       Software development kit
@@ -407,6 +458,9 @@ Acronym and Terminology Definitions
       service, or system under specific conditions. For example, characterizing
       the chemical composition of a compound in a gas chromatograph.
 
+   UD
+     A system's unscheduled downtime or service outage time.
+
    UI
       User interface
 
@@ -424,6 +478,9 @@ Acronym and Terminology Definitions
 
    UUID
       Universally Unique Identifier
+
+   VM
+      Virtual machine
 
    VOC
       Volatile organic compound

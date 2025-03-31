@@ -12,5 +12,4 @@ to accomplish the goals of a specific application use case.
 
    conductor-choreography
    retry-recovery
-
-
+   resilience

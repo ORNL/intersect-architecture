@@ -26,9 +26,9 @@ There are different aspects of dealing with faults, errors and failures in the
 :term:`INTERSECT` ecosystem. First, basic :term:`INTERSECT` services required
 to operate and use the ecosystem need to be up and running correctly at the
 time they are being used, i.e., they need to be highly available and
-dependable. Second, such disruptive events need to be handled in a reasonable
+dependable. Second, disruptive events need to be handled in a reasonable
 manner, ranging from a simple fail-stop to more elaborate fault tolerance
-strategies, such as failing over to redundant services. Third, certain workflows
+strategies such as failing over to redundant services. Third, certain workflows
 using the ecosystem may have real-time requirements that, if not fulfilled, may
 result in a failure of a workflow. Lastly, there are certainly other resilience
 aspects, such as guaranteeing the correctness of computation performed by
@@ -55,7 +55,7 @@ always in the scope of a specific
 :ref:`task, command, or action<intersect:arch:sos:logical:systems:ors:tasks>`
 and in the context of a specific :ref:`system, subsystem, and
 service<intersect:arch:sos:logical:systems>`. These activities may encounter
-such events, either when selfdetected or when notified. This may include a
+such events, either when self-detected or when notified. This may include a
 failed action, command, or task as a result of a failed instrument, computer,
 or data storage. These events may be encountered by a service and communicated
 back to another service that was trying to use it. They also may be encounterd
@@ -190,7 +190,7 @@ Containment
 Containment enables limiting the effects of an error or failure from
 propagating :cite:`engelmann22rdp-20`. It is achieved by reasoning about the
 modularity of subsystems and services that make up a system. In terms of
-error op failure resilience of a system, a containment module is a unit that
+error or failure resilience of a system, a containment module is a unit that
 fails independently of other units and it is also the unit of repair or
 replacement.
 
@@ -225,8 +225,8 @@ incorrect state into correct state, it is called *error correction*.
 Notification
 ------------
 
-Notifications only involve errors or failures and are described in the
-:ref:`intersect:arch:sos:logical` always in the scope of a specific :ref:`task,
+Notifications only involve errors or failures, and they are always described in the
+:ref:`intersect:arch:sos:logical` in the scope of a specific :ref:`task,
 command, or action<intersect:arch:sos:logical:systems:ors:tasks>` and in the
 context of a specific :ref:`system, subsystem, and
 service<intersect:arch:sos:logical:systems>` in which an event occurs. For
@@ -284,7 +284,7 @@ events, the following three general fault, error and failure handling
 categories exist:
 
 Ignore
-   Allthough it might sound counterintuitive, but ignoring a specific error or
+   Although counterintuitive, ignoring a specific error or
    failure may be the right action to perform, such as when the event has no
    impact on the current :ref:`intersect:arch:sos:logical:systems:ors:tasks`.
    For example, the outcome of a :term:`campaign` may not be impacted if the
@@ -304,12 +304,16 @@ User-defined response
    containment and mitigation and is within the scope of
    :ref:`intersect:arch:sos:user:roles`. For example, an admin may define
    or a user may configure an automated fail-over procedure for a service.
-   The admin knows the physical view and may use reserve resources as part of
+   The admin knows the physical view and may use reserved resources as part of
    a general mitigation plan with transparent fail-over. In contrast, the
    user-defined response would request additional resources ahead of time and
    perform user-defined actions when required. Additionally, delegation may
    also be an appropriate user-defined response, such as when another task is
-   better equipped to handkle an error or failure.
+   better equipped to handle an error or failure. See
+   :ref:`intersect:arch:sos:logical:resilience` for different
+   :ref:`intersect:arch:sos:logical:resilience:mitigation` options for a
+   user-defined response, including the use of
+   :ref:`intersect:arch:sos:logical:resilience:patterns`.
 
 There is also the aspect of error and failure handling in the
 :ref:`intersect:arch:sos:operational`, specifically with
