@@ -11,14 +11,14 @@ network and computing allocations and creating setbacks for scientists.
 The :ref:`intersect:arch:sos:logical:errors` of the
 :ref:`intersect:arch:sos:logical` defines faults, errors, failures, detection,
 containment, masking, and handling. This part of the
-:ref:`intersect:arch:sos:logical` describes the different options for a
-user-defined response to an error or failure that may enact specific
-containment and mitigation and is within the scope of
-:ref:`intersect:arch:sos:user:roles`. Due to the involved complexities of error
-and failure detection, notification, containment, and mitigation, resilience
-through user-defined responses needs to be an integral part of the federated
-ecosystem through co-design, such that the burden for providing resilience is
-on the system by design and not on the operator or user as an afterthought.
+:ref:`intersect:arch:sos:logical` describes the different options for
+:ref:`intersect:arch:sos:logical:resilience:mitigation`, which depend on
+:ref:`intersect:arch:sos:logical:resilience:types` and
+:ref:`intersect:arch:sos:logical:resilience:scopes`. Due to the involved
+complexities of error and failure detection, notification, containment, and
+mitigation, resilience needs to be an integral part of the federated ecosystem
+through co-design, such that the burden for providing resilience is on the
+system by design and not on the operator or user as an afterthought.
 
 .. _intersect:arch:sos:logical:resilience:types:
 
@@ -64,10 +64,10 @@ following failure impact scopes exist in the :term:`INTERSECT` ecosystem:
   e.g., the computer's or the instrument's infrastructure system with all of
   its services and microservices.
 
-.. _intersect:arch:sos:logical:resilience:responses:
+.. _intersect:arch:sos:logical:resilience:mitigation:
 
-User-Defined Responses
-----------------------
+Error and Failure Mitigation
+----------------------------
 
 Depending on failure type, location, impact, and mitigation, failure
 propagation can be limited by proper containment. For example, a failed
@@ -158,7 +158,7 @@ Tolerance, Self-Healing, and Self-Aware are currently not included.
 A specific resilience solution may require the composition of multiple
 resilience design patterns, such as to provide different
 :ref:`intersect:arch:sos:logical:errors:containment` and
-:ref:`intersect:arch:sos:logical:resilience:responses`
+:ref:`intersect:arch:sos:logical:resilience:mitigation`
 for different :ref:`intersect:arch:sos:logical:resilience:types`. For example,
 the :ref:`intersect:arch:sos:logical:resilience:patterns:active_standby`
 pattern may be used to provide a fail-over capability from an active system to

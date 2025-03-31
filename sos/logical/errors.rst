@@ -310,8 +310,10 @@ User-defined response
    perform user-defined actions when required. Additionally, delegation may
    also be an appropriate user-defined response, such as when another task is
    better equipped to handle an error or failure. See
-   :ref:`intersect:arch:sos:logical:resilience` for different options for a
-   user-defined response.
+   :ref:`intersect:arch:sos:logical:resilience` for different
+   :ref:`intersect:arch:sos:logical:resilience:mitigation` options for a
+   user-defined response, including the use of
+   :ref:`intersect:arch:sos:logical:resilience:patterns`.
 
 There is also the aspect of error and failure handling in the
 :ref:`intersect:arch:sos:operational`, specifically with
