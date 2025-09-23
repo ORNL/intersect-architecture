@@ -74,6 +74,18 @@ numfig = True
 # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html
 todo_include_todos = True
 
+# -- Options for LaTeX output ------------------------------------------------
+# LaTeX configuration for PDF generation
+latex_engine = 'pdflatex'
+
+# Configure image converter for SVG files in LaTeX output
+# This tells Sphinx to ignore SVG files that can't be processed by LaTeX
+latex_show_pagerefs = True
+latex_show_urls = 'footnote'
+
+# LaTeX specific configuration
+latex_elements = {}
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
