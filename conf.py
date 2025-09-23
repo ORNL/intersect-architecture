@@ -74,6 +74,27 @@ numfig = True
 # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html
 todo_include_todos = True
 
+# -- Options for LaTeX output ------------------------------------------------
+# LaTeX configuration for PDF generation
+latex_engine = 'pdflatex'
+
+# Configure image converter for SVG files in LaTeX output
+# This tells Sphinx to ignore SVG files that can't be processed by LaTeX
+latex_show_pagerefs = True
+latex_show_urls = 'footnote'
+
+# LaTeX specific configuration
+latex_elements = {}
+
+latex_documents = [
+    ('index',                     # Root document (e.g., 'index' or 'pdf-index')
+     'intersectarchitecture.tex', # Output LaTeX filename (no spaces)
+     project,                     # Document Title (empty uses root doc's title)
+     author,                      # Author names(s)
+     'manual',                    # Document type: ('manual' or 'howto')
+     False)                       # if True, only include docs in toctree
+]
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
