@@ -124,4 +124,7 @@ rst_prolog = f"""
 # Fix the "too deeply nested" LaTeX error.
 latex_elements = {
     'maxlistdepth': '99', # Or a sufficiently large number
+    'preamble': r'''
+    \renewcommand{\hyperref}[2][]{#2}
+    '''
 }
