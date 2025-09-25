@@ -55,7 +55,7 @@ html_context = {
 # ones.
 import sphinx_rtd_theme
 extensions = ['recommonmark', "sphinx_rtd_theme", 'sphinxcontrib.bibtex',
-              'sphinx.ext.todo','sphinxcontrib.plantuml','sphinxcontrib.mermaid', 'sphinxcontrib.youtube']
+              'sphinx.ext.todo','sphinxcontrib.plantuml','sphinxcontrib.mermaid', 'sphinxcontrib.youtube','sphinxcontrib.inkscapeconverter']
 bibtex_bibfiles = ['bibliography.bib', 'publications.bib']
 bibtex_default_style = 'unsrt'
 bibtex_reference_style = 'label'
