@@ -55,7 +55,7 @@ html_context = {
 # ones.
 import sphinx_rtd_theme
 extensions = ['recommonmark', "sphinx_rtd_theme", 'sphinxcontrib.bibtex',
-              'sphinx.ext.todo','sphinxcontrib.plantuml','sphinxcontrib.mermaid', 'sphinxcontrib.youtube']
+              'sphinx.ext.todo','sphinxcontrib.plantuml','sphinxcontrib.mermaid', 'sphinxcontrib.youtube','sphinxcontrib.inkscapeconverter']
 bibtex_bibfiles = ['bibliography.bib', 'publications.bib']
 bibtex_default_style = 'unsrt'
 bibtex_reference_style = 'label'
@@ -129,3 +129,12 @@ rst_prolog = f"""
 
 
 """
+
+latex_elements = {
+    # Fix the "too deeply nested" LaTeX error.
+    'maxlistdepth': '99', # Or a sufficiently large number
+    # Temporarily fix the hyperfer warnings by disabling hyperrefs.
+#    'preamble': r'''
+#    \renewcommand{\hyperref}[2][]{#2}
+#    '''
+}
