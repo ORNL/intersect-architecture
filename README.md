@@ -38,11 +38,23 @@ format and uses [Sphinx](https://www.sphinx-doc.org/) to generate the
    shell$ make
    ```
 
+   To build a PDF version:
+
+   ```
+   shell$ make pdf
+   ```
+
    
  - View in browser (e.g., using ``open`` utility on macOS)
 
    ```
    shell$ open _build/index.html
+   ```
+
+   To view the PDF version:
+
+   ```
+   shell$ open _build/latex/*.pdf
    ```
 
 

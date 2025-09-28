@@ -141,7 +141,7 @@ adopted, as they are universally applicable.
          high-performance computing
 
    Classification of resilience design patterns in the context of
-   high-performance computing :cite:`engelmann22rdp-20`
+   high-performance computing
 
 The :ref:`intersect:arch:sos:logical:resilience:patterns:toc` provides a
 variety of solutions to problems that repeatedly appear in the design of error

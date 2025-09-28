@@ -16,11 +16,17 @@ build:
   #
   apt_packages:
     - plantuml
+    - inkscape
 
 sphinx:
   configuration: conf.py
   # TODO: Fail on all warning to avoid broken references
   #fail_on_warning: true
+
+# Build documentation in additional formats
+formats:
+  - htmlzip
+  - pdf
 
 python:
    install:

@@ -20,6 +20,13 @@ help:
 clean:
 	@$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+pdf: latexpdf
+
+latexpdf:
+	@$(SPHINXBUILD) -b latex "$(SOURCEDIR)" "$(BUILDDIR)/latex" $(SPHINXOPTS) $(O)
+	@echo "Running LaTeX files through pdflatex..."
+	$(MAKE) -C "$(BUILDDIR)/latex" LATEXMKOPTS="-interaction=nonstopmode" all-pdf
+
 #.PHONY: help Makefile
 #
 ## Catch-all target: route all unknown targets to Sphinx using the new
