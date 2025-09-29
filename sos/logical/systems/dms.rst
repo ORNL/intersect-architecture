@@ -3,6 +3,10 @@
 Data Management System
 ----------------------
 
+.. note::
+
+  See the `INTERSECT Scientific Data Layer <https://intersect-sdl.github.io/>`_ documentation for details
+
 The main purpose of the :term:`INTERSECT` federated ecosystem is to enable
 science breakthroughs with autonomous experiments, self-driving laboratories,
 smart manufacturing, and :term:`AI`-driven design, discovery and evaluation.
