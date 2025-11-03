@@ -177,6 +177,16 @@ Capability
       |               | (sub-) system to the standby (sub-) systems         |
       +---------------+-----------------------------------------------------+
 
+   .. mermaid::
+      :caption: Active/Standby pattern workflow
+      :align: center
+
+      flowchart LR
+         A(["Start"]) --> B{"Active Alive?"}
+         B --> C["Execute Task on<br>Active System"] & D["Fail-over: Standby Becomes<br> New Active System"]
+         D --> C
+         C --> E(["End"])
+
 Protection Domain
    The protection domain extends to the system state and the system resources
    that implement the :math:`N` functionally identical replica systems.
