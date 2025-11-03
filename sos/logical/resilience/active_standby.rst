@@ -134,8 +134,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:active_standby:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:active_standby:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:active_standby:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:active_standby:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:active_standby:workflow`.
 
    .. figure:: active_standby/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:active_standby:flowchart
@@ -178,6 +180,7 @@ Capability
       +---------------+-----------------------------------------------------+
 
    .. mermaid::
+      :name: intersect:arch:sos:logical:resilience:patterns:active_standby:workflow
       :caption: Active/Standby pattern workflow
       :align: center
 
