@@ -181,11 +181,12 @@ Capability
       :caption: Active/Standby pattern workflow
       :align: center
 
-      flowchart LR
+      flowchart TD
          A(["Start"]) --> B{"Active Alive?"}
-         B --> C["Execute Task on<br>Active System"] & D["Fail-over: Standby Becomes<br> New Active System"]
+         B --> C["Execute Task on<br>Active System"] & D["Fail-over: Standby Becomes New Active System"]
          D --> C
-         C --> E(["End"])
+         C --> E("Replicate State Change from Active to Standby System")
+         E --> F(["End"])
 
 Protection Domain
    The protection domain extends to the system state and the system resources
