@@ -184,8 +184,8 @@ Capability
       :caption: Active/Standby pattern workflow
       :align: center
 
-      flowchart LR
-         A(["Start"]) --> B["Execute Task on<br>Active System"]
+      flowchart TD
+         A(["Start"]) --> B["Execute Task on Active System"]
          B --> C{"Task Successful?"}
          C -->|Yes| D["Replicate State Change from Active to Standby System"]
          C -->|No| E["Fail-over: Standby Becomes New Active System"]
