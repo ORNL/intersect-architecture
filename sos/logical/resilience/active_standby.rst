@@ -179,23 +179,11 @@ Capability
       |               | (sub-) system to the standby (sub-) systems         |
       +---------------+-----------------------------------------------------+
 
-   .. mermaid::
+   .. mermaid:: active_standby/workflow.mmd
       :name: intersect:arch:sos:logical:resilience:patterns:active_standby:workflow
       :caption: Active/Standby pattern workflow
       :align: center
-
-      flowchart TD
-         A(["Start"]) --> B["Execute Task on Active System"]
-         B --> C{"Task Successful?"}
-         C -->|Yes| D["Replicate State Change from Active to Standby System"]
-         C -->|No| E["Fail-over: Standby Becomes New Active System"]
-         E --> F{"Task Successful?"}
-         F -->|Yes| B
-         F -->|No| G(["Failed"])
-         D --> H{"Task Successful?"}
-         H -->|Yes| I(["Success"])
-         H -->|No| J["Disable Standby System"]
-         J --> I
+      :scale: 50%
 
 Protection Domain
    The protection domain extends to the system state and the system resources

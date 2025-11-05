@@ -99,7 +99,7 @@ Capability
    its parameters in
    :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:parameters`,
    and its workflow in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:modular_redundancy:workflow`
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:workflow`
 
    .. figure:: n-modular_redundancy/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:flowchart
@@ -138,25 +138,10 @@ Capability
       |               | redundant (sub) system replica(s)                 |
       +---------------+---------------------------------------------------+
 
-   .. mermaid::
-      :name: intersect:arch:sos:logical:resilience:patterns:modular_redundancy:workflow
+   .. mermaid:: n-modular_redundancy/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:workflow
       :caption: N-Modular Redundancy pattern workflow
       :align: center
-
-      flowchart TD
-         A(["Start"]) --> B["Replicate Input"]
-         B --> C["Execute Task on System 1"]
-         B --> D["Execute Task on System N"]
-         C --> E["Compare Output"]
-         D --> E
-         E --> G{"Task Successful?"}
-         G -->|Yes| H(["Sucess"])
-         G -->|No| I["Remove, Replace, or Discount Failed System(s)"]
-         I --> J{"Task Successful?"}
-         J -->|Yes| K{"Reexecute Task?"}
-         J -->|No| F(["Failed"])
-         K -->|Yes| B
-         K -->|No| H
 
 Protection Domain
    The protection domain extends to the system state and the system resources
