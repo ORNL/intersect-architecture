@@ -183,7 +183,6 @@ Capability
       :name: intersect:arch:sos:logical:resilience:patterns:active_standby:workflow
       :caption: Active/Standby pattern workflow
       :align: center
-      :scale: 50%
 
 Protection Domain
    The protection domain extends to the system state and the system resources
