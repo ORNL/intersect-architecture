@@ -7,7 +7,7 @@ flowchart TD
     E --> G{"Successful?"}
     G -->|Yes| H(["Sucess"])
     G -->|No| I["Remove, Replace, or Discount Failed System(s)"]
-    I --> J{"Task Successful?"}
+    I --> J{"Successful?"}
     J -->|Yes| K{"Reexecute Task?"}
     J -->|No| F(["Failed"])
     K -->|Yes| B
