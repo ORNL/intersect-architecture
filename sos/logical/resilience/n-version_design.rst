@@ -156,6 +156,11 @@ Capability
       |               | redundant (sub) system version(s)                   |
       +---------------+-----------------------------------------------------+
 
+   .. mermaid:: n-version_design/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:n-version_design:workflow
+      :caption: N-Version Design pattern workflow
+      :align: center
+
 Protection Domain
    The protection domain extends to the system state and the system resources
    described by the design specification that implement the :math:`N`
