@@ -115,8 +115,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:reinitialization:workflow`.
    
    .. figure:: reinitialization/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:reinitialization:flowchart
@@ -147,6 +149,11 @@ Capability
       +---------------+----------------------------------------------------------+
       | :math:`T_{r}` | Time to reset the entire system or affected subsystem(s) |
       +---------------+----------------------------------------------------------+
+
+   .. mermaid:: reinitialization/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:reinitialization:workflow
+      :caption: Reinitialization Design pattern workflow
+      :align: center
 
 Protection Domain
    The protection domain extends to the monitored system’s state that is not

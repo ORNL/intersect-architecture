@@ -116,8 +116,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:n-version_design:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:n-version_design:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:n-version_design:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-version_design:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-version_design:workflow`.
 
    .. figure:: n-version_design/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:n-version_design:flowchart
