@@ -105,8 +105,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:forward_error_correction_code:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:forward_error_correction_code:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:forward_error_correction_code:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:forward_error_correction_code:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:forward_error_correction_code:workflow`.
 
    .. figure:: forward_error_correction_code/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:forward_error_correction_code:flowchart
@@ -140,6 +142,11 @@ Capability
       +----------------+----------------------------------------------------+
       | :math:`T_{c}`  | Time to correct using redundant information        |
       +----------------+----------------------------------------------------+
+
+   .. mermaid:: forward_error_correction_code/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:forward_error_correction_code:workflow
+      :caption: Forward Error Correction Code pattern workflow
+      :align: center
 
 Protection Domain
    The protection domain extends to the encoded system state and to the system
