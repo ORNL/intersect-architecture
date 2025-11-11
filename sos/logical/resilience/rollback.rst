@@ -174,8 +174,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:rollback:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:rollback:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:rollback:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:rollback:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:rollback:workflow`.
    
    .. figure:: rollback/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:rollback:flowchart
@@ -212,6 +214,11 @@ Capability
       | :math:`T_{s}` | Time to save system state and progress to         |
       |               | storage                                           |
       +---------------+---------------------------------------------------+
+
+   .. mermaid:: rollback/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:rollback:workflow
+      :caption: Rollback pattern workflow
+      :align: center
 
 Protection Domain
    The protection domain extends to the previously preserved system state that
