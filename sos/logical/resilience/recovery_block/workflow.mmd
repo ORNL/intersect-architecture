@@ -1,0 +1,10 @@
+flowchart TD
+    A(["Start"]) --> B["Replicate Input"]
+    B --> C["Execute Task"]
+    C --> D["Validate Output"]
+    D --> E{"Successful?"}
+    E -->|Yes| G(["Sucess"])
+    E -->|No| H["Execute Recovery Block Task"]
+    H --> I{"Successful?"}
+    I -->|Yes| B
+    I -->|No| J(["Failed"])

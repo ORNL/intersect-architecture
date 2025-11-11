@@ -99,7 +99,7 @@ Capability
    its parameters in
    :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:parameters`,
    and its workflow in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:workflow`
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:workflow`.
 
    .. figure:: n-modular_redundancy/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:flowchart
