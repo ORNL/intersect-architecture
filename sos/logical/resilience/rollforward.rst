@@ -164,8 +164,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:rollforward:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:rollforward:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:rollforward:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:rollforward:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:rollforward:workflow`.
    
    .. figure:: rollforward/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:rollforward:flowchart
@@ -202,6 +204,11 @@ Capability
       | :math:`T_{s}` | Time to save (sub-) system state and progress to    |
       |               | storage                                             |
       +---------------+-----------------------------------------------------+
+
+   .. mermaid:: rollforward/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:rollforward:workflow
+      :caption: Rollforward pattern workflow
+      :align: center
 
 Protection Domain:
    The protection domain extends to the system state before an error or failure

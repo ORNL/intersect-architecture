@@ -7,7 +7,7 @@ flowchart TD
     F -->|Yes| G(["Success"])
     F -->|No| H(["Failed"])
     E --> I{"Successful?"}
-    I -->|Yes| J["Roll Back to Last Known Correct State"]
+    I -->|Yes| J["Rollforward to Correct State Before the Event"]
     I -->|No| H
     J --> K{"Successful?"}
     K -->|Yes| B
