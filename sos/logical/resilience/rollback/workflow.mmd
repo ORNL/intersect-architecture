@@ -1,14 +1,12 @@
 flowchart TD
     A(["Start"]) --> B["Execute Task"]
     B --> C{"Successful?"}
-    C -->|Yes| D(["Save Progress to Storage"])
+    C -->|Yes| D["Save Progress to Storage"]
     C -->|No| E["Load Last Consistent Progress from Storage"]
-    D --> F{"Successful?"}
-    F -->|Yes| G(["Success"])
-    F -->|No| H(["Failed"])
+    D --> G(["Success"])
     E --> I{"Successful?"}
     I -->|Yes| J["Roll Back to Last Known Correct State"]
-    I -->|No| H
+    I -->|No| H(["Failed"])
     J --> K{"Successful?"}
     K -->|Yes| B
     K -->|No| H
