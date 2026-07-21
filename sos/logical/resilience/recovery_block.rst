@@ -113,7 +113,7 @@ Capability
    its parameters in
    :numref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:parameters`,
    and its workflow in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:n-recovery_block:workflow`.
+   :numref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:workflow`.
    
    .. figure:: recovery_block/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:recovery_block:flowchart

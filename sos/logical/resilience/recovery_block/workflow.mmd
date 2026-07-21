@@ -3,7 +3,7 @@ flowchart TD
     B --> C["Execute Task"]
     C --> D["Validate Output"]
     D --> E{"Successful?"}
-    E -->|Yes| G(["Sucess"])
+    E -->|Yes| G(["Success"])
     E -->|No| H["Execute Recovery Block Task"]
     H --> I{"Successful?"}
     I -->|Yes| B
