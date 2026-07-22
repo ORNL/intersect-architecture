@@ -1,0 +1,10 @@
+flowchart TD
+    A(["Start"]) --> B["Encode"]
+    B --> C["Execute Task"]
+    C --> D["Decode and Detect"]
+    D --> E{"Successful?"}
+    E -->|Yes| F(["Success"])
+    E -->|No| G["Correct Using Redundant Information"]
+    G --> H{"Successful?"}
+    H -->|Yes| F
+    H -->|No| I(["Failed"])

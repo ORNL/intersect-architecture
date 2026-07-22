@@ -96,8 +96,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:workflow`.
 
    .. figure:: n-modular_redundancy/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:flowchart
@@ -135,6 +137,11 @@ Capability
       | :math:`T_{r}` | Time to remove, replace, or discount the affected |
       |               | redundant (sub) system replica(s)                 |
       +---------------+---------------------------------------------------+
+
+   .. mermaid:: n-modular_redundancy/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy:workflow
+      :caption: N-Modular Redundancy pattern workflow
+      :align: center
 
 Protection Domain
    The protection domain extends to the system state and the system resources

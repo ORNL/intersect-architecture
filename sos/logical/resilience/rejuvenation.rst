@@ -157,8 +157,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:rejuvenation:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:rejuvenation:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:rejuvenation:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:rejuvenation:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:rejuvenation:workflow`.
 
    .. figure:: rejuvenation/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:rejuvenation:flowchart
@@ -190,6 +192,11 @@ Capability
       | :math:`T_{r}` | Time to restore or replace the state of the         |
       |               | affected (sub-) system(s)                           |
       +---------------+-----------------------------------------------------+
+
+   .. mermaid:: rejuvenation/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:rejuvenation:workflow
+      :caption: Rejuvenation pattern workflow
+      :align: center
 
 Protection Domain
    The protection domain extends to the monitored system’s state that is not

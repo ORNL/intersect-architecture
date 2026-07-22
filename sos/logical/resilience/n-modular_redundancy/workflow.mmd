@@ -1,0 +1,14 @@
+flowchart TD
+    A(["Start"]) --> B["Replicate Input"]
+    B --> C["Execute Task on System 1"]
+    B --> D["Execute Task on System N"]
+    C --> E["Compare Output"]
+    D --> E
+    E --> G{"Successful?"}
+    G -->|Yes| H(["Success"])
+    G -->|No| I["Remove, Replace, or Discount Failed System(s)"]
+    I --> J{"Successful?"}
+    J -->|Yes| K{"Reexecute Task?"}
+    J -->|No| F(["Failed"])
+    K -->|Yes| B
+    K -->|No| H

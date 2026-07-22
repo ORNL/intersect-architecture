@@ -134,8 +134,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:active_standby:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:active_standby:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:active_standby:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:active_standby:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:active_standby:workflow`.
 
    .. figure:: active_standby/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:active_standby:flowchart
@@ -176,6 +178,11 @@ Capability
       | :math:`T_{r}` | Time to replicate system state from the active      |
       |               | (sub-) system to the standby (sub-) systems         |
       +---------------+-----------------------------------------------------+
+
+   .. mermaid:: active_standby/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:active_standby:workflow
+      :caption: Active/Standby pattern workflow
+      :align: center
 
 Protection Domain
    The protection domain extends to the system state and the system resources

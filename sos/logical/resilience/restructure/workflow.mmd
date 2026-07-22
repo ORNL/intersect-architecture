@@ -1,0 +1,11 @@
+flowchart TD
+    A(["Start"]) --> B["Execute Task"]
+    B --> C{"Successful?"}
+    C -->|Yes| D(["Success"])
+    C -->|No| E["Isolate Affected Sub-System(s)"]
+    E --> F{"Successful?"}
+    F -->|Yes| G["Remove Affected Sub-System(s)"]
+    F -->|No| H(["Failed"])
+    G --> I{"Successful?"}
+    I -->|Yes| B
+    I -->|No| H

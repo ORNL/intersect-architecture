@@ -1,0 +1,12 @@
+flowchart TD
+    A(["Start"]) --> B["Execute Task on Active System"]
+    B --> C{"Successful?"}
+    C -->|Yes| D["Replicate State Change from Active to Standby System"]
+    C -->|No| E["Fail-over: Standby Becomes New Active System"]
+    E --> F{"Successful?"}
+    F -->|Yes| B
+    F -->|No| G(["Failed"])
+    D --> H{"Successful?"}
+    H -->|Yes| I(["Success"])
+    H -->|No| J["Disable Standby System"]
+    J --> I

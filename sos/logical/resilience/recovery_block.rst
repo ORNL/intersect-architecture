@@ -110,8 +110,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:recovery_block:workflow`.
    
    .. figure:: recovery_block/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:recovery_block:flowchart
@@ -147,6 +149,11 @@ Capability
       | :math:`T_{r}` | Time to execute the recovery block of the (sub-)   |
       |               | system                                             |
       +---------------+----------------------------------------------------+
+
+   .. mermaid:: recovery_block/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:recovery_block:workflow
+      :caption: Recovery Block pattern workflow
+      :align: center
 
 Protection Domain
    The protection domain extends to the system state and the system resources

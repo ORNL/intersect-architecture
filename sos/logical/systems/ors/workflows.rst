@@ -120,3 +120,15 @@ Computational/Experimental Science Workflow Patterns
    the patterns for scientific instruments and computation in
    :cite:`VESCOVI2022100606` are more informal descriptions, similar to
    workflow motifs.
+
+Resilience Design Patterns for Workflows
+  Tasks in a workflow may fail. Resilience to such task failures can be
+  provided in many ways, such as by restarting a failed task (i.e., redundancy
+  in time) or running redundant tasks (i.e., redundancy in space). The
+  :ref:`intersect:arch:sos:logical:resilience:patterns` offer a
+  :ref:`catalog<intersect:arch:sos:logical:resilience:patterns:toc>` with
+  different options, including
+  :ref:`intersect:arch:sos:logical:resilience:patterns:rollback` and
+  :ref:`intersect:arch:sos:logical:resilience:patterns:n-modular_redundancy`.
+  These formal patterns provide concrete descriptions of individual resilience
+  solutions, including their applications to workflows.

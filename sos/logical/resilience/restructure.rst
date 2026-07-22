@@ -122,8 +122,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:restructure:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:restructure:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:restructure:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:restructure:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:restructure:workflow`.
    
    .. figure:: restructure/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:restructure:flowchart
@@ -154,6 +156,11 @@ Capability
       +---------------+-----------------------------------------------------+
       | :math:`T_{r}` | Time to remove the affected subsystem(s)            |
       +---------------+-----------------------------------------------------+
+
+   .. mermaid:: restructure/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:restructure:workflow
+      :caption: Restructure pattern workflow
+      :align: center
 
 Protection Domain
    The protection domain extends to the monitored system’s state that is not

@@ -116,8 +116,10 @@ Capability
    :numref:`intersect:arch:sos:logical:resilience:patterns:n-version_design:flowchart`,
    the state diagram in
    :numref:`intersect:arch:sos:logical:resilience:patterns:n-version_design:state_diagram`,
-   and its parameters in
-   :numref:`intersect:arch:sos:logical:resilience:patterns:n-version_design:parameters`.
+   its parameters in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-version_design:parameters`,
+   and its workflow in
+   :numref:`intersect:arch:sos:logical:resilience:patterns:n-version_design:workflow`.
 
    .. figure:: n-version_design/flowchart.png
       :name: intersect:arch:sos:logical:resilience:patterns:n-version_design:flowchart
@@ -155,6 +157,11 @@ Capability
       | :math:`T_{r}` | Time to remove, replace, or discount the affected   |
       |               | redundant (sub) system version(s)                   |
       +---------------+-----------------------------------------------------+
+
+   .. mermaid:: n-version_design/workflow.mmd
+      :name: intersect:arch:sos:logical:resilience:patterns:n-version_design:workflow
+      :caption: N-Version Design pattern workflow
+      :align: center
 
 Protection Domain
    The protection domain extends to the system state and the system resources
