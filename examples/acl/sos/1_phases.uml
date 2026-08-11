@@ -1,0 +1,6 @@
+@startuml
+:Setup;
+:Synthesis;
+:Preparation of ink slurry;
+:Characterization;
+@enduml
